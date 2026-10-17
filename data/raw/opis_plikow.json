@@ -156,7 +156,7 @@
     "tytul": "Toalety",
     "kategoria": "Środowisko",
     "endpoint": "get_m_toalety",
-    "pobrano": "2026-10-13T23:06:00",
+    "pobrano": "2026-10-18T01:43:18",
     "status": "ok",
     "plik": "male/toalety.json",
     "rekordy": 695,
