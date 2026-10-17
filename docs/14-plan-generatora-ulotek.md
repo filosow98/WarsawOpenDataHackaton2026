@@ -18,6 +18,11 @@ przystanku.
   standardowa). Na Windows nie ma się co zepsuć.
 - Stronę da się wystawić na GitHub Pages, więc jury może ją otworzyć samo.
   To punkty za wdrożenie.
+- **Projektujemy dla seniora, korzystają wszyscy** (decyzja 17.10). Ulotka
+  jest dla każdego: mieszkańców, rodziców z dziećmi, turystów. Teksty po
+  polsku i angielsku, a kod QR otwiera nawigację pieszą do toalety. Senior
+  zostaje bohaterem opowieści: jeśli ulotka działa dla niego, zadziała dla
+  każdego.
 
 ## Co jest na ulotce
 
@@ -27,28 +32,37 @@ słupku).
 ```
 ┌─────────────────────────────────────────────┐
 │ 🚻 NAJBLIŻSZA TOALETA                        │
+│    Nearest toilet                           │
 │ Przystanek: Sympatyczna 03        nr 4225-03 │
 ├─────────────────────────────────────────────┤
 │          350 m  ·  ok. 8 min pieszo          │
+│                     approx. 8 min walk      │
 │   Inwalidów 3, Biblioteka Publiczna          │
 │   Wskazówka: wejście od ul. Piekarskiej      │
 ├─────────────────────────────────────────────┤
 │                                             │
 │   [ MAPA:  ● JESTEŚ TUTAJ   🚻 TOALETA ]     │
-│   [ linia przerywana, nazwy ulic       ]     │
+│   [        You are here     Toilet   ]     │
 │                                             │
 ├─────────────────────────────────────────────┤
-│ ✔ BEZPŁATNA          ✘ W NIEDZIELĘ NIECZYNNA │
+│ ✔ BEZPŁATNA / free   ✘ W NIEDZIELĘ NIECZYNNA │
 │ ✔ CZYNNA CAŁY ROK    ✔ DLA WÓZKÓW            │
-│ Godziny: pon.–pt. 9–19 · sob. 9–15           │
+│ Godziny / hours: pon.–pt. 9–19 · sob. 9–15   │
 ├─────────────────────────────────────────────┤
-│ W niedzielę najbliższa czynna:               │
-│ 900 m, ul. Przykładowa 5 (bezpłatna)         │
+│ W niedzielę najbliższa czynna:      ┌──────┐ │
+│ 900 m, ul. Przykładowa 5            │  QR  │ │
+│                                     │      │ │
+│ Prowadź mnie / Navigate me  ──────► └──────┘ │
 ├─────────────────────────────────────────────┤
 │ Dane: dane.um.warszawa.pl, toalety IV 2026   │
 │ Błąd na ulotce? Zadzwoń 19115, podaj 4225-03 │
 └─────────────────────────────────────────────┘
 ```
+
+**Dwa języki bez utraty czytelności:** polski duży, angielski pod spodem
+mniejszą czcionką (ok. połowa wielkości), szarym, ale nadal z wysokim
+kontrastem. Liczby (350 m, 8 min) i ikony są wspólne dla obu języków, więc
+nie dublujemy ich. Angielski tylko w nagłówkach i etykietach, nie w adresie.
 
 | Pole | Skąd | Uwagi |
 |---|---|---|
@@ -73,9 +87,36 @@ słupku).
 - Pełne słowa zamiast skrótów i żargonu („czynna”, a nie „otw.”).
 - Mapa ustawiona na północ, z dużymi znacznikami i podpisami
   „JESTEŚ TUTAJ” i „TOALETA”.
-- Kod QR najwyżej jako mały dodatek (np. dla opiekuna). Ulotka musi działać
-  bez telefonu, bo właśnie tym różni się od miejskich tabliczek „Mapa WC”
-  z samym kodem QR (patrz plik 13).
+- Kod QR to dodatek dla osób z telefonem (turyści, młodsi, opiekunowie).
+  Ulotka musi działać **bez** telefonu, bo właśnie tym różni się od miejskich
+  tabliczek „Mapa WC” z samym kodem QR (patrz plik 13).
+
+## Kod QR: nawigacja do toalety
+
+Kod QR na ulotce otwiera **pieszą nawigację od przystanku do toalety**
+w Google Maps. Link w oficjalnym formacie Google Maps URLs, bez klucza API:
+
+```
+https://www.google.com/maps/dir/?api=1&origin=52.2103,20.91986&destination=52.2081,20.9214&travelmode=walking
+```
+
+- `origin` = współrzędne słupka, `destination` = współrzędne toalety (z
+  `ulotki.json`). Na telefonie link otwiera aplikację Google Maps, jeśli jest
+  zainstalowana, a jeśli nie, przeglądarkę.
+- Kod generujemy w przeglądarce, przy renderze ulotki: biblioteka
+  `qrcodejs` 1.0.0 z cdnjs (`https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js`).
+  Bez zmian w Pythonie. Czas: ok. 30 min.
+- **Rozmiar:** kod skanuje się z odległości ok. 10× jego boku, więc na
+  ulotce co najmniej 4 cm. Poziom korekcji błędów M lub wyższy (ulotka na
+  zewnątrz, zabrudzenia).
+- Podpis przy kodzie w obu językach: „Prowadź mnie / Navigate me”.
+- Sprawdzić przed prezentacją: zeskanować wydruk dwoma telefonami (Android
+  i iPhone).
+- Na prezentacji pokazać na żywo: skan → nawigacja do toalety. Dobry moment
+  dla jury.
+- Wariant na później: kod prowadzi na naszą stronę `?id=4225-03` (ulotka
+  w telefonie, aktualne godziny, wybór Google Maps / Apple Maps / OSM).
+  Daje miastu kontrolę nad treścią, ale wymaga stałego hostingu.
 
 ## Którą toaletę pokazujemy
 
@@ -160,6 +201,21 @@ src/ulotki_dane.py ──► app/dane/ulotki.json   (1 rekord = 1 słupek, ok. 5
 }
 ```
 
+**Zasady pracy z `ulotki.json`:**
+
+- **Wzór rekordu to umowa** między osobą od danych a osobą od ulotek.
+  Zmianę nazwy albo znaczenia pola uzgadniamy we dwoje i od razu
+  poprawiamy wzór powyżej. Inaczej ulotka po cichu pokaże puste miejsca.
+- **Python liczy, przeglądarka tylko wyświetla.** Ulotka i mapa nie liczą
+  odległości, godzin ani sezonu. Brakuje pola (np. „całodobowa”)? Dopisujemy
+  je w `src/ulotki_dane.py` i uruchamiamy skrypt jeszcze raz. Dzięki temu
+  liczby na ulotkach, mapie i slajdach zawsze się zgadzają.
+- **Wyjątek:** link do nawigacji w kodzie QR ulotka składa sama z gotowych
+  pól `lat`/`lon` przystanku i toalety (sekcja „Kod QR”).
+- **Do czasu gotowego skryptu** osoba od ulotek trzyma przykładowy rekord
+  w `app/dane/ulotki.json` (lista z 2–3 rekordami, ręcznie wpisanymi według
+  wzoru). Skrypt potem nadpisze ten plik.
+
 **Uruchomienie:**
 
 ```bash
@@ -198,14 +254,17 @@ ostatni działający krok.
 niedzieli 8:00. **Zamrożenie kodu w niedzielę o 9:00.** Potem tylko
 prezentacja i próba. Oddanie o 11:00.
 
-**Podział ról (3–5 osób):**
+**Podział ról (3 osoby, ustalony 17.10):**
 
-- **Dane:** krok 1, potem 6.
-- **Ulotka / front:** kroki 2–3. Najlepiej dwie osoby: projekt i kod.
-- **Mapa luk + prezentacja:** kroki 4–5, liczby, źródła z pliku 13, scenariusz
-  pitchu.
-- **Wolna osoba:** krok 7, testy na kilkunastu przystankach (Wisła, tory,
-  pętle), pytania do mentora.
+- **Osoba 1 (Roman): dane + mapa.** Krok 1 (`ulotki.json`, z pomocą AI),
+  potem krok 4 (mapa luk, statystyki dzielnic), opcjonalnie 6.
+- **Osoba 2: ulotki.** Kroki 2–3 i kod QR, potem opcjonalnie 7. Do czasu
+  gotowego `ulotki.json` pracuje na rekordzie z sekcji „Rekord w
+  ulotki.json”.
+- **Osoba 3: prezentacja i storytelling.** Scenariusz pitchu, slajdy, źródła
+  z pliku 13, liczby z kroku 4, krok 5 (makieta ulotki na zdjęciu
+  przystanku), próba prezentacji. Testy ulotki na kilkunastu przystankach
+  (Wisła, tory, pętle) i pytania do mentora.
 
 ## Jak to wypada wobec kryteriów jury
 
@@ -224,7 +283,9 @@ prezentacja i próba. Oddanie o 11:00.
 
 - [ ] Reguła wyboru toalety (główna + alternatywa) — czy przyjmujemy?
 - [ ] Format: A4 czy A5?
-- [ ] Czy na ulotce jest mały kod QR dla opiekuna?
+- [x] Kod QR: tak, nawigacja piesza w Google Maps (sekcja „Kod QR”).
+- [x] Dla kogo: wszyscy (mieszkańcy, turyści), teksty PL + EN; senior jako
+  bohater opowieści.
 - [ ] Czy robimy trasę pieszą (krok 6), czy zostajemy przy linii prostej × 1,3?
 
 ## Pytania do mentora

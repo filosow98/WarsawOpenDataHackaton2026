@@ -145,8 +145,9 @@ daleko (np. „1,2 km”) — to sygnał dla miasta, gdzie brakuje toalet.
   Zamiast tego filtry na mapie: bezpłatna, dostępna, otwarta teraz.
 - **Aplikacji dla seniorów.** Wykluczenie cyfrowe (Głos Seniora) — stawiamy
   na tabliczkę.
-- **Dzieci jako drugiej grupy.** Skupiamy się na seniorach, żeby nie
-  rozmywać przekazu.
+- ~~Dzieci jako drugiej grupy.~~ Zmiana 17.10: ulotka jest dla wszystkich
+  (PL + EN, QR z nawigacją), ale w opowieści bohaterem zostaje senior, żeby
+  nie rozmywać przekazu. Szczegóły: [14-plan-generatora-ulotek.md](14-plan-generatora-ulotek.md).
 
 ## Ocena wobec kryteriów jury (szacunki)
 

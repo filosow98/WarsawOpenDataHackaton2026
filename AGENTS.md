@@ -20,9 +20,9 @@ tylko to, co trzeba wiedzieć zawsze.
 Uzupełniamy na bieżąco — to jest źródło prawdy o tym, co robimy.
 
 - **Wyzwanie:** Twój ruch (wyzwanie 3)
-- **Temat / pomysł:** ulotki „Najbliższa toaleta” na przystankach (dla seniorów) — [docs/13-toalety-przy-przystankach.md](docs/13-toalety-przy-przystankach.md), plan aplikacji: [docs/14-plan-generatora-ulotek.md](docs/14-plan-generatora-ulotek.md). Wcześniej: upał na przystankach ([docs/12](docs/12-upal-na-przystankach.md))
+- **Temat / pomysł:** ulotki „Najbliższa toaleta” na przystankach — projektowane dla seniorów, dla wszystkich (mieszkańcy, turyści; PL + EN, QR z nawigacją) — [docs/13-toalety-przy-przystankach.md](docs/13-toalety-przy-przystankach.md), plan aplikacji: [docs/14-plan-generatora-ulotek.md](docs/14-plan-generatora-ulotek.md). Wcześniej: upał na przystankach ([docs/12](docs/12-upal-na-przystankach.md))
 - **Wykorzystane zbiory:** _—_
-- **Podział ról:** _—_
+- **Podział ról:** Roman — dane + mapa luk; osoba 2 — ulotki (+ QR); osoba 3 — prezentacja i storytelling. Szczegóły: [docs/14](docs/14-plan-generatora-ulotek.md)
 
 ## Kryteria jury
 
