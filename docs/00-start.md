@@ -19,6 +19,8 @@ Deadline oddania projektu: **niedziela 11:00** (nie po południu — to ok. 22 h
 | [12-upal-na-przystankach.md](12-upal-na-przystankach.md) | **Bieżąca analiza pomysłu „Upał na przystankach” — wersja do przesłania dalej** |
 | [13-toalety-przy-przystankach.md](13-toalety-przy-przystankach.md) | Pomysł „Toaleta w zasięgu przystanku” — luka toaletowa, tabliczki, źródła o odwodnieniu seniorów |
 | [14-plan-generatora-ulotek.md](14-plan-generatora-ulotek.md) | **Plan aplikacji: generator ulotek „Najbliższa toaleta” + mapa luk** |
+| [15-storytelling.md](15-storytelling.md) | **Historia na prezentację + liczby ze źródłami** |
+| [16-skrypt-prezentacji.md](16-skrypt-prezentacji.md) | **Skrypt 5-minutowej prezentacji (tekst do powiedzenia + slajdy)** |
 
 ## Stan: połączenie działa (13.10.2026)
 
