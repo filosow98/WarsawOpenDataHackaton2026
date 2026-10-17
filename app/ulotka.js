@@ -91,7 +91,7 @@
   function naglowek(r) {
     const h = el("header", "u-naglowek");
     const img = el("img", "u-maskotka");
-    img.src = "img/syrenka.svg";
+    img.src = "img/wc_syrenka.jpeg";
     img.alt = "";
     const tytul = el("div", "u-tytul");
     tytul.append(el("h1", "", "NAJBLIŻSZA TOALETA"), el("p", "en", "Nearest toilet · WC"));

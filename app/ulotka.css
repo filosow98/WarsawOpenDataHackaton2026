@@ -38,7 +38,8 @@
   padding-bottom: 4mm;
   border-bottom: 1.2mm solid var(--linia);
 }
-.u-maskotka { width: 36mm; height: 36mm; object-fit: contain; }
+/* wc_syrenka.jpeg ma szeroki biały margines: wycinamy samo koło i powiększamy je do ramki */
+.u-maskotka { width: 36mm; height: 36mm; object-fit: contain; clip-path: circle(34%); transform: scale(1.45); }
 .u-tytul h1 { font-size: 32pt; line-height: 1.05; letter-spacing: 0.01em; }
 .u-tytul .en { font-size: 17pt; margin-top: 1mm; }
 .u-przystanek { text-align: right; display: flex; flex-direction: column; }
@@ -83,7 +84,7 @@
 /* dół: piktogramy toalety + kod QR */
 .u-dol {
   display: grid; grid-template-columns: 1fr 44mm; gap: 6mm; align-items: center;
-  border-top: 0.6mm solid var(--linia); padding-top: 4mm;
+  padding-top: 1mm;
 }
 .u-kafelki { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; }
 .kafelek {
