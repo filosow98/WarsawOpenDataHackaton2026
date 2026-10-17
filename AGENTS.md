@@ -100,5 +100,6 @@ docs/08-opis-zbiorow.md  co zawiera każdy zbiór (pola, rozmiar)
 docs/09-kryteria-oceny.md  kryteria jury
 docs/10-problemy.md    propozycje tematów (5 problemów + parkingi)
 docs/11-pomysl-przystanki.md  pomysł „Upał na przystankach” (pełny kontekst)
+docs/12-upal-na-przystankach.md  bieżąca analiza pomysłu (wersja do przesłania)
 data/raw/opis_plikow.json  opis pobranych plików
 ```

@@ -16,6 +16,7 @@ Deadline oddania projektu: **niedziela 11:00** (nie po południu — to ok. 22 h
 | [09-kryteria-oceny.md](09-kryteria-oceny.md) | **Przy wyborze tematu i przed prezentacją — jak ocenia jury** |
 | [10-problemy.md](10-problemy.md) | **Przy wyborze tematu — 5 propozycji problemów + ocena** |
 | [11-pomysl-przystanki.md](11-pomysl-przystanki.md) | Pomysł „Upał na przystankach” — wersja pierwotna, krytyka, wersja po przeróbce, plan |
+| [12-upal-na-przystankach.md](12-upal-na-przystankach.md) | **Bieżąca analiza pomysłu „Upał na przystankach” — wersja do przesłania dalej** |
 
 ## Stan: połączenie działa (13.10.2026)
 
