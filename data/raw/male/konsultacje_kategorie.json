@@ -1,0 +1,42 @@
+[
+  {
+    "id": 5,
+    "name": "Plany miejscowe"
+  },
+  {
+    "id": 6,
+    "name": "Przestrzeń publiczna"
+  },
+  {
+    "id": 9,
+    "name": "Sport i rekreacja"
+  },
+  {
+    "id": 1,
+    "name": "Dokumenty"
+  },
+  {
+    "id": 3,
+    "name": "Kultura i edukacja"
+  },
+  {
+    "id": 10,
+    "name": "Studium"
+  },
+  {
+    "id": 2,
+    "name": "Drogi i transport"
+  },
+  {
+    "id": 4,
+    "name": "Miejsca spotkań"
+  },
+  {
+    "id": 7,
+    "name": "Zieleń i środowisko"
+  },
+  {
+    "id": 8,
+    "name": "Sprawy społeczne"
+  }
+]

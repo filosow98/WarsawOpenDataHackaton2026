@@ -1,0 +1,55 @@
+Kluczowa obserwacja: zapotrzebowanie na cień i potencjał PV to ten sam wskaźnik, czyli nasłonecznienie, odczytany z dwóch stron. Przystanek, który najbardziej potrzebuje zadaszenia, jest też najlepszym miejscem na panel. Z dwóch problemów robi się jedna decyzja inwestycyjna: zadaszenie, które samo produkuje prąd.
+
+Poniżej wiadomość gotowa do porównania z innym pomysłem.
+
+Pomysł: mapa nasłonecznienia przystanków w Warszawie
+
+Co robimy
+
+Bierzemy lokalizacje wszystkich przystanków komunikacji miejskiej w Warszawie.
+Nakładamy geometrię miasta: budynki, ich wysokości i drzewa.
+Symulujemy ruch słońca w ciągu dnia i roku. Liczymy, ile godzin bezpośredniego słońca dostaje każdy przystanek.
+Wynik pokazujemy na interaktywnej mapie.
+
+Co pokazuje mapa
+
+Potrzeba cienia: przystanki najbardziej wystawione na słońce latem, w godzinach szczytu.
+Potencjał PV: roczne nasłonecznienie, czyli ile prądu dałby panel na wiacie.
+Ranking priorytetów: gdzie inwestycja w zadaszenie z panelem daje największy efekt.
+
+Skąd dane (do potwierdzenia)
+
+Przystanki: otwarte dane ZTM / GTFS.
+Budynki: OpenStreetMap albo model 3D / LiDAR z GUGiK.
+Pozycja słońca: obliczenia astronomiczne, standardowe biblioteki.
+
+Dla kogo
+
+Miasto i ZTM: planowanie nowych wiat i modernizacji.
+Firmy PV i producenci wiat: lista lokalizacji z gotowym uzasadnieniem.
+Mieszkańcy: argument w budżecie obywatelskim.
+
+Mocne strony
+
+Dane są publiczne, więc koszt startu jest niski.
+Wynik jest wizualny i łatwo go sprzedać.
+Łączy dwa tematy z agendy miast: adaptację do upałów i OZE.
+
+Ryzyka
+
+Drzewa są słabo opisane w danych, a to one dają najwięcej cienia. Bez nich wyniki mogą być zawyżone.
+Model zasilania wiat jest niejasny: kto płaci, kto odbiera prąd, czy wiata ma przyłącze.
+Ruch pasażerów zmienia priorytety. Słoneczny przystanek z 20 osobami dziennie jest mniej ważny niż średnio słoneczny z 2000.
+
+Kryteria do porównania z drugim pomysłem
+
+Czas do pierwszego działającego prototypu.
+Kto zapłaci i za co (miasto, firma, grant).
+Dostępność danych.
+Skalowalność na inne miasta.
+
+Rekomendacja: jeśli pomysł wygra porównanie, warto od razu dodać warstwę liczby pasażerów. Dopiero ona zamienia mapę ciekawostkę w narzędzie do decyzji inwestycyjnych.
+
+Następny krok: do środy 21.10 opisz drugi pomysł według tych samych czterech kryteriów. Wtedy porównamy oba w jednej tabeli.
+
+Pytanie: czy celem jest projekt komercyjny (klient: miasto lub firma), czy portfolio / projekt społeczny? To zmienia wagę kryteriów.

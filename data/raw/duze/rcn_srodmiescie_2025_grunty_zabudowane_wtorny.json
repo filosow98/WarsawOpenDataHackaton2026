@@ -1,0 +1,1599 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7502743.24,
+              5788598.62
+            ],
+            [
+              7502725.99,
+              5788619.83
+            ],
+            [
+              7502715.93,
+              5788611.8
+            ],
+            [
+              7502718.14,
+              5788609.08
+            ],
+            [
+              7502718.05,
+              5788607.81
+            ],
+            [
+              7502719.49,
+              5788606.04
+            ],
+            [
+              7502720.71,
+              5788605.9
+            ],
+            [
+              7502726.14,
+              5788599.28
+            ],
+            [
+              7502726.02,
+              5788599.02
+            ],
+            [
+              7502726.08,
+              5788598.82
+            ],
+            [
+              7502728.44,
+              5788595.95
+            ],
+            [
+              7502728.67,
+              5788595.8
+            ],
+            [
+              7502728.96,
+              5788595.81
+            ],
+            [
+              7502731.45,
+              5788592.78
+            ],
+            [
+              7502732.06,
+              5788592.49
+            ],
+            [
+              7502732.08,
+              5788591.12
+            ],
+            [
+              7502732.04,
+              5788590.84
+            ],
+            [
+              7502732.11,
+              5788590.57
+            ],
+            [
+              7502730.01,
+              5788589.05
+            ],
+            [
+              7502729.86,
+              5788589.12
+            ],
+            [
+              7502729.68,
+              5788589.07
+            ],
+            [
+              7502727.49,
+              5788587.31
+            ],
+            [
+              7502727.33,
+              5788587.5
+            ],
+            [
+              7502727.21,
+              5788587.59
+            ],
+            [
+              7502727.06,
+              5788587.6
+            ],
+            [
+              7502726.74,
+              5788587.41
+            ],
+            [
+              7502722.43,
+              5788583.89
+            ],
+            [
+              7502730.71,
+              5788573.59
+            ],
+            [
+              7502737.8,
+              5788579.31
+            ],
+            [
+              7502737.73,
+              5788579.41
+            ],
+            [
+              7502737.84,
+              5788579.49
+            ],
+            [
+              7502739.93,
+              5788581.01
+            ],
+            [
+              7502741.01,
+              5788581.84
+            ],
+            [
+              7502748.36,
+              5788587.82
+            ],
+            [
+              7502748.31,
+              5788587.89
+            ],
+            [
+              7502750.52,
+              5788589.67
+            ],
+            [
+              7502750.39,
+              5788589.83
+            ],
+            [
+              7502743.33,
+              5788598.51
+            ],
+            [
+              7502743.24,
+              5788598.62
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "idBudynku": "146510_8.0604.54_BUD",
+        "rodzajBudynku": "biurowy",
+        "powierzchniaUzytkowaBudynku": null,
+        "cenaBudynkuBrutto": null,
+        "kwotaPodatkuVAT": null,
+        "dodatkoweInformacje": null,
+        "adresBudynku": [
+          {
+            "miejscowosc": "Warszawa",
+            "ulica": "ulica Wilanowska",
+            "numerPorzadkowy": "4"
+          }
+        ],
+        "nieruchomosc": {
+          "rodzajNieruchomosci": "nieruchomoscGruntowaZabudowana",
+          "rodzajPrawaDoNieruchomosci": "wlasnoscNieruchomosciGruntowej",
+          "udzialWPrawieDoNieruchomosci": "1/1",
+          "polePowierzchniNieruchomosciGruntowej": 2748,
+          "opis": null,
+          "cenaNieruchomosciBrutto": 49692000,
+          "kwotaPodatkuVAT": 9292000,
+          "transakcja": {
+            "IdRCN": {
+              "przestrzenNazw": "PL.PZGiK.5346.RCN",
+              "lokalnyId": "2b418148-df32-4706-8b72-5b6f7a513c36",
+              "wersjaId": "2025-10-09T11:11:40"
+            },
+            "oznaczenieTransakcji": "597736",
+            "rodzajTransakcji": "wolnyRynek",
+            "rodzajRynku": "rynekWtorny",
+            "stronaSprzedajaca": "osobaPrawna",
+            "stronaKupujaca": "osobaPrawna",
+            "cenaTransakcjiBrutto": 49692000,
+            "kwotaPodatkuVAT": 9292000,
+            "dokument": {
+              "oznaczenieDokumentu": "8930/2025",
+              "dataSporzadzeniaDokumentu": "2025-08-12",
+              "tworcaDokumentu": "ANNA TURZYŃSKA"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7502702.14,
+              5788608.45
+            ],
+            [
+              7502714.9,
+              5788592.99
+            ],
+            [
+              7502722.45,
+              5788583.88
+            ],
+            [
+              7502730.89,
+              5788573.66
+            ],
+            [
+              7502776.38,
+              5788611.14
+            ],
+            [
+              7502776.85,
+              5788615.32
+            ],
+            [
+              7502767.09,
+              5788632.83
+            ],
+            [
+              7502753.9,
+              5788646.24
+            ],
+            [
+              7502726.7,
+              5788624.79
+            ],
+            [
+              7502725.7,
+              5788625.54
+            ],
+            [
+              7502723.1,
+              5788623.44
+            ],
+            [
+              7502722.6,
+              5788623.84
+            ],
+            [
+              7502702.72,
+              5788608.68
+            ],
+            [
+              7502702.14,
+              5788608.45
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "idDzialki": "146510_8.0604.15/1",
+        "przeznaczenieWMPZP": null,
+        "polePowierzchniEwidencyjnej": 2748,
+        "sposobUzytkowania": "gruntyZabudowaneIZurbanizowane",
+        "cenaDzialkiEwidencyjnejBrutto": null,
+        "kwotaPodatkuVAT": null,
+        "dodatkoweInformacje": null,
+        "adresDzialki": null,
+        "nieruchomosc": {
+          "rodzajNieruchomosci": "nieruchomoscGruntowaZabudowana",
+          "rodzajPrawaDoNieruchomosci": "wlasnoscNieruchomosciGruntowej",
+          "udzialWPrawieDoNieruchomosci": "1/1",
+          "polePowierzchniNieruchomosciGruntowej": 2748,
+          "opis": null,
+          "cenaNieruchomosciBrutto": 49692000,
+          "kwotaPodatkuVAT": 9292000,
+          "transakcja": {
+            "IdRCN": {
+              "przestrzenNazw": "PL.PZGiK.5346.RCN",
+              "lokalnyId": "2b418148-df32-4706-8b72-5b6f7a513c36",
+              "wersjaId": "2025-10-09T11:11:40"
+            },
+            "oznaczenieTransakcji": "597736",
+            "rodzajTransakcji": "wolnyRynek",
+            "rodzajRynku": "rynekWtorny",
+            "stronaSprzedajaca": "osobaPrawna",
+            "stronaKupujaca": "osobaPrawna",
+            "cenaTransakcjiBrutto": 49692000,
+            "kwotaPodatkuVAT": 9292000,
+            "dokument": {
+              "oznaczenieDokumentu": "8930/2025",
+              "dataSporzadzeniaDokumentu": "2025-08-12",
+              "tworcaDokumentu": "ANNA TURZYŃSKA"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7500591.82,
+              5790517.88
+            ],
+            [
+              7500604.02,
+              5790525.59
+            ],
+            [
+              7500609.13,
+              5790525.35
+            ],
+            [
+              7500604.05,
+              5790529.91
+            ],
+            [
+              7500603.89,
+              5790530.05
+            ],
+            [
+              7500591.82,
+              5790517.88
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "idDzialki": "146510_8.0208.20/4",
+        "przeznaczenieWMPZP": null,
+        "polePowierzchniEwidencyjnej": 39,
+        "sposobUzytkowania": "gruntyZabudowaneIZurbanizowane",
+        "cenaDzialkiEwidencyjnejBrutto": null,
+        "kwotaPodatkuVAT": null,
+        "dodatkoweInformacje": null,
+        "adresDzialki": null,
+        "nieruchomosc": {
+          "rodzajNieruchomosci": "nieruchomoscGruntowaZabudowana",
+          "rodzajPrawaDoNieruchomosci": "wlasnoscNieruchomosciGruntowej",
+          "udzialWPrawieDoNieruchomosci": "1/1",
+          "polePowierzchniNieruchomosciGruntowej": 39,
+          "opis": null,
+          "cenaNieruchomosciBrutto": 1073790,
+          "kwotaPodatkuVAT": 200790,
+          "transakcja": {
+            "IdRCN": {
+              "przestrzenNazw": "PL.PZGiK.5346.RCN",
+              "lokalnyId": "f27542f3-e647-44aa-82c9-42863dabbed2",
+              "wersjaId": "2025-04-24T11:34:25"
+            },
+            "oznaczenieTransakcji": "577219",
+            "rodzajTransakcji": "wolnyRynek",
+            "rodzajRynku": "rynekWtorny",
+            "stronaSprzedajaca": "jednostkaSamorzaduTerytorialnego",
+            "stronaKupujaca": "osobaFizyczna",
+            "cenaTransakcjiBrutto": 1073790,
+            "kwotaPodatkuVAT": 200790,
+            "dokument": {
+              "oznaczenieDokumentu": "5519/2025",
+              "dataSporzadzeniaDokumentu": "2025-03-27",
+              "tworcaDokumentu": "KRZYSZTOF BORAWSKI"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7501595.28,
+              5787753.22
+            ],
+            [
+              7501596.53,
+              5787740.9
+            ],
+            [
+              7501596.86,
+              5787740.95
+            ],
+            [
+              7501597.25,
+              5787737.12
+            ],
+            [
+              7501597.87,
+              5787737.18
+            ],
+            [
+              7501597.97,
+              5787736.04
+            ],
+            [
+              7501597.98,
+              5787735.98
+            ],
+            [
+              7501603.03,
+              5787736.75
+            ],
+            [
+              7501602.81,
+              5787738.57
+            ],
+            [
+              7501614.54,
+              5787740.11
+            ],
+            [
+              7501614.74,
+              5787738.39
+            ],
+            [
+              7501619.7,
+              5787738.98
+            ],
+            [
+              7501619.43,
+              5787740.91
+            ],
+            [
+              7501622.3,
+              5787741.31
+            ],
+            [
+              7501622.34,
+              5787740.99
+            ],
+            [
+              7501629.76,
+              5787741.97
+            ],
+            [
+              7501629.74,
+              5787742.12
+            ],
+            [
+              7501629.6,
+              5787743.42
+            ],
+            [
+              7501628.92,
+              5787748.09
+            ],
+            [
+              7501629.12,
+              5787748.12
+            ],
+            [
+              7501627.63,
+              5787757.75
+            ],
+            [
+              7501627.42,
+              5787757.72
+            ],
+            [
+              7501626.51,
+              5787763.39
+            ],
+            [
+              7501626.47,
+              5787763.38
+            ],
+            [
+              7501614.95,
+              5787761.78
+            ],
+            [
+              7501614.5,
+              5787761.71
+            ],
+            [
+              7501609.03,
+              5787761.02
+            ],
+            [
+              7501609.87,
+              5787755.31
+            ],
+            [
+              7501595.28,
+              5787753.22
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "idBudynku": "146510_8.0507.119_BUD",
+        "rodzajBudynku": "pozostaleNiemieszkalne",
+        "powierzchniaUzytkowaBudynku": null,
+        "cenaBudynkuBrutto": null,
+        "kwotaPodatkuVAT": null,
+        "dodatkoweInformacje": null,
+        "adresBudynku": [
+          {
+            "miejscowosc": "Warszawa",
+            "ulica": "Aleje Ujazdowskie",
+            "numerPorzadkowy": "23"
+          }
+        ],
+        "nieruchomosc": {
+          "rodzajNieruchomosci": "nieruchomoscGruntowaZabudowana",
+          "rodzajPrawaDoNieruchomosci": "wlasnoscNieruchomosciGruntowej",
+          "udzialWPrawieDoNieruchomosci": "1/1",
+          "polePowierzchniNieruchomosciGruntowej": 1288,
+          "opis": null,
+          "cenaNieruchomosciBrutto": 60596950,
+          "kwotaPodatkuVAT": null,
+          "transakcja": {
+            "IdRCN": {
+              "przestrzenNazw": "PL.PZGiK.5346.RCN",
+              "lokalnyId": "b8292211-3a09-4c9e-aa6a-a724fde7e941",
+              "wersjaId": "2026-02-09T13:11:22"
+            },
+            "oznaczenieTransakcji": "581349",
+            "rodzajTransakcji": "wolnyRynek",
+            "rodzajRynku": "rynekWtorny",
+            "stronaSprzedajaca": "osobaFizyczna",
+            "stronaKupujaca": "osobaPrawna",
+            "cenaTransakcjiBrutto": 60596950,
+            "kwotaPodatkuVAT": null,
+            "dokument": {
+              "oznaczenieDokumentu": "5279/2025",
+              "dataSporzadzeniaDokumentu": "2025-04-04",
+              "tworcaDokumentu": "MAREK WATRAKIEWICZ"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7501637.77,
+              5787741.35
+            ],
+            [
+              7501637.42,
+              5787743.66
+            ],
+            [
+              7501629.8,
+              5787742.59
+            ],
+            [
+              7501629.04,
+              5787747.21
+            ],
+            [
+              7501636.72,
+              5787748.29
+            ],
+            [
+              7501634.27,
+              5787764.46
+            ],
+            [
+              7501614.62,
+              5787761.73
+            ],
+            [
+              7501579.11,
+              5787757.2
+            ],
+            [
+              7501579.67,
+              5787751.66
+            ],
+            [
+              7501581.48,
+              5787733.44
+            ],
+            [
+              7501604.63,
+              5787736.68
+            ],
+            [
+              7501614.56,
+              5787738.09
+            ],
+            [
+              7501637.77,
+              5787741.35
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "idDzialki": "146510_8.0507.37/2",
+        "przeznaczenieWMPZP": null,
+        "polePowierzchniEwidencyjnej": 1288,
+        "sposobUzytkowania": "gruntyZabudowaneIZurbanizowane",
+        "cenaDzialkiEwidencyjnejBrutto": null,
+        "kwotaPodatkuVAT": null,
+        "dodatkoweInformacje": null,
+        "adresDzialki": [
+          {
+            "miejscowosc": "Warszawa",
+            "ulica": "Aleje Ujazdowskie",
+            "numerPorzadkowy": "23"
+          }
+        ],
+        "nieruchomosc": {
+          "rodzajNieruchomosci": "nieruchomoscGruntowaZabudowana",
+          "rodzajPrawaDoNieruchomosci": "wlasnoscNieruchomosciGruntowej",
+          "udzialWPrawieDoNieruchomosci": "1/1",
+          "polePowierzchniNieruchomosciGruntowej": 1288,
+          "opis": null,
+          "cenaNieruchomosciBrutto": 60596950,
+          "kwotaPodatkuVAT": null,
+          "transakcja": {
+            "IdRCN": {
+              "przestrzenNazw": "PL.PZGiK.5346.RCN",
+              "lokalnyId": "b8292211-3a09-4c9e-aa6a-a724fde7e941",
+              "wersjaId": "2026-02-09T13:11:22"
+            },
+            "oznaczenieTransakcji": "581349",
+            "rodzajTransakcji": "wolnyRynek",
+            "rodzajRynku": "rynekWtorny",
+            "stronaSprzedajaca": "osobaFizyczna",
+            "stronaKupujaca": "osobaPrawna",
+            "cenaTransakcjiBrutto": 60596950,
+            "kwotaPodatkuVAT": null,
+            "dokument": {
+              "oznaczenieDokumentu": "5279/2025",
+              "dataSporzadzeniaDokumentu": "2025-04-04",
+              "tworcaDokumentu": "MAREK WATRAKIEWICZ"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7501344.07,
+              5789034.53
+            ],
+            [
+              7501345.01,
+              5789031.5
+            ],
+            [
+              7501347.6,
+              5789032.36
+            ],
+            [
+              7501350.97,
+              5789022.53
+            ],
+            [
+              7501353.85,
+              5789023.46
+            ],
+            [
+              7501363.7,
+              5789026.62
+            ],
+            [
+              7501359.21,
+              5789039.51
+            ],
+            [
+              7501344.07,
+              5789034.53
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "idBudynku": "146510_8.0407.91_BUD",
+        "rodzajBudynku": "mieszkalny",
+        "powierzchniaUzytkowaBudynku": null,
+        "cenaBudynkuBrutto": null,
+        "kwotaPodatkuVAT": null,
+        "dodatkoweInformacje": null,
+        "adresBudynku": [
+          {
+            "miejscowosc": "Warszawa",
+            "ulica": "ulica Konstantego Ildefonsa Gałczyńskiego",
+            "numerPorzadkowy": "10"
+          }
+        ],
+        "nieruchomosc": {
+          "rodzajNieruchomosci": "nieruchomoscGruntowaZabudowana",
+          "rodzajPrawaDoNieruchomosci": "wlasnoscNieruchomosciGruntowej",
+          "udzialWPrawieDoNieruchomosci": "1/1",
+          "polePowierzchniNieruchomosciGruntowej": 184,
+          "opis": null,
+          "cenaNieruchomosciBrutto": 9500000,
+          "kwotaPodatkuVAT": null,
+          "transakcja": {
+            "IdRCN": {
+              "przestrzenNazw": "PL.PZGiK.5346.RCN",
+              "lokalnyId": "adc45341-a6a8-4234-aeff-a5326a3a97c1",
+              "wersjaId": "2025-05-30T14:16:42"
+            },
+            "oznaczenieTransakcji": "581664",
+            "rodzajTransakcji": "wolnyRynek",
+            "rodzajRynku": "rynekWtorny",
+            "stronaSprzedajaca": "osobaFizyczna",
+            "stronaKupujaca": "osobaPrawna",
+            "cenaTransakcjiBrutto": 11400000,
+            "kwotaPodatkuVAT": null,
+            "dokument": {
+              "oznaczenieDokumentu": "1342/2025",
+              "dataSporzadzeniaDokumentu": "2025-04-24",
+              "tworcaDokumentu": "TOMASZ KARŁOWSKI"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7501373.26,
+              5789040.28
+            ],
+            [
+              7501372.27,
+              5789043.31
+            ],
+            [
+              7501360.52,
+              5789039.38
+            ],
+            [
+              7501361.55,
+              5789036.37
+            ],
+            [
+              7501373.26,
+              5789040.28
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "idBudynku": "146510_8.0407.130_BUD",
+        "rodzajBudynku": "pozostaleNiemieszkalne",
+        "powierzchniaUzytkowaBudynku": null,
+        "cenaBudynkuBrutto": null,
+        "kwotaPodatkuVAT": null,
+        "dodatkoweInformacje": null,
+        "adresBudynku": null,
+        "nieruchomosc": {
+          "rodzajNieruchomosci": "nieruchomoscGruntowaZabudowana",
+          "rodzajPrawaDoNieruchomosci": "wlasnoscNieruchomosciGruntowej",
+          "udzialWPrawieDoNieruchomosci": "1/1",
+          "polePowierzchniNieruchomosciGruntowej": 286,
+          "opis": null,
+          "cenaNieruchomosciBrutto": 1900000,
+          "kwotaPodatkuVAT": null,
+          "transakcja": {
+            "IdRCN": {
+              "przestrzenNazw": "PL.PZGiK.5346.RCN",
+              "lokalnyId": "22b98b2a-16ee-49c8-b7d9-bae8bdbc036e",
+              "wersjaId": "2025-06-09T10:04:03"
+            },
+            "oznaczenieTransakcji": "581661",
+            "rodzajTransakcji": "wolnyRynek",
+            "rodzajRynku": "rynekWtorny",
+            "stronaSprzedajaca": "osobaFizyczna",
+            "stronaKupujaca": "osobaPrawna",
+            "cenaTransakcjiBrutto": 11400000,
+            "kwotaPodatkuVAT": null,
+            "dokument": {
+              "oznaczenieDokumentu": "1342/2025",
+              "dataSporzadzeniaDokumentu": "2025-04-24",
+              "tworcaDokumentu": "TOMASZ KARŁOWSKI"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7501372.08,
+              5789043.95
+            ],
+            [
+              7501376.5,
+              5789030.48
+            ],
+            [
+              7501383.27,
+              5789032.95
+            ],
+            [
+              7501381.52,
+              5789038.3
+            ],
+            [
+              7501379.08,
+              5789046.28
+            ],
+            [
+              7501372.08,
+              5789043.95
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "idBudynku": "146510_8.0407.200_BUD",
+        "rodzajBudynku": "pozostaleNiemieszkalne",
+        "powierzchniaUzytkowaBudynku": null,
+        "cenaBudynkuBrutto": null,
+        "kwotaPodatkuVAT": null,
+        "dodatkoweInformacje": null,
+        "adresBudynku": [
+          {
+            "miejscowosc": "Warszawa",
+            "ulica": "ulica Konstantego Ildefonsa Gałczyńskiego",
+            "numerPorzadkowy": "10"
+          }
+        ],
+        "nieruchomosc": {
+          "rodzajNieruchomosci": "nieruchomoscGruntowaZabudowana",
+          "rodzajPrawaDoNieruchomosci": "wlasnoscNieruchomosciGruntowej",
+          "udzialWPrawieDoNieruchomosci": "1/1",
+          "polePowierzchniNieruchomosciGruntowej": 286,
+          "opis": null,
+          "cenaNieruchomosciBrutto": 1900000,
+          "kwotaPodatkuVAT": null,
+          "transakcja": {
+            "IdRCN": {
+              "przestrzenNazw": "PL.PZGiK.5346.RCN",
+              "lokalnyId": "22b98b2a-16ee-49c8-b7d9-bae8bdbc036e",
+              "wersjaId": "2025-06-09T10:04:03"
+            },
+            "oznaczenieTransakcji": "581661",
+            "rodzajTransakcji": "wolnyRynek",
+            "rodzajRynku": "rynekWtorny",
+            "stronaSprzedajaca": "osobaFizyczna",
+            "stronaKupujaca": "osobaPrawna",
+            "cenaTransakcjiBrutto": 11400000,
+            "kwotaPodatkuVAT": null,
+            "dokument": {
+              "oznaczenieDokumentu": "1342/2025",
+              "dataSporzadzeniaDokumentu": "2025-04-24",
+              "tworcaDokumentu": "TOMASZ KARŁOWSKI"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7501344.07,
+              5789034.53
+            ],
+            [
+              7501345.01,
+              5789031.5
+            ],
+            [
+              7501347.6,
+              5789032.36
+            ],
+            [
+              7501350.97,
+              5789022.53
+            ],
+            [
+              7501353.85,
+              5789023.46
+            ],
+            [
+              7501363.7,
+              5789026.62
+            ],
+            [
+              7501359.21,
+              5789039.51
+            ],
+            [
+              7501344.07,
+              5789034.53
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "idDzialki": "146510_8.0407.28",
+        "przeznaczenieWMPZP": null,
+        "polePowierzchniEwidencyjnej": 184,
+        "sposobUzytkowania": "gruntyZabudowaneIZurbanizowane",
+        "cenaDzialkiEwidencyjnejBrutto": null,
+        "kwotaPodatkuVAT": null,
+        "dodatkoweInformacje": null,
+        "adresDzialki": [
+          {
+            "miejscowosc": "Warszawa",
+            "ulica": "ulica Konstantego Ildefonsa Gałczyńskiego",
+            "numerPorzadkowy": "10"
+          }
+        ],
+        "nieruchomosc": {
+          "rodzajNieruchomosci": "nieruchomoscGruntowaZabudowana",
+          "rodzajPrawaDoNieruchomosci": "wlasnoscNieruchomosciGruntowej",
+          "udzialWPrawieDoNieruchomosci": "1/1",
+          "polePowierzchniNieruchomosciGruntowej": 184,
+          "opis": null,
+          "cenaNieruchomosciBrutto": 9500000,
+          "kwotaPodatkuVAT": null,
+          "transakcja": {
+            "IdRCN": {
+              "przestrzenNazw": "PL.PZGiK.5346.RCN",
+              "lokalnyId": "adc45341-a6a8-4234-aeff-a5326a3a97c1",
+              "wersjaId": "2025-05-30T14:16:42"
+            },
+            "oznaczenieTransakcji": "581664",
+            "rodzajTransakcji": "wolnyRynek",
+            "rodzajRynku": "rynekWtorny",
+            "stronaSprzedajaca": "osobaFizyczna",
+            "stronaKupujaca": "osobaPrawna",
+            "cenaTransakcjiBrutto": 11400000,
+            "kwotaPodatkuVAT": null,
+            "dokument": {
+              "oznaczenieDokumentu": "1342/2025",
+              "dataSporzadzeniaDokumentu": "2025-04-24",
+              "tworcaDokumentu": "TOMASZ KARŁOWSKI"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7501359.21,
+              5789039.51
+            ],
+            [
+              7501363.7,
+              5789026.62
+            ],
+            [
+              7501366.4,
+              5789027.46
+            ],
+            [
+              7501376.5,
+              5789030.48
+            ],
+            [
+              7501383.27,
+              5789032.95
+            ],
+            [
+              7501381.52,
+              5789038.3
+            ],
+            [
+              7501379.08,
+              5789046.28
+            ],
+            [
+              7501372.08,
+              5789043.95
+            ],
+            [
+              7501359.21,
+              5789039.51
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "idDzialki": "146510_8.0407.110",
+        "przeznaczenieWMPZP": null,
+        "polePowierzchniEwidencyjnej": 286,
+        "sposobUzytkowania": "gruntyZabudowaneIZurbanizowane",
+        "cenaDzialkiEwidencyjnejBrutto": null,
+        "kwotaPodatkuVAT": null,
+        "dodatkoweInformacje": null,
+        "adresDzialki": [
+          {
+            "miejscowosc": "Warszawa",
+            "ulica": "ulica Konstantego Ildefonsa Gałczyńskiego",
+            "numerPorzadkowy": "10"
+          }
+        ],
+        "nieruchomosc": {
+          "rodzajNieruchomosci": "nieruchomoscGruntowaZabudowana",
+          "rodzajPrawaDoNieruchomosci": "wlasnoscNieruchomosciGruntowej",
+          "udzialWPrawieDoNieruchomosci": "1/1",
+          "polePowierzchniNieruchomosciGruntowej": 286,
+          "opis": null,
+          "cenaNieruchomosciBrutto": 1900000,
+          "kwotaPodatkuVAT": null,
+          "transakcja": {
+            "IdRCN": {
+              "przestrzenNazw": "PL.PZGiK.5346.RCN",
+              "lokalnyId": "22b98b2a-16ee-49c8-b7d9-bae8bdbc036e",
+              "wersjaId": "2025-06-09T10:04:03"
+            },
+            "oznaczenieTransakcji": "581661",
+            "rodzajTransakcji": "wolnyRynek",
+            "rodzajRynku": "rynekWtorny",
+            "stronaSprzedajaca": "osobaFizyczna",
+            "stronaKupujaca": "osobaPrawna",
+            "cenaTransakcjiBrutto": 11400000,
+            "kwotaPodatkuVAT": null,
+            "dokument": {
+              "oznaczenieDokumentu": "1342/2025",
+              "dataSporzadzeniaDokumentu": "2025-04-24",
+              "tworcaDokumentu": "TOMASZ KARŁOWSKI"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7500811.3,
+              5790329.77
+            ],
+            [
+              7500817.26,
+              5790326.19
+            ],
+            [
+              7500817.56,
+              5790326.68
+            ],
+            [
+              7500820.52,
+              5790324.89
+            ],
+            [
+              7500820.22,
+              5790324.4
+            ],
+            [
+              7500821.97,
+              5790323.34
+            ],
+            [
+              7500821.83,
+              5790323.11
+            ],
+            [
+              7500822.98,
+              5790322.43
+            ],
+            [
+              7500823.27,
+              5790322.92
+            ],
+            [
+              7500826.21,
+              5790321.15
+            ],
+            [
+              7500825.92,
+              5790320.66
+            ],
+            [
+              7500835.44,
+              5790314.95
+            ],
+            [
+              7500838.64,
+              5790320.27
+            ],
+            [
+              7500836.72,
+              5790321.43
+            ],
+            [
+              7500838.48,
+              5790324.34
+            ],
+            [
+              7500840.4,
+              5790323.18
+            ],
+            [
+              7500843.62,
+              5790328.53
+            ],
+            [
+              7500842.75,
+              5790329.06
+            ],
+            [
+              7500843.51,
+              5790330.34
+            ],
+            [
+              7500842.61,
+              5790330.88
+            ],
+            [
+              7500844.21,
+              5790333.58
+            ],
+            [
+              7500845.12,
+              5790333.04
+            ],
+            [
+              7500845.88,
+              5790334.33
+            ],
+            [
+              7500846.54,
+              5790334.04
+            ],
+            [
+              7500847.18,
+              5790335.49
+            ],
+            [
+              7500845.81,
+              5790336.1
+            ],
+            [
+              7500847.44,
+              5790339.76
+            ],
+            [
+              7500848.81,
+              5790339.15
+            ],
+            [
+              7500851.68,
+              5790345.56
+            ],
+            [
+              7500850.31,
+              5790346.16
+            ],
+            [
+              7500851.93,
+              5790349.84
+            ],
+            [
+              7500853.3,
+              5790349.24
+            ],
+            [
+              7500856.16,
+              5790355.6
+            ],
+            [
+              7500854.79,
+              5790356.21
+            ],
+            [
+              7500856.41,
+              5790359.87
+            ],
+            [
+              7500857.78,
+              5790359.26
+            ],
+            [
+              7500860.59,
+              5790365.63
+            ],
+            [
+              7500858.57,
+              5790366.47
+            ],
+            [
+              7500860.22,
+              5790370.14
+            ],
+            [
+              7500862.24,
+              5790369.3
+            ],
+            [
+              7500862.87,
+              5790370.81
+            ],
+            [
+              7500862.3,
+              5790371.06
+            ],
+            [
+              7500862.64,
+              5790371.83
+            ],
+            [
+              7500861.68,
+              5790372.26
+            ],
+            [
+              7500862.93,
+              5790375.06
+            ],
+            [
+              7500863.89,
+              5790374.63
+            ],
+            [
+              7500864.23,
+              5790375.4
+            ],
+            [
+              7500864.75,
+              5790375.17
+            ],
+            [
+              7500867.26,
+              5790380.86
+            ],
+            [
+              7500865.21,
+              5790381.79
+            ],
+            [
+              7500866.63,
+              5790384.91
+            ],
+            [
+              7500868.68,
+              5790383.98
+            ],
+            [
+              7500871.2,
+              5790389.69
+            ],
+            [
+              7500857.62,
+              5790398.15
+            ],
+            [
+              7500857.78,
+              5790398.41
+            ],
+            [
+              7500853.15,
+              5790401.28
+            ],
+            [
+              7500853.04,
+              5790401.11
+            ],
+            [
+              7500853.84,
+              5790400.62
+            ],
+            [
+              7500847.12,
+              5790389.4
+            ],
+            [
+              7500852.4,
+              5790386.46
+            ],
+            [
+              7500850.22,
+              5790381.62
+            ],
+            [
+              7500850.81,
+              5790381.36
+            ],
+            [
+              7500848.88,
+              5790377.03
+            ],
+            [
+              7500848.29,
+              5790377.29
+            ],
+            [
+              7500847.91,
+              5790376.37
+            ],
+            [
+              7500844.92,
+              5790377.66
+            ],
+            [
+              7500825.51,
+              5790345.4
+            ],
+            [
+              7500832.31,
+              5790341.26
+            ],
+            [
+              7500831.94,
+              5790340.49
+            ],
+            [
+              7500832.57,
+              5790340.18
+            ],
+            [
+              7500830.36,
+              5790336.54
+            ],
+            [
+              7500830.02,
+              5790336.75
+            ],
+            [
+              7500829.88,
+              5790336.51
+            ],
+            [
+              7500819.19,
+              5790342.91
+            ],
+            [
+              7500811.3,
+              5790329.77
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "idBudynku": "146510_8.0211.124_BUD",
+        "rodzajBudynku": "biurowy",
+        "powierzchniaUzytkowaBudynku": null,
+        "cenaBudynkuBrutto": 123727735.54,
+        "kwotaPodatkuVAT": 23136080.63,
+        "dodatkoweInformacje": null,
+        "adresBudynku": [
+          {
+            "miejscowosc": "Warszawa",
+            "ulica": "ulica Senatorska",
+            "numerPorzadkowy": "2"
+          }
+        ],
+        "nieruchomosc": {
+          "rodzajNieruchomosci": "nieruchomoscGruntowaZabudowana",
+          "rodzajPrawaDoNieruchomosci": "wlasnoscNieruchomosciGruntowej",
+          "udzialWPrawieDoNieruchomosci": "1/1",
+          "polePowierzchniNieruchomosciGruntowej": 2149,
+          "opis": null,
+          "cenaNieruchomosciBrutto": 188782744.32,
+          "kwotaPodatkuVAT": 35300838.37,
+          "transakcja": {
+            "IdRCN": {
+              "przestrzenNazw": "PL.PZGiK.5346.RCN",
+              "lokalnyId": "78b4b609-da2a-48e1-a88d-97b388cd9451",
+              "wersjaId": "2025-06-10T11:32:32"
+            },
+            "oznaczenieTransakcji": "582848",
+            "rodzajTransakcji": "wolnyRynek",
+            "rodzajRynku": "rynekWtorny",
+            "stronaSprzedajaca": "osobaPrawna",
+            "stronaKupujaca": "osobaPrawna",
+            "cenaTransakcjiBrutto": 188782744.32,
+            "kwotaPodatkuVAT": 35300838.37,
+            "dokument": {
+              "oznaczenieDokumentu": "3725/2025",
+              "dataSporzadzeniaDokumentu": "2025-04-16",
+              "tworcaDokumentu": "MONIKA SMAGA"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7500853.83,
+              5790401
+            ],
+            [
+              7500853.84,
+              5790400.62
+            ],
+            [
+              7500847.12,
+              5790389.4
+            ],
+            [
+              7500844.98,
+              5790385.5
+            ],
+            [
+              7500843.31,
+              5790382.75
+            ],
+            [
+              7500840.4,
+              5790378.01
+            ],
+            [
+              7500860.71,
+              5790365.76
+            ],
+            [
+              7500871.29,
+              5790389.72
+            ],
+            [
+              7500863.43,
+              5790394.6
+            ],
+            [
+              7500863.53,
+              5790394.8
+            ],
+            [
+              7500853.83,
+              5790401
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "idDzialki": "146510_8.0211.8",
+        "przeznaczenieWMPZP": null,
+        "polePowierzchniEwidencyjnej": 581,
+        "sposobUzytkowania": "gruntyZabudowaneIZurbanizowane",
+        "cenaDzialkiEwidencyjnejBrutto": null,
+        "kwotaPodatkuVAT": null,
+        "dodatkoweInformacje": null,
+        "adresDzialki": [
+          {
+            "miejscowosc": "Warszawa",
+            "ulica": "ulica Senatorska",
+            "numerPorzadkowy": "2"
+          }
+        ],
+        "nieruchomosc": {
+          "rodzajNieruchomosci": "nieruchomoscGruntowaZabudowana",
+          "rodzajPrawaDoNieruchomosci": "wlasnoscNieruchomosciGruntowej",
+          "udzialWPrawieDoNieruchomosci": "1/1",
+          "polePowierzchniNieruchomosciGruntowej": 2149,
+          "opis": null,
+          "cenaNieruchomosciBrutto": 188782744.32,
+          "kwotaPodatkuVAT": 35300838.37,
+          "transakcja": {
+            "IdRCN": {
+              "przestrzenNazw": "PL.PZGiK.5346.RCN",
+              "lokalnyId": "78b4b609-da2a-48e1-a88d-97b388cd9451",
+              "wersjaId": "2025-06-10T11:32:32"
+            },
+            "oznaczenieTransakcji": "582848",
+            "rodzajTransakcji": "wolnyRynek",
+            "rodzajRynku": "rynekWtorny",
+            "stronaSprzedajaca": "osobaPrawna",
+            "stronaKupujaca": "osobaPrawna",
+            "cenaTransakcjiBrutto": 188782744.32,
+            "kwotaPodatkuVAT": 35300838.37,
+            "dokument": {
+              "oznaczenieDokumentu": "3725/2025",
+              "dataSporzadzeniaDokumentu": "2025-04-16",
+              "tworcaDokumentu": "MONIKA SMAGA"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7500840.4,
+              5790378.01
+            ],
+            [
+              7500810.52,
+              5790328.43
+            ],
+            [
+              7500834.45,
+              5790314.64
+            ],
+            [
+              7500838.37,
+              5790315.5
+            ],
+            [
+              7500860.71,
+              5790365.76
+            ],
+            [
+              7500840.4,
+              5790378.01
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "idDzialki": "146510_8.0211.9/2",
+        "przeznaczenieWMPZP": null,
+        "polePowierzchniEwidencyjnej": 1568,
+        "sposobUzytkowania": "gruntyZabudowaneIZurbanizowane",
+        "cenaDzialkiEwidencyjnejBrutto": null,
+        "kwotaPodatkuVAT": null,
+        "dodatkoweInformacje": null,
+        "adresDzialki": [
+          {
+            "miejscowosc": "Warszawa",
+            "ulica": "ulica Senatorska",
+            "numerPorzadkowy": "2"
+          }
+        ],
+        "nieruchomosc": {
+          "rodzajNieruchomosci": "nieruchomoscGruntowaZabudowana",
+          "rodzajPrawaDoNieruchomosci": "wlasnoscNieruchomosciGruntowej",
+          "udzialWPrawieDoNieruchomosci": "1/1",
+          "polePowierzchniNieruchomosciGruntowej": 2149,
+          "opis": null,
+          "cenaNieruchomosciBrutto": 188782744.32,
+          "kwotaPodatkuVAT": 35300838.37,
+          "transakcja": {
+            "IdRCN": {
+              "przestrzenNazw": "PL.PZGiK.5346.RCN",
+              "lokalnyId": "78b4b609-da2a-48e1-a88d-97b388cd9451",
+              "wersjaId": "2025-06-10T11:32:32"
+            },
+            "oznaczenieTransakcji": "582848",
+            "rodzajTransakcji": "wolnyRynek",
+            "rodzajRynku": "rynekWtorny",
+            "stronaSprzedajaca": "osobaPrawna",
+            "stronaKupujaca": "osobaPrawna",
+            "cenaTransakcjiBrutto": 188782744.32,
+            "kwotaPodatkuVAT": 35300838.37,
+            "dokument": {
+              "oznaczenieDokumentu": "3725/2025",
+              "dataSporzadzeniaDokumentu": "2025-04-16",
+              "tworcaDokumentu": "MONIKA SMAGA"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

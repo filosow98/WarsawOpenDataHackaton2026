@@ -1,0 +1,97 @@
+[
+  {
+    "id": 1,
+    "name": "Bemowo",
+    "address": "Urząd Dzielnicy Bemowo, 70, Powstańców Śląskich, Stare Jelonki, Jelonki Północne, Bemowo, Warszawa, województwo mazowieckie, 01-381, Polska"
+  },
+  {
+    "id": 7,
+    "name": "Białołęka",
+    "address": "Urząd Dzielnicy Białołęka, 197, Modlińska, Nowy Tarchomin, Tarchomin, Białołęka, Warszawa, województwo mazowieckie, 03-122, Polska"
+  },
+  {
+    "id": 3,
+    "name": "Bielany",
+    "address": "Urząd Dzielnicy Bielany, 29, Stefana Żeromskiego, Bielany II, Słodowiec, Bielany, Warszawa, województwo mazowieckie, 01-882, Polska"
+  },
+  {
+    "id": 4,
+    "name": "Mokotów",
+    "address": "Urząd Dzielnicy Mokotów, 25/27, Rakowiecka, Osiedle Batorego, Stary Mokotów, Mokotów, Warszawa, województwo mazowieckie, 02-517, Polska"
+  },
+  {
+    "id": 8,
+    "name": "Ochota",
+    "address": "Urząd Dzielnicy Ochota, 17A, Grójecka, Stara Ochota, Ochota, Warszawa, województwo mazowieckie, 02-021, Polska"
+  },
+  {
+    "id": 12,
+    "name": "Praga-Północ",
+    "address": "Urząd Dzielnicy Praga-Północ m.st. Warszawy, 15, Księdza Ignacego Kłopotowskiego, Port Praski, Stara Praga, Praga-Północ, Warszawa, województwo mazowieckie, 03-708, Polska"
+  },
+  {
+    "id": 13,
+    "name": "Praga-Południe",
+    "address": "Urząd Dzielnicy Praga-Południe, Grochowska, Kamionek, Praga-Południe, Warszawa, województwo mazowieckie, 03-841, Polska"
+  },
+  {
+    "id": 18,
+    "name": "Rembertów",
+    "address": "Urząd Dzielnicy Rembertów, 28, Aleja Generała Antoniego Chruściela \"Montera\", Stary Rembertów, Stary Rembertów (obszar MSI), Rembertów, Warszawa, województwo mazowieckie, 04-401, Polska"
+  },
+  {
+    "id": 14,
+    "name": "Śródmieście",
+    "address": "Urząd Dzielnicy Śródmieście, 43, Nowogrodzka, Śródmieście Południowe, Śródmieście, Warszawa, województwo mazowieckie, 00-691, Polska"
+  },
+  {
+    "id": 11,
+    "name": "Targówek",
+    "address": "Urząd Dzielnicy Targówek, 20, Ludwika Kondratowicza, Bródno, Targówek, Warszawa, województwo mazowieckie, 03-285, Polska"
+  },
+  {
+    "id": 15,
+    "name": "Ursus",
+    "address": "Urząd Dzielnicy Ursus, 1, Plac Czerwca 1976 roku, Szamoty, Ursus, Warszawa, województwo mazowieckie, 02-495, Polska"
+  },
+  {
+    "id": 16,
+    "name": "Ursynów",
+    "address": "Urząd Dzielnicy Ursynów, 61, Aleja Komisji Edukacji Narodowej, Imielin, Ursynów Centrum, Ursynów, Warszawa, województwo mazowieckie, 02-777, Polska"
+  },
+  {
+    "id": 9,
+    "name": "Wawer",
+    "address": "Urząd Dzielnicy Wawer, 1, Żegańska, Szelągowizna, Międzylesie, Wawer, Warszawa, województwo mazowieckie, 04-713, Polska"
+  },
+  {
+    "id": 10,
+    "name": "Wesoła",
+    "address": "Urząd Dzielnicy Wesoła, 33, 1 Praskiego Pułku WP, Groszówka, Wesoła, Warszawa, województwo mazowieckie, 05-075, Polska"
+  },
+  {
+    "id": 19,
+    "name": "Wilanów",
+    "address": "Urząd Dzielnicy Wilanów, 2, Franciszka Klimczaka, Nowy Wilanów, Błonia Wilanowskie, Wilanów, Warszawa, województwo mazowieckie, 02-797, Polska"
+  },
+  {
+    "id": 17,
+    "name": "Włochy",
+    "address": "Urząd Dzielnicy Włochy, 257, Aleja Krakowska, Raków, Włochy, Warszawa, województwo mazowieckie, 02-133, Polska"
+  },
+  {
+    "id": 5,
+    "name": "Wola",
+    "address": "Urząd Dzielnicy Wola, 90, Aleja \"Solidarności\", Muranów II, Muranów, Śródmieście, Warszawa, województwo mazowieckie, 01-003, Polska"
+  },
+  {
+    "id": 6,
+    "name": "Żoliborz",
+    "address": "Urząd Dzielnicy Żoliborz, 6/8, Juliusza Słowackiego, Żoliborz Spółdzielczy, Stary Żoliborz, Żoliborz, Warszawa, województwo mazowieckie, 01-627, Polska"
+  },
+  {
+    "id": 2,
+    "name": "Konsultacje ogólnomiejskie",
+    "address": "Urząd m.st. Warszawy, 3/5, Plac Bankowy, Za Żelazną Bramą, Śródmieście Północne, Śródmieście, Warszawa, województwo mazowieckie, 00-142, Polska"
+  }
+]

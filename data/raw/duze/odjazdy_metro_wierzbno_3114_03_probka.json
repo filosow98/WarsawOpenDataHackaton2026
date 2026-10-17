@@ -1,0 +1,7398 @@
+[
+  {
+    "zespol": "3114",
+    "slupek": "03",
+    "nazwa_zespolu": "Metro Wierzbno",
+    "linia": "4",
+    "odpowiedz": [
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "018",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań Wschodni",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3ZEW",
+          "key": "trasa"
+        },
+        {
+          "value": "05:54:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "018",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań Wschodni",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3ZEW",
+          "key": "trasa"
+        },
+        {
+          "value": "13:43:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "1",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań Wschodni",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3ZEW",
+          "key": "trasa"
+        },
+        {
+          "value": "04:12:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "10",
+          "key": "brygada"
+        },
+        {
+          "value": "Al. Lotników",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3ALL",
+          "key": "trasa"
+        },
+        {
+          "value": "05:32:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "13",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań Wschodni",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3ZEW",
+          "key": "trasa"
+        },
+        {
+          "value": "06:31:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "015",
+          "key": "brygada"
+        },
+        {
+          "value": "Al. Lotników",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3ALL",
+          "key": "trasa"
+        },
+        {
+          "value": "14:12:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "015",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań Wschodni",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3ZEW",
+          "key": "trasa"
+        },
+        {
+          "value": "04:42:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań Wschodni",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3ZEW",
+          "key": "trasa"
+        },
+        {
+          "value": "04:22:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Al. Lotników",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3ALL",
+          "key": "trasa"
+        },
+        {
+          "value": "04:06:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Al. Lotników",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3ALL",
+          "key": "trasa"
+        },
+        {
+          "value": "06:46:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "8",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań Wschodni",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3ZEW",
+          "key": "trasa"
+        },
+        {
+          "value": "05:40:00",
+          "key": "czas"
+        }
+      ]
+    ]
+  },
+  {
+    "zespol": "3114",
+    "slupek": "03",
+    "nazwa_zespolu": "Metro Wierzbno",
+    "linia": "10",
+    "odpowiedz": [
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "014",
+          "key": "brygada"
+        },
+        {
+          "value": "Os. Górczewska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3GOR",
+          "key": "trasa"
+        },
+        {
+          "value": "04:49:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "014",
+          "key": "brygada"
+        },
+        {
+          "value": "Al. Lotników",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3ALL",
+          "key": "trasa"
+        },
+        {
+          "value": "14:17:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "8",
+          "key": "brygada"
+        },
+        {
+          "value": "Os. Górczewska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3GOR",
+          "key": "trasa"
+        },
+        {
+          "value": "05:29:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "6",
+          "key": "brygada"
+        },
+        {
+          "value": "Al. Lotników",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3ALL",
+          "key": "trasa"
+        },
+        {
+          "value": "04:35:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "015",
+          "key": "brygada"
+        },
+        {
+          "value": "Al. Lotników",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3ALL",
+          "key": "trasa"
+        },
+        {
+          "value": "04:55:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "7",
+          "key": "brygada"
+        },
+        {
+          "value": "Al. Lotników",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3ALL",
+          "key": "trasa"
+        },
+        {
+          "value": "07:15:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Os. Górczewska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3GOR",
+          "key": "trasa"
+        },
+        {
+          "value": "04:19:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Al. Lotników",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3ALL",
+          "key": "trasa"
+        },
+        {
+          "value": "04:15:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "015",
+          "key": "brygada"
+        },
+        {
+          "value": "Al. Lotników",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3ALL",
+          "key": "trasa"
+        },
+        {
+          "value": "14:40:00",
+          "key": "czas"
+        }
+      ]
+    ]
+  },
+  {
+    "zespol": "3114",
+    "slupek": "03",
+    "nazwa_zespolu": "Metro Wierzbno",
+    "linia": "11",
+    "odpowiedz": [
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "021",
+          "key": "brygada"
+        },
+        {
+          "value": "Cm. Wolski",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3CMWpPuł",
+          "key": "trasa"
+        },
+        {
+          "value": "06:21:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "023",
+          "key": "brygada"
+        },
+        {
+          "value": "Sielce",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3SLC",
+          "key": "trasa"
+        },
+        {
+          "value": "06:45:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "1",
+          "key": "brygada"
+        },
+        {
+          "value": "Sielce",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3SLC",
+          "key": "trasa"
+        },
+        {
+          "value": "04:28:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "016",
+          "key": "brygada"
+        },
+        {
+          "value": "Cm. Wolski",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3CMWpPuł",
+          "key": "trasa"
+        },
+        {
+          "value": "05:01:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "015",
+          "key": "brygada"
+        },
+        {
+          "value": "Nowe Bemowo",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3NBMpPuł",
+          "key": "trasa"
+        },
+        {
+          "value": "13:48:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "015",
+          "key": "brygada"
+        },
+        {
+          "value": "Cm. Wolski",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3CMWpPuł",
+          "key": "trasa"
+        },
+        {
+          "value": "04:29:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "023",
+          "key": "brygada"
+        },
+        {
+          "value": "Sielce",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3SLC",
+          "key": "trasa"
+        },
+        {
+          "value": "14:45:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "6",
+          "key": "brygada"
+        },
+        {
+          "value": "Cm. Wolski",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3CMWpPuł",
+          "key": "trasa"
+        },
+        {
+          "value": "04:42:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "016",
+          "key": "brygada"
+        },
+        {
+          "value": "Nowe Bemowo",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3NBMpPuł",
+          "key": "trasa"
+        },
+        {
+          "value": "14:11:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "8",
+          "key": "brygada"
+        },
+        {
+          "value": "Sielce",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3SLC",
+          "key": "trasa"
+        },
+        {
+          "value": "06:21:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "7",
+          "key": "brygada"
+        },
+        {
+          "value": "Sielce",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3SLC",
+          "key": "trasa"
+        },
+        {
+          "value": "06:05:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "021",
+          "key": "brygada"
+        },
+        {
+          "value": "Cm. Wolski",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3CMWpPuł",
+          "key": "trasa"
+        },
+        {
+          "value": "14:09:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "010",
+          "key": "brygada"
+        },
+        {
+          "value": "Sielce",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3SLC",
+          "key": "trasa"
+        },
+        {
+          "value": "06:57:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "011",
+          "key": "brygada"
+        },
+        {
+          "value": "Sielce",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3SLC",
+          "key": "trasa"
+        },
+        {
+          "value": "14:31:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Sielce",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3SLC",
+          "key": "trasa"
+        },
+        {
+          "value": "04:48:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "022",
+          "key": "brygada"
+        },
+        {
+          "value": "Cm. Wolski",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3CMWpPuł",
+          "key": "trasa"
+        },
+        {
+          "value": "06:45:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Sielce",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3SLC",
+          "key": "trasa"
+        },
+        {
+          "value": "04:58:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "010",
+          "key": "brygada"
+        },
+        {
+          "value": "Cm. Wolski",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3CMWpPuł",
+          "key": "trasa"
+        },
+        {
+          "value": "13:21:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "011",
+          "key": "brygada"
+        },
+        {
+          "value": "Sielce",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3SLC",
+          "key": "trasa"
+        },
+        {
+          "value": "05:18:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "022",
+          "key": "brygada"
+        },
+        {
+          "value": "Cm. Wolski",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3CMWpPuł",
+          "key": "trasa"
+        },
+        {
+          "value": "14:37:00",
+          "key": "czas"
+        }
+      ]
+    ]
+  },
+  {
+    "zespol": "3114",
+    "slupek": "03",
+    "nazwa_zespolu": "Metro Wierzbno",
+    "linia": "14",
+    "odpowiedz": [
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "011",
+          "key": "brygada"
+        },
+        {
+          "value": "Miasteczko Wilanów",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3MWL",
+          "key": "trasa"
+        },
+        {
+          "value": "06:03:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Miasteczko Wilanów",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3MWL",
+          "key": "trasa"
+        },
+        {
+          "value": "05:48:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "8",
+          "key": "brygada"
+        },
+        {
+          "value": "Miasteczko Wilanów",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3MWL",
+          "key": "trasa"
+        },
+        {
+          "value": "06:53:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "6",
+          "key": "brygada"
+        },
+        {
+          "value": "Miasteczko Wilanów",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3MWL",
+          "key": "trasa"
+        },
+        {
+          "value": "06:31:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "012",
+          "key": "brygada"
+        },
+        {
+          "value": "Miasteczko Wilanów",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3MWL",
+          "key": "trasa"
+        },
+        {
+          "value": "04:38:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "012",
+          "key": "brygada"
+        },
+        {
+          "value": "Miasteczko Wilanów",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3MWL",
+          "key": "trasa"
+        },
+        {
+          "value": "14:06:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Miasteczko Wilanów",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3MWL",
+          "key": "trasa"
+        },
+        {
+          "value": "03:58:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "013",
+          "key": "brygada"
+        },
+        {
+          "value": "Miasteczko Wilanów",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3MWL",
+          "key": "trasa"
+        },
+        {
+          "value": "05:11:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "013",
+          "key": "brygada"
+        },
+        {
+          "value": "Miasteczko Wilanów",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3MWL",
+          "key": "trasa"
+        },
+        {
+          "value": "14:29:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Miasteczko Wilanów",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3MWL",
+          "key": "trasa"
+        },
+        {
+          "value": "04:19:00",
+          "key": "czas"
+        }
+      ]
+    ]
+  },
+  {
+    "zespol": "3114",
+    "slupek": "03",
+    "nazwa_zespolu": "Metro Wierzbno",
+    "linia": "15",
+    "odpowiedz": [
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "P+R Al. Krakowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3OKE",
+          "key": "trasa"
+        },
+        {
+          "value": "05:45:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "8",
+          "key": "brygada"
+        },
+        {
+          "value": "P+R Al. Krakowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3OKE",
+          "key": "trasa"
+        },
+        {
+          "value": "06:11:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "015",
+          "key": "brygada"
+        },
+        {
+          "value": "P+R Al. Krakowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3OKE",
+          "key": "trasa"
+        },
+        {
+          "value": "13:48:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "P+R Al. Krakowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3OKE",
+          "key": "trasa"
+        },
+        {
+          "value": "05:14:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "013",
+          "key": "brygada"
+        },
+        {
+          "value": "P+R Al. Krakowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3OKE",
+          "key": "trasa"
+        },
+        {
+          "value": "14:01:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "015",
+          "key": "brygada"
+        },
+        {
+          "value": "P+R Al. Krakowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3OKE",
+          "key": "trasa"
+        },
+        {
+          "value": "04:14:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "7",
+          "key": "brygada"
+        },
+        {
+          "value": "P+R Al. Krakowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3OKE",
+          "key": "trasa"
+        },
+        {
+          "value": "04:01:00",
+          "key": "czas"
+        }
+      ]
+    ]
+  },
+  {
+    "zespol": "3114",
+    "slupek": "03",
+    "nazwa_zespolu": "Metro Wierzbno",
+    "linia": "16",
+    "odpowiedz": [
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "029",
+          "key": "brygada"
+        },
+        {
+          "value": "Muranowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3MUR",
+          "key": "trasa"
+        },
+        {
+          "value": "15:17:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "Miasteczko Wilanów",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3MWL",
+          "key": "trasa"
+        },
+        {
+          "value": "05:18:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "7",
+          "key": "brygada"
+        },
+        {
+          "value": "Piaski",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3PIA",
+          "key": "trasa"
+        },
+        {
+          "value": "06:25:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "029",
+          "key": "brygada"
+        },
+        {
+          "value": "Miasteczko Wilanów",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3MWL",
+          "key": "trasa"
+        },
+        {
+          "value": "05:01:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "23",
+          "key": "brygada"
+        },
+        {
+          "value": "Piaski",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3PIA",
+          "key": "trasa"
+        },
+        {
+          "value": "04:08:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "25",
+          "key": "brygada"
+        },
+        {
+          "value": "Piaski",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3PIA",
+          "key": "trasa"
+        },
+        {
+          "value": "04:28:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "016",
+          "key": "brygada"
+        },
+        {
+          "value": "Piaski",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3PIA",
+          "key": "trasa"
+        },
+        {
+          "value": "14:41:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "017",
+          "key": "brygada"
+        },
+        {
+          "value": "Piaski",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3PIA",
+          "key": "trasa"
+        },
+        {
+          "value": "15:05:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "27",
+          "key": "brygada"
+        },
+        {
+          "value": "Miasteczko Wilanów",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3MWL",
+          "key": "trasa"
+        },
+        {
+          "value": "05:50:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "22",
+          "key": "brygada"
+        },
+        {
+          "value": "Miasteczko Wilanów",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3MWL",
+          "key": "trasa"
+        },
+        {
+          "value": "06:29:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "017",
+          "key": "brygada"
+        },
+        {
+          "value": "Miasteczko Wilanów",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3MWL",
+          "key": "trasa"
+        },
+        {
+          "value": "04:43:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "9",
+          "key": "brygada"
+        },
+        {
+          "value": "Miasteczko Wilanów",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3MWL",
+          "key": "trasa"
+        },
+        {
+          "value": "04:13:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "016",
+          "key": "brygada"
+        },
+        {
+          "value": "Miasteczko Wilanów",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3MWL",
+          "key": "trasa"
+        },
+        {
+          "value": "04:23:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "26",
+          "key": "brygada"
+        },
+        {
+          "value": "Miasteczko Wilanów",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3MWL",
+          "key": "trasa"
+        },
+        {
+          "value": "05:38:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "1",
+          "key": "brygada"
+        },
+        {
+          "value": "Miasteczko Wilanów",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3MWL",
+          "key": "trasa"
+        },
+        {
+          "value": "03:43:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "8",
+          "key": "brygada"
+        },
+        {
+          "value": "Miasteczko Wilanów",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3MWL",
+          "key": "trasa"
+        },
+        {
+          "value": "04:03:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "12",
+          "key": "brygada"
+        },
+        {
+          "value": "Miasteczko Wilanów",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3MWL",
+          "key": "trasa"
+        },
+        {
+          "value": "03:53:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "21",
+          "key": "brygada"
+        },
+        {
+          "value": "Miasteczko Wilanów",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3MWL",
+          "key": "trasa"
+        },
+        {
+          "value": "06:15:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Miasteczko Wilanów",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3MWL",
+          "key": "trasa"
+        },
+        {
+          "value": "05:05:00",
+          "key": "czas"
+        }
+      ]
+    ]
+  },
+  {
+    "zespol": "3114",
+    "slupek": "03",
+    "nazwa_zespolu": "Metro Wierzbno",
+    "linia": "18",
+    "odpowiedz": [
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "017",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "21:04:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "014",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "14:58:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "07:30:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "7",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "22:24:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "09:54:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "7",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "15:06:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "8",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "08:10:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "013",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "14:34:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "7",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "07:54:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "1",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "06:50:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "1",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "11:30:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "22:04:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "015",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "15:22:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "11",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "13:29:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "09:30:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "6",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "17:14:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "7",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "12:42:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "04:24:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "10",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "13:18:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "018",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "16:34:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "05:04:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "015",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "17:46:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "017",
+          "key": "brygada"
+        },
+        {
+          "value": "R5(A)",
+          "key": "kierunek"
+        },
+        {
+          "value": "TZ-SLU5",
+          "key": "trasa"
+        },
+        {
+          "value": "23:44:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "12",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "11:18:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "06:58:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "19:06:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "12",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "06:42:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "10",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "06:16:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "11",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "11:06:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "6",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "14:50:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "015",
+          "key": "brygada"
+        },
+        {
+          "value": "R5(A)",
+          "key": "kierunek"
+        },
+        {
+          "value": "TZ-SLU5",
+          "key": "trasa"
+        },
+        {
+          "value": "10:22:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "12",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "08:58:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "10",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "15:38:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "013",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "04:44:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "1",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "09:06:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "17:06:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "9",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "13:05:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "7",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "05:40:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "7",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "19:54:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "12",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "18:28:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "14:42:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "7",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "17:30:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "12:06:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "017",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "08:50:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "8",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "12:54:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "9",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "06:04:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "014",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "17:22:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "8",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "22:44:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "6",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "05:24:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "017",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "18:42:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "11",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "18:10:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "12",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "16:02:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "07:14:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "014",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "07:38:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "14:18:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "10",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "18:02:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "12",
+          "key": "brygada"
+        },
+        {
+          "value": "R5(A)",
+          "key": "kierunek"
+        },
+        {
+          "value": "TZ-SLU5",
+          "key": "trasa"
+        },
+        {
+          "value": "20:50:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "16:50:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "12:18:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "016",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "08:26:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "6",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "12:30:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "1",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "16:10:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "16:42:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "7",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "10:18:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "11",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "08:42:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "14:06:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "8",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "10:30:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "016",
+          "key": "brygada"
+        },
+        {
+          "value": "R5(A)",
+          "key": "kierunek"
+        },
+        {
+          "value": "TZ-SLU5",
+          "key": "trasa"
+        },
+        {
+          "value": "23:24:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "9",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "15:30:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "11:54:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "10",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "08:34:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "10",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "10:54:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "1",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "13:54:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "09:42:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "8",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "05:52:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "016",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "20:44:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "013",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "16:58:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "10",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "20:24:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "8",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "15:14:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "07:22:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "6",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "19:42:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "11:42:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "016",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "15:54:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "09:19:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "9",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "17:54:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "6",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "07:46:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "21:24:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "19:18:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "16:26:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "21:44:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "8",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "20:05:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "6",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "10:06:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "017",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "06:29:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "018",
+          "key": "brygada"
+        },
+        {
+          "value": "R5(A)",
+          "key": "kierunek"
+        },
+        {
+          "value": "TZ-SLU5",
+          "key": "trasa"
+        },
+        {
+          "value": "19:01:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "19:30:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "1",
+          "key": "brygada"
+        },
+        {
+          "value": "R5(A)",
+          "key": "kierunek"
+        },
+        {
+          "value": "TZ-SLU5",
+          "key": "trasa"
+        },
+        {
+          "value": "18:35:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "10",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "23:04:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "9",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "08:18:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "016",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "18:18:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "14:26:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "18:53:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "11",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "15:46:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "8",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "17:38:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "013",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "07:06:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "017",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "16:18:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "12",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "13:42:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "014",
+          "key": "brygada"
+        },
+        {
+          "value": "R5(A)",
+          "key": "kierunek"
+        },
+        {
+          "value": "TZ-SLU5",
+          "key": "trasa"
+        },
+        {
+          "value": "09:58:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "015",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "08:02:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "9",
+          "key": "brygada"
+        },
+        {
+          "value": "Żerań FSO",
+          "key": "kierunek"
+        },
+        {
+          "value": "TP-FSO",
+          "key": "trasa"
+        },
+        {
+          "value": "10:42:00",
+          "key": "czas"
+        }
+      ]
+    ]
+  },
+  {
+    "zespol": "3114",
+    "slupek": "03",
+    "nazwa_zespolu": "Metro Wierzbno",
+    "linia": "31",
+    "odpowiedz": [
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "07:58:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "06",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "17:26:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "14:54:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "1",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "08:06:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "05:34:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "1",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "07:18:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "08:22:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "13:12:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "1",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "08:54:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "07:10:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "06",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "07:50:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "10:00:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "1",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "18:48:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "13:24:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "17:02:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "10:24:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "18:24:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "17:34:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "10:36:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "06",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "07:02:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "17:50:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "13:00:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "1",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "17:10:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "06",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "05:58:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "19:48:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "15:18:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "06:36:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "18:37:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "09:12:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "06:46:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "07:26:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "16:14:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "07:34:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "21:54:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "06:21:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "12:12:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "16:54:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "20:10:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "12:00:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "19:24:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "12:36:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "1",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "13:48:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "14:22:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "09:22:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "1",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "10:48:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "1",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "17:58:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "08:46:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "06",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "15:50:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "15:10:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "05:14:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "06",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "18:14:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "14:12:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "11:12:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "1",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "20:00:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "16:06:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "15:26:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "1",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "20:54:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "11:00:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "16:30:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "1",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "12:48:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "11:36:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "1",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "14:46:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "06",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "16:38:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "19:36:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "14:38:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "1",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "09:48:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "06",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "15:02:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "10:12:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "20:19:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "21:34:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "13:36:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "06:09:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "21:14:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "16:46:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "17:42:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "18:06:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "08:30:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "5",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "09:36:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "1",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "16:22:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "07:42:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "12:24:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "14:00:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "1",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "15:34:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "15:42:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "3",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "15:58:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "11:24:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "1",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "22:14:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TD-3WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "05:48:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "18:32:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "06",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "19:12:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "17:18:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "18:57:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "1",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "11:48:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "09:02:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "2",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "08:14:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "06",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "08:38:00",
+          "key": "czas"
+        }
+      ],
+      [
+        {
+          "value": null,
+          "key": "symbol_2"
+        },
+        {
+          "value": null,
+          "key": "symbol_1"
+        },
+        {
+          "value": "4",
+          "key": "brygada"
+        },
+        {
+          "value": "Metro Wilanowska",
+          "key": "kierunek"
+        },
+        {
+          "value": "TO-WIL",
+          "key": "trasa"
+        },
+        {
+          "value": "20:34:00",
+          "key": "czas"
+        }
+      ]
+    ]
+  }
+]

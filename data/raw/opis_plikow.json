@@ -1,0 +1,364 @@
+{
+  "konsultacje_spoleczne": {
+    "typ": "maly",
+    "tytul": "Konsultacje społeczne",
+    "kategoria": "Aktywni mieszkańcy",
+    "endpoint": "get_cks_konsultacje_spoleczne",
+    "pobrano": "2026-10-13T23:05:50",
+    "status": "ok",
+    "plik": "male/konsultacje_spoleczne.json",
+    "rekordy": 7,
+    "bajty": 58596
+  },
+  "konsultacje_dzielnice": {
+    "typ": "maly",
+    "tytul": "Konsultacje społeczne dzielnice",
+    "kategoria": "Aktywni mieszkańcy",
+    "endpoint": "get_cks_konsultacje_spoleczne_dzielnice",
+    "pobrano": "2026-10-13T23:05:51",
+    "status": "ok",
+    "plik": "male/konsultacje_dzielnice.json",
+    "rekordy": 19,
+    "bajty": 4031
+  },
+  "konsultacje_kategorie": {
+    "typ": "maly",
+    "tytul": "Konsultacje społeczne kategorie",
+    "kategoria": "Aktywni mieszkańcy",
+    "endpoint": "get_cks_konsultacje_spoleczne_kategorie",
+    "pobrano": "2026-10-13T23:05:51",
+    "status": "ok",
+    "plik": "male/konsultacje_kategorie.json",
+    "rekordy": 10,
+    "bajty": 572
+  },
+  "trasy_turystyczne": {
+    "typ": "maly",
+    "tytul": "Trasy turystyczne",
+    "kategoria": "Aktywni mieszkańcy",
+    "endpoint": "get_sbt_trasy_turystyczne",
+    "pobrano": "2026-10-13T23:05:52",
+    "status": "ok",
+    "plik": "male/trasy_turystyczne.json",
+    "rekordy": 9,
+    "bajty": 331391
+  },
+  "otwarte_boiska": {
+    "typ": "maly",
+    "tytul": "Otwarte boiska",
+    "kategoria": "Sport",
+    "endpoint": "get_be_otwarte_boiska",
+    "pobrano": "2026-10-13T23:05:52",
+    "status": "ok",
+    "plik": "male/otwarte_boiska.json",
+    "rekordy": 1227,
+    "bajty": 935757
+  },
+  "zajecia_sportowe": {
+    "typ": "maly",
+    "tytul": "Zajęcia sportowe",
+    "kategoria": "Sport",
+    "endpoint": "get_bmm_zajecia_sportowe",
+    "pobrano": "2026-10-13T23:05:53",
+    "status": "ok",
+    "plik": "male/zajecia_sportowe.json",
+    "rekordy": 593,
+    "bajty": 1754244
+  },
+  "pojazdy_transportu_publicznego": {
+    "typ": "maly",
+    "tytul": "Pojazdy transportu publicznego",
+    "kategoria": "Transport",
+    "endpoint": "get_ztm_pojazdy",
+    "pobrano": "2026-10-13T23:06:24",
+    "status": "ok",
+    "plik": "male/pojazdy_transportu_publicznego.json",
+    "rekordy": {
+      "busy": 1839,
+      "kolej": 230,
+      "markiBus": 253,
+      "markiKolej": 16,
+      "markiMetro": 17,
+      "markiTramwaje": 81,
+      "metro": 223,
+      "tramwaje": 797
+    },
+    "bajty": 1773682
+  },
+  "utrudnienia_drogowe": {
+    "typ": "maly",
+    "tytul": "Utrudnienia w ruchu drogowym",
+    "kategoria": "Transport",
+    "endpoint": "get_bin_utrudnienia_drogowe",
+    "pobrano": "2026-10-13T23:05:55",
+    "status": "ok",
+    "plik": "male/utrudnienia_drogowe.json",
+    "rekordy": 54,
+    "bajty": 146266
+  },
+  "parkingi_wolne_miejsca": {
+    "typ": "maly",
+    "tytul": "Wolne miejsca parkingowe",
+    "kategoria": "Transport",
+    "endpoint": "get_m_parkingi_wolne_miejsca",
+    "pobrano": "2026-10-13T23:06:26",
+    "status": "ok",
+    "plik": "male/parkingi_wolne_miejsca.json",
+    "rekordy": 14,
+    "bajty": 38720
+  },
+  "kalendarz_wydarzen": {
+    "typ": "maly",
+    "tytul": "Kalendarz wydarzeń",
+    "kategoria": "Wydarzenia",
+    "endpoint": "get_bmm_kalendarz_wydarzen",
+    "pobrano": "2026-10-13T23:05:56",
+    "status": "ok",
+    "plik": "male/kalendarz_wydarzen.json",
+    "rekordy": 655,
+    "bajty": 2296447
+  },
+  "defibrylatory_aed": {
+    "typ": "maly",
+    "tytul": "Lokalizacja defibrylatorów (AED)",
+    "kategoria": "Zdrowie",
+    "endpoint": "get_scb_lokalizacja_defibrylatorow",
+    "pobrano": "2026-10-13T23:05:58",
+    "status": "ok",
+    "plik": "male/defibrylatory_aed.json",
+    "rekordy": 710,
+    "bajty": 595117
+  },
+  "eko_punkty": {
+    "typ": "maly",
+    "tytul": "Eko punkty",
+    "kategoria": "Środowisko",
+    "endpoint": "get_bos_ekopunkty",
+    "pobrano": "2026-10-13T23:05:58",
+    "status": "ok",
+    "plik": "male/eko_punkty.json",
+    "rekordy": 775,
+    "bajty": 1452461
+  },
+  "segregacja_odpadow": {
+    "typ": "maly",
+    "tytul": "Segregacja odpadów",
+    "kategoria": "Środowisko",
+    "endpoint": "get_bmm_segregacja_odpadow",
+    "pobrano": "2026-10-13T23:05:59",
+    "status": "ok",
+    "plik": "male/segregacja_odpadow.json",
+    "rekordy": 1079,
+    "bajty": 410356
+  },
+  "toalety": {
+    "typ": "maly",
+    "tytul": "Toalety",
+    "kategoria": "Środowisko",
+    "endpoint": "get_m_toalety",
+    "pobrano": "2026-10-13T23:06:00",
+    "status": "ok",
+    "plik": "male/toalety.json",
+    "rekordy": 695,
+    "bajty": 527355
+  },
+  "typy_odpadow": {
+    "typ": "maly",
+    "tytul": "Typy odpadów",
+    "kategoria": "Środowisko",
+    "endpoint": "get_bmm_typy_odpadow",
+    "pobrano": "2026-10-13T23:06:01",
+    "status": "ok",
+    "plik": "male/typy_odpadow.json",
+    "rekordy": 13,
+    "bajty": 29416
+  },
+  "jakosc_powietrza": {
+    "typ": "maly",
+    "tytul": "Monitoring jakości powietrza",
+    "kategoria": "Środowisko",
+    "endpoint": "get_bopipk_monitoring_jakosci_powietrza",
+    "pobrano": "2026-10-13T23:06:01",
+    "status": "ok",
+    "plik": "male/jakosc_powietrza.json",
+    "rekordy": 140,
+    "bajty": 312532
+  },
+  "pogoda": {
+    "typ": "maly",
+    "tytul": "Pogoda",
+    "kategoria": "Środowisko",
+    "endpoint": "get_zom_pogoda",
+    "pobrano": "2026-10-13T23:06:02",
+    "status": "ok",
+    "plik": "male/pogoda.json",
+    "rekordy": 16,
+    "bajty": 4399
+  },
+  "przystanki": {
+    "typ": "maly",
+    "tytul": "Lokalizacja przystanków komunikacji miejskiej",
+    "kategoria": "Transport",
+    "endpoint": "get_ztm_przystanki_komunikacji_miejskiej",
+    "pobrano": "2026-10-13T23:42:00",
+    "status": "ok",
+    "plik": "male/przystanki.json",
+    "rekordy": 6988,
+    "bajty": 3370721
+  },
+  "budzet_obywatelski_2025_zrealizowane": {
+    "typ": "duzy (próbka)",
+    "tytul": "Budżet obywatelski",
+    "kategoria": "Aktywni mieszkańcy",
+    "endpoint": "get_cks_budzet_obywatelski",
+    "parametry": {
+      "rok": 2025,
+      "status": "zrealizowane"
+    },
+    "pobrano": "2026-10-13T23:20:05",
+    "status": "ok",
+    "plik": "duze/budzet_obywatelski_2025_zrealizowane.json",
+    "rekordy": 228,
+    "bajty": 1171731,
+    "uwagi": "rok × status — oba obowiązkowe"
+  },
+  "budzet_obywatelski_2025_w_realizacji": {
+    "typ": "duzy (próbka)",
+    "tytul": "Budżet obywatelski",
+    "kategoria": "Aktywni mieszkańcy",
+    "endpoint": "get_cks_budzet_obywatelski",
+    "parametry": {
+      "rok": 2025,
+      "status": "w_realizacji"
+    },
+    "pobrano": "2026-10-13T23:20:07",
+    "status": "ok",
+    "plik": "duze/budzet_obywatelski_2025_w_realizacji.json",
+    "rekordy": 61,
+    "bajty": 356924,
+    "uwagi": "rok × status — oba obowiązkowe"
+  },
+  "rcn_srodmiescie_2025_lokale_pierwotny": {
+    "typ": "duzy (próbka)",
+    "tytul": "Rejestr Cen Nieruchomości",
+    "kategoria": "Nieruchomości",
+    "endpoint": "get_bgk_rcn",
+    "parametry": {
+      "dzielnica": "Srodmiescie",
+      "rodzajNieruchomosci": "nieruchomoscLokalowa",
+      "rodzajRynku": "rynekPierwotny",
+      "rok": 2025
+    },
+    "pobrano": "2026-10-13T23:24:32",
+    "status": "ok",
+    "plik": "duze/rcn_srodmiescie_2025_lokale_pierwotny.json",
+    "rekordy": 208,
+    "bajty": 684722,
+    "uwagi": "współrzędne w EPSG:2178"
+  },
+  "rcn_srodmiescie_2025_lokale_wtorny": {
+    "typ": "duzy (próbka)",
+    "tytul": "Rejestr Cen Nieruchomości",
+    "kategoria": "Nieruchomości",
+    "endpoint": "get_bgk_rcn",
+    "parametry": {
+      "dzielnica": "Srodmiescie",
+      "rodzajNieruchomosci": "nieruchomoscLokalowa",
+      "rodzajRynku": "rynekWtorny",
+      "rok": 2025
+    },
+    "pobrano": "2026-10-13T23:24:36",
+    "status": "ok",
+    "plik": "duze/rcn_srodmiescie_2025_lokale_wtorny.json",
+    "rekordy": 4236,
+    "bajty": 14286326,
+    "uwagi": "współrzędne w EPSG:2178"
+  },
+  "rcn_srodmiescie_2025_grunty_zabudowane_wtorny": {
+    "typ": "duzy (próbka)",
+    "tytul": "Rejestr Cen Nieruchomości",
+    "kategoria": "Nieruchomości",
+    "endpoint": "get_bgk_rcn",
+    "parametry": {
+      "dzielnica": "Srodmiescie",
+      "rodzajNieruchomosci": "nieruchomoscGruntowaZabudowana",
+      "rodzajRynku": "rynekWtorny",
+      "rok": 2025
+    },
+    "pobrano": "2026-10-13T23:24:43",
+    "status": "ok",
+    "plik": "duze/rcn_srodmiescie_2025_grunty_zabudowane_wtorny.json",
+    "rekordy": 13,
+    "bajty": 42761,
+    "uwagi": "współrzędne w EPSG:2178"
+  },
+  "linie_na_przystanku_probka": {
+    "typ": "duzy (próbka)",
+    "tytul": "Linie dostępne na przystanku",
+    "kategoria": "Transport",
+    "endpoint": "get_ztm_lista_linii_na_przystanku",
+    "parametry": {
+      "busstopId": "7013 i 3114 (wszystkie słupki)",
+      "busstopNr": "*"
+    },
+    "pobrano": "2026-10-13T23:42:27",
+    "status": "ok",
+    "plik": "duze/linie_na_przystanku_probka.json",
+    "rekordy": {
+      "slupki": 16,
+      "pary_slupek_linia": 112
+    },
+    "bajty": 16833,
+    "uwagi": "Centrum + Metro Wierzbno, 16 słupków; wpis = słupek + surowa odpowiedź"
+  },
+  "odjazdy_metro_wierzbno_3114_03_probka": {
+    "typ": "duzy (próbka)",
+    "tytul": "Odjazdy linii z przystanku",
+    "kategoria": "Transport",
+    "endpoint": "get_ztm_odjazdy_linii_z_przystanku",
+    "parametry": {
+      "busstopId": "3114",
+      "busstopNr": "03",
+      "line": "4,10,11,14,15,16,18,31"
+    },
+    "pobrano": "2026-10-13T23:52:27",
+    "status": "ok",
+    "plik": "duze/odjazdy_metro_wierzbno_3114_03_probka.json",
+    "rekordy": {
+      "linie": 8,
+      "odjazdy": 282
+    },
+    "bajty": 141951,
+    "uwagi": "line obowiązkowy; wpis = linia + surowa odpowiedź; TD-/TZ- = kursy zajezdniowe"
+  },
+  "gps_autobusy_probka": {
+    "typ": "duzy (próbka)",
+    "tytul": "Lokalizacja pojazdów komunikacji miejskiej",
+    "kategoria": "Transport",
+    "endpoint": "get_ztm_lokalizacja_pojazdow",
+    "parametry": {
+      "type": 1
+    },
+    "pobrano": "2026-10-13T23:54:38",
+    "status": "ok",
+    "plik": "duze/gps_autobusy_probka.json",
+    "rekordy": 1018,
+    "bajty": 168071,
+    "uwagi": "jedna migawka; zawiera stare pozycje — filtruj po Time"
+  },
+  "gps_tramwaje_probka": {
+    "typ": "duzy (próbka)",
+    "tytul": "Lokalizacja pojazdów komunikacji miejskiej",
+    "kategoria": "Transport",
+    "endpoint": "get_ztm_lokalizacja_pojazdow",
+    "parametry": {
+      "type": 2
+    },
+    "pobrano": "2026-10-13T23:54:39",
+    "status": "ok",
+    "plik": "duze/gps_tramwaje_probka.json",
+    "rekordy": 289,
+    "bajty": 47082,
+    "uwagi": "jedna migawka; zawiera stare pozycje — filtruj po Time"
+  }
+}

@@ -1,0 +1,1010 @@
+[
+  {
+    "zespol": "3114",
+    "slupek": "01",
+    "nazwa_zespolu": "Metro Wierzbno",
+    "odpowiedz": [
+      {
+        "values": [
+          {
+            "value": "174",
+            "key": "linia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "zespol": "7013",
+    "slupek": "15",
+    "nazwa_zespolu": "Centrum",
+    "odpowiedz": [
+      {
+        "values": [
+          {
+            "value": "131",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "158",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N33",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "128",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "517",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "507",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "175",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "117",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "171",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "521",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N24",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "127",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N22",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "525",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N83",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N72",
+            "key": "linia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "zespol": "7013",
+    "slupek": "01",
+    "nazwa_zespolu": "Centrum",
+    "odpowiedz": [
+      {
+        "values": [
+          {
+            "value": "520",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "525",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N81",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "517",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N31",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N25",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N37",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "175",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "ZM1",
+            "key": "linia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "zespol": "7013",
+    "slupek": "04",
+    "nazwa_zespolu": "Centrum",
+    "odpowiedz": [
+      {
+        "values": [
+          {
+            "value": "ZM1",
+            "key": "linia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "zespol": "7013",
+    "slupek": "03",
+    "nazwa_zespolu": "Centrum",
+    "odpowiedz": [
+      {
+        "values": [
+          {
+            "value": "N38",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N35",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N32",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N88",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N85",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "175",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "ZM1",
+            "key": "linia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "zespol": "7013",
+    "slupek": "06",
+    "nazwa_zespolu": "Centrum",
+    "odpowiedz": [
+      {
+        "values": [
+          {
+            "value": "175",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "520",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "128",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "517",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "507",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "158",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "117",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "525",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "131",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "127",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N25",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N22",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N37",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N42",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N32",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N35",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "521",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N31",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N24",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N72",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N33",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N81",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N38",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N85",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N88",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N83",
+            "key": "linia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "zespol": "7013",
+    "slupek": "02",
+    "nazwa_zespolu": "Centrum",
+    "odpowiedz": [
+      {
+        "values": [
+          {
+            "value": "171",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N42",
+            "key": "linia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "zespol": "3114",
+    "slupek": "06",
+    "nazwa_zespolu": "Metro Wierzbno",
+    "odpowiedz": [
+      {
+        "values": [
+          {
+            "value": "228",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "218",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "308",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "174",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N86",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N36",
+            "key": "linia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "zespol": "3114",
+    "slupek": "05",
+    "nazwa_zespolu": "Metro Wierzbno",
+    "odpowiedz": [
+      {
+        "values": [
+          {
+            "value": "308",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "228",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "218",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "ZM1",
+            "key": "linia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "zespol": "3114",
+    "slupek": "02",
+    "nazwa_zespolu": "Metro Wierzbno",
+    "odpowiedz": [
+      {
+        "values": [
+          {
+            "value": "174",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N36",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "N86",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "ZM1",
+            "key": "linia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "zespol": "3114",
+    "slupek": "04",
+    "nazwa_zespolu": "Metro Wierzbno",
+    "odpowiedz": [
+      {
+        "values": [
+          {
+            "value": "11",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "31",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "18",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "16",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "4",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "14",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "10",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "15",
+            "key": "linia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "zespol": "3114",
+    "slupek": "03",
+    "nazwa_zespolu": "Metro Wierzbno",
+    "odpowiedz": [
+      {
+        "values": [
+          {
+            "value": "18",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "31",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "11",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "15",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "4",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "16",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "10",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "14",
+            "key": "linia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "zespol": "7013",
+    "slupek": "08",
+    "nazwa_zespolu": "Centrum",
+    "odpowiedz": [
+      {
+        "values": [
+          {
+            "value": "4",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "16",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "18",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "15",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "91",
+            "key": "linia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "zespol": "7013",
+    "slupek": "09",
+    "nazwa_zespolu": "Centrum",
+    "odpowiedz": [
+      {
+        "values": [
+          {
+            "value": "24",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "9",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "7",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "22",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "25",
+            "key": "linia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "zespol": "7013",
+    "slupek": "10",
+    "nazwa_zespolu": "Centrum",
+    "odpowiedz": [
+      {
+        "values": [
+          {
+            "value": "9",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "25",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "24",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "22",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "7",
+            "key": "linia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "zespol": "7013",
+    "slupek": "07",
+    "nazwa_zespolu": "Centrum",
+    "odpowiedz": [
+      {
+        "values": [
+          {
+            "value": "15",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "16",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "18",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "4",
+            "key": "linia"
+          }
+        ]
+      },
+      {
+        "values": [
+          {
+            "value": "91",
+            "key": "linia"
+          }
+        ]
+      }
+    ]
+  }
+]
