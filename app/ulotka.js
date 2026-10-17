@@ -182,10 +182,17 @@
   }
 
   async function wczytajUlotki() {
+    if (location.protocol === "file:") throw new Error(BLAD_FILE);
     const odp = await fetch("dane/ulotki.json");
     if (!odp.ok) throw new Error("Brak dane/ulotki.json — uruchom src/ulotki_dane.py");
     return odp.json();
   }
 
-  window.Ulotka = { renderuj, wczytajUlotki, odleglosc };
+  // Przeglądarka nie wczyta JSON-a ze strony otwartej z dysku (file://).
+  const BLAD_FILE =
+    "Strona otwarta z dysku, więc przeglądarka blokuje wczytanie danych. Uruchom serwer " +
+    "w katalogu projektu: uv run python -m http.server 8000 --directory app " +
+    "i otwórz http://localhost:8000";
+
+  window.Ulotka = { renderuj, wczytajUlotki, odleglosc, BLAD_FILE };
 })();

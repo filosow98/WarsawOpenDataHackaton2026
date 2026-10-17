@@ -91,6 +91,8 @@ Python z venv (Windows: `.venv/Scripts/python.exe`, Mac/Linux: `.venv/bin/python
 # Ulotki „Najbliższa toaleta” (docs/14)
 .venv/Scripts/python.exe src/ulotki_dane.py                  # dane → app/dane/
 .venv/Scripts/python.exe -m http.server 8000 -d app          # localhost:8000 ulotki, /mapa.html mapa luk
+#   (albo: uv run python -m http.server 8000 --directory app; nie otwieraj
+#   index.html z dysku — z file:// przeglądarka nie wczyta danych)
 .venv/Scripts/python.exe src/ulotki_pdf.py --dzielnica Wola  # PDF → data/out/ulotki/ (--id, --wszystkie)
 ```
 
