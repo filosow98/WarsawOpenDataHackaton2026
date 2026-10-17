@@ -3,3 +3,6 @@
 __pycache__/
 *.parquet
 .ipynb_checkpoints/
+
+# wygenerowane ulotki PDF (docs/14)
+data/out/

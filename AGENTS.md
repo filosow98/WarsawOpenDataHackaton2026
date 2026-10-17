@@ -20,7 +20,11 @@ tylko to, co trzeba wiedzieć zawsze.
 Uzupełniamy na bieżąco — to jest źródło prawdy o tym, co robimy.
 
 - **Wyzwanie:** Twój ruch (wyzwanie 3)
+<<<<<<< HEAD
 - **Temat / pomysł:** ulotki „Najbliższa toaleta” na przystankach — projektowane dla seniorów, dla wszystkich (mieszkańcy, turyści; PL + EN, QR z nawigacją) — [docs/13-toalety-przy-przystankach.md](docs/13-toalety-przy-przystankach.md), plan aplikacji: [docs/14-plan-generatora-ulotek.md](docs/14-plan-generatora-ulotek.md). Wcześniej: upał na przystankach ([docs/12](docs/12-upal-na-przystankach.md))
+=======
+- **Temat / pomysł:** ulotki „Najbliższa toaleta” na przystankach (dla seniorów) — [docs/13-toalety-przy-przystankach.md](docs/13-toalety-przy-przystankach.md), plan aplikacji: [docs/14-plan-generatora-ulotek.md](docs/14-plan-generatora-ulotek.md). Wcześniej: upał na przystankach ([docs/12](docs/12-upal-na-przystankach.md))
+>>>>>>> 56d2340 (Plan dla tworzenia ulotek z odległością toalet.)
 - **Wykorzystane zbiory:** _—_
 - **Podział ról:** Roman — dane + mapa luk; osoba 2 — ulotki (+ QR); osoba 3 — prezentacja i storytelling. Szczegóły: [docs/14](docs/14-plan-generatora-ulotek.md)
 
@@ -103,6 +107,10 @@ docs/10-problemy.md    propozycje tematów (5 problemów + parkingi)
 docs/11-pomysl-przystanki.md  pomysł „Upał na przystankach” (pełny kontekst)
 docs/12-upal-na-przystankach.md  bieżąca analiza pomysłu (wersja do przesłania)
 docs/13-toalety-przy-przystankach.md  pomysł „Toaleta w zasięgu przystanku” + źródła
+<<<<<<< HEAD
 docs/14-plan-generatora-ulotek.md  plan aplikacji: generator ulotek + mapa luk
+=======
+docs/14-plan-generatora-ulotek.md  plan aplikacji: ulotki (mapa, QR, syrenka), druk wsadowy, mapa luk
+>>>>>>> 56d2340 (Plan dla tworzenia ulotek z odległością toalet.)
 data/raw/opis_plikow.json  opis pobranych plików
 ```
