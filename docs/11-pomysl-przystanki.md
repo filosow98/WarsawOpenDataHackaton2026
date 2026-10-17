@@ -237,11 +237,30 @@ pokażą, jakie wozy (z klimą czy bez) jeżdżą na każdej linii tramwajowej.
 | Dane | Źródło | Uwagi |
 |---|---|---|
 | Budynki + wysokość | OSM (`building:levels`, `height`) | dobre pokrycie w centrum, dziury na obrzeżach |
-| Budynki 3D (opcja) | GUGiK, modele LoD1/LoD2 (CityGML) | dokładne, ale ciężkie w obróbce — raczej nie w 22 h |
+| Budynki 3D (opcja) | GUGiK, modele LoD1/LoD2 (CityGML) | dokładne; linki niżej (LoD1 2024: 58 MB, LoD2: 116 MB) |
 | Wiaty | OSM: `shelter=yes` na przystankach | częściowe; zapytać mentorów ZTM o pełną listę — **kluczowe dla klas A/B** |
 | Wrażliwe miejsca | OSM: `amenity=clinic`, `hospital`, `social_facility` (seniorzy) | do punktów „wrażliwi” |
-| Drzewa | OSM `natural=tree` (rzadkie) / NDVI z Sentinel-2 | zastępstwo dla braku inwentaryzacji miejskiej |
+| Drzewa | **GUGiK, modele drzew LoD1 2023 (CityGML)**, 1,93 mln drzew | pełne pokrycie Warszawy, ale plik ma **8,6 GB** — linki niżej |
 | Pozycja słońca | `pvlib` albo `pysolar` | standard |
+
+**Modele 3D z GUGiK dla Warszawy (powiat, TERYT 1465), sprawdzone 17.10.2026:**
+
+| Dane | Bezpośredni link | Rozmiar | Obiektów |
+|---|---|---|---|
+| Budynki LoD1 2024 | `https://opendata.geoportal.gov.pl/InneDane/Budynki3D/LOD1/2024/14/1465.zip` | 58 MB | 153 109 |
+| Budynki LoD2 (stan 2017/18) | `https://opendata.geoportal.gov.pl/InneDane/Budynki3D/LOD2/1465_gml.zip` | 116 MB | 139 279 |
+| Drzewa LoD1 2023 | `https://opendata.geoportal.gov.pl/InneDane/Drzewa3D/LOD1/2023/14/1465.zip` | **8,6 GB** | 1 933 646 |
+
+- Linki pochodzą z `GetFeatureInfo` usług WMS
+  `https://mapy.geoportal.gov.pl/wss/service/PZGIK/FOTO/WMS/ModeleBudynkow3D`
+  i `.../ModeleDrzew3D`. Dla innego powiatu zmień TERYT w ścieżce.
+- Serwer **nie obsługuje pobierania częściowego** (`Range` → 200), więc
+  przerwanego pobierania nie da się wznowić. Pliku drzew nie pobieraj przez Wi-Fi
+  na hackatonie.
+- Publicznego WFS nie ma (401), więc wycinka obszaru nie da się pobrać. Jest tylko cały powiat.
+- Format: CityGML 2.0. Układ współrzędnych sprawdź w atrybucie `srsName` po
+  pobraniu (najpewniej PL-1992, EPSG:2180, ale jeszcze nie zweryfikowane).
+  LoD1 to bryła z wysokością, co wystarcza do liczenia cienia.
 
 ---
 
