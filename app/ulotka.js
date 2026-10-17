@@ -30,20 +30,17 @@
       '<text x="24" y="30" text-anchor="middle" font-size="16" font-weight="700" fill="currentColor">0 zł</text>',
     platna: '<circle cx="24" cy="24" r="20" fill="currentColor"/>' +
       '<text x="24" y="31" text-anchor="middle" font-size="19" font-weight="700" fill="#fff">zł</text>',
-    niedziela: '<rect x="5" y="8" width="38" height="34" rx="4" fill="none" stroke="currentColor" stroke-width="3.5"/>' +
-      '<rect x="5" y="8" width="38" height="11" rx="4" fill="currentColor"/>' +
-      '<line x1="15" y1="4" x2="15" y2="12" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>' +
-      '<line x1="33" y1="4" x2="33" y2="12" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>' +
-      '<text x="24" y="37" text-anchor="middle" font-size="14" font-weight="700" fill="currentColor">ND</text>',
-    calyRok: '<path d="M39 17 A 17 17 0 1 0 41 27" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>' +
-      '<path d="M34 9 L 40 17 L 31 19" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>' +
-      '<text x="24" y="29" text-anchor="middle" font-size="12" font-weight="700" fill="currentColor">365</text>',
-    sezon: '<circle cx="24" cy="24" r="8" fill="currentColor"/>' +
-      '<g stroke="currentColor" stroke-width="3.5" stroke-linecap="round">' +
-      '<line x1="24" y1="4" x2="24" y2="10"/><line x1="24" y1="38" x2="24" y2="44"/>' +
-      '<line x1="4" y1="24" x2="10" y2="24"/><line x1="38" y1="24" x2="44" y2="24"/>' +
-      '<line x1="10" y1="10" x2="14" y2="14"/><line x1="34" y1="34" x2="38" y2="38"/>' +
-      '<line x1="10" y1="38" x2="14" y2="34"/><line x1="34" y1="14" x2="38" y2="10"/></g>',
+    // przewijak: standardowy piktogram — dorosły przewija niemowlę na blacie
+    przewijak: '<circle cx="22" cy="5.8" r="3.6" fill="currentColor"/>' +
+      '<path d="M17 10 L 22 10 L 23 30 L 10.7 30 Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>' +
+      '<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">' +
+      '<line x1="17" y1="30" x2="17" y2="43.5" stroke-width="3.8"/>' +
+      '<line x1="21.5" y1="11.5" x2="28.8" y2="18" stroke-width="3.4"/>' +
+      '<line x1="26.5" y1="26" x2="34" y2="26" stroke-width="3.2"/>' +
+      '<line x1="32.6" y1="25" x2="32.6" y2="20.8" stroke-width="2.4"/>' +
+      '<polyline points="26.5,26 24.3,21.6 29.4,23" stroke-width="2.6"/></g>' +
+      '<circle cx="36.4" cy="25.4" r="2.5" fill="currentColor"/>' +
+      '<rect x="24.3" y="28.6" width="14.4" height="1.8" fill="currentColor"/>',
     wozek: '<circle cx="21" cy="8" r="4" fill="currentColor"/>' +
       '<path d="M21 14 L 21 27 L 33 27 L 37 39" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>' +
       '<path d="M21 19 L 30 19" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>' +
@@ -68,17 +65,24 @@
     return m >= 1000 ? (m / 1000).toFixed(1).replace(".", ",") + " km" : m + " m";
   }
 
-  // Kafelek: piktogram + znacznik ✔/✘ + krótki podpis PL/EN (+ wartość, np. godziny).
-  function kafelek(ok, ikona, pl, en, wartosc) {
+  // Kafelek: piktogram + znacznik ✔/✘ + krótki podpis PL/EN.
+  function kafelek(ok, ikona, pl, en) {
     const k = el("div", "kafelek " + (ok ? "tak" : "nie"));
     k.innerHTML =
       '<span class="ikona"><svg viewBox="0 0 48 48" aria-hidden="true">' + ikona + "</svg>" +
       '<span class="znacznik">' + (ok ? "✔" : "✘") + "</span></span>";
-    const podpis = el("span", "podpis", pl);
-    if (wartosc) podpis.append(el("span", "wartosc", wartosc));
-    podpis.append(el("span", "en", en));
-    k.append(podpis);
+    k.append(dwujezyczny("span", "podpis", pl, en));
     return k;
+  }
+
+  // 'pon.–pt. 8–16 · sob. 8–14' → wiersz łamany tylko na „·”, nigdy w środku godzin.
+  function grupyGodzin(tekst, klasa) {
+    const e = el("span", klasa);
+    tekst.split(" · ").forEach((g, i) => {
+      if (i) e.append(" · ");
+      e.append(el("span", "grupa", g));
+    });
+    return e;
   }
 
   function linkNawigacji(r) {
@@ -131,12 +135,9 @@
       t.platna
         ? kafelek(false, IKONY.platna, "PŁATNA", "Paid")
         : kafelek(true, IKONY.bezplatna, "BEZPŁATNA", "Free"),
-      t.niedziela
-        ? kafelek(true, IKONY.niedziela, "NIEDZIELA", "Open on Sunday", t.niedziela)
-        : kafelek(false, IKONY.niedziela, "NIEDZIELA", "Closed on Sunday", "ZAMKNIĘTA"),
-      t.sezon
-        ? kafelek(false, IKONY.sezon, "SEZONOWA", "Seasonal", t.sezon_krotko)
-        : kafelek(true, IKONY.calyRok, "CAŁY ROK", "All year"),
+      t.przewijak
+        ? kafelek(true, IKONY.przewijak, "PRZEWIJAK", "Baby changing")
+        : kafelek(false, IKONY.przewijak + IKONY.przekreslenie, "BEZ PRZEWIJAKA", "No baby changing"),
       t.dla_wozkow
         ? kafelek(true, IKONY.wozek, "DLA WÓZKÓW", "Wheelchair")
         : kafelek(false, IKONY.wozek + IKONY.przekreslenie, "NIE DLA WÓZKÓW", "No wheelchair access")
@@ -145,7 +146,10 @@
     godziny.innerHTML =
       '<svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="19" fill="none" stroke="currentColor" stroke-width="4"/>' +
       '<path d="M24 12 L 24 24 L 32 29" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>';
-    godziny.append(el("span", "", t.godziny));
+    // Toaleta sezonowa: okres działania dopisany do godzin (osobnego kafelka już nie ma).
+    const pl = grupyGodzin(t.godziny + (t.sezon_krotko ? " · sezonowo: " + t.sezon_krotko : ""));
+    pl.append(grupyGodzin(t.godziny_en + (t.sezon_krotko_en ? " · seasonal: " + t.sezon_krotko_en : ""), "en"));
+    godziny.append(pl);
     info.append(kafelki, godziny);
 
     const qr = el("div", "u-qr");
@@ -182,18 +186,26 @@
   }
 
   // Zwraca Promise<boolean>: true, gdy kafelki mapy się wczytały.
-  function mapa(r, kontener) {
+  // Mapę tworzymy dopiero po wczytaniu fontu: font zmienia wysokość tekstu,
+  // a z nią rozmiar mapy — Leaflet zmierzony wcześniej zostawiłby szary pas.
+  async function mapa(r, kontener) {
+    await document.fonts.ready;
     const m = L.map(kontener, {
       zoomControl: false, attributionControl: false, dragging: false, scrollWheelZoom: false,
       doubleClickZoom: false, boxZoom: false, keyboard: false, touchZoom: false,
-      fadeAnimation: false, zoomAnimation: false,
+      fadeAnimation: false, zoomAnimation: false, zoomSnap: 0.25,
     });
     const tu = [r.lat, r.lon];
     const wc = [r.glowna.lat, r.glowna.lon];
     // Podpis przystanku po stronie odwrotnej do toalety, żeby nie zasłaniał
-    // pinezki; margines poziomy mieści podpis, górny — pinezkę WC nad punktem.
+    // pinezki; margines po stronie podpisu go mieści, górny — pinezkę WC nad punktem.
     const wcZLewej = r.glowna.lon < r.lon;
-    m.fitBounds([tu, wc], { paddingTopLeft: [190, 80], paddingBottomRight: [190, 30], maxZoom: 18 });
+    const PODPIS = 190, BOK = 50;
+    m.fitBounds([tu, wc], {
+      paddingTopLeft: [wcZLewej ? BOK : PODPIS, 75],
+      paddingBottomRight: [wcZLewej ? PODPIS : BOK, 30],
+      maxZoom: 18.5,
+    });
     L.polyline([tu, wc], { color: "#111", weight: 5, dashArray: "4 10", lineCap: "round" }).addTo(m);
     L.marker(tu, { icon: pinezka("pin-tu", "", "JESTEŚ TUTAJ", "You are here", !wcZLewej) }).addTo(m);
     L.marker(wc, { icon: pinezka("pin-wc", "WC"), zIndexOffset: 1000 }).addTo(m);

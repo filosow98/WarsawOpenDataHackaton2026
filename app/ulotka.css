@@ -32,16 +32,16 @@
 /* nagłówek */
 .u-naglowek {
   display: grid;
-  grid-template-columns: 36mm 1fr auto;
+  grid-template-columns: 44mm 1fr auto;
   align-items: center;
   gap: 5mm;
   padding-bottom: 4mm;
   border-bottom: 1.2mm solid var(--linia);
 }
 /* wc_syrenka.jpeg ma szeroki biały margines: wycinamy samo koło i powiększamy je do ramki */
-.u-maskotka { width: 36mm; height: 36mm; object-fit: contain; clip-path: circle(34%); transform: scale(1.45); }
+.u-maskotka { width: 44mm; height: 44mm; object-fit: contain; clip-path: circle(34%); transform: scale(1.45); }
 .u-tytul h1 { font-size: 32pt; line-height: 1.05; letter-spacing: 0.01em; }
-.u-tytul .en { font-size: 17pt; margin-top: 1mm; }
+.u-tytul .en { font-size: 22pt; margin-top: 1mm; }
 .u-przystanek { text-align: right; display: flex; flex-direction: column; }
 .u-przystanek .etykieta { font-size: 11pt; color: var(--tusz-2); }
 .u-przystanek strong { font-size: 19pt; }
@@ -49,17 +49,19 @@
 
 /* odległość — najważniejsza liczba na kartce */
 .u-brak { font-size: 22pt; font-weight: 700; }
-.u-liczby { display: flex; align-items: baseline; gap: 6mm; flex-wrap: wrap; }
+.u-liczby { display: flex; align-items: flex-end; gap: 6mm; flex-wrap: wrap; }
 .u-metry { font-size: 60pt; font-weight: 700; line-height: 1; }
-.u-minuty { font-size: 26pt; font-weight: 700; }
+/* oba wiersze (PL + EN) w pasie wysokości liczby, a nie pod nią */
+.u-minuty { font-size: 26pt; font-weight: 700; line-height: 1.1; margin-bottom: 2.5mm; }
 .u-minuty .en { font-size: 13pt; }
 .u-adres { font-size: 19pt; font-weight: 700; margin-top: 2mm; }
 .u-wskazowka { font-size: 14pt; margin-top: 1mm; }
 
-/* mapa wypełnia wolne miejsce */
+/* mapa: najwyżej 100 mm, przy długim adresie się kurczy */
 .u-mapa {
-  flex: 1;
+  flex: 1 1 100mm;
   min-height: 60mm;
+  max-height: 100mm;
   border: 0.6mm solid var(--linia);
   background: #eee;
 }
@@ -83,31 +85,35 @@
 
 /* dół: piktogramy toalety + kod QR */
 .u-dol {
-  display: grid; grid-template-columns: 1fr 44mm; gap: 6mm; align-items: center;
+  flex: 1; /* zabiera miejsce zwolnione przez mapę */
+  display: grid; grid-template-columns: minmax(0, 1fr) 44mm; gap: 5mm;
   padding-top: 1mm;
 }
-.u-kafelki { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; }
+.u-info { display: flex; flex-direction: column; gap: 6mm; }
+/* kafelki rosną w pionie i wypełniają miejsce między mapą a godzinami */
+.u-kafelki { flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; }
 .kafelek {
-  display: flex; flex-direction: column; align-items: center; gap: 2mm; text-align: center;
-  padding: 3mm 1mm 2.5mm; border: 0.6mm solid var(--linia); border-radius: 3mm;
+  position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 2.5mm; text-align: center; padding: 3mm 1.5mm; border: 0.6mm solid var(--linia); border-radius: 3mm;
 }
-.kafelek .ikona { position: relative; width: 17mm; height: 17mm; color: var(--tusz); }
+.kafelek .ikona { width: 23mm; height: 23mm; flex: none; color: var(--tusz); }
 .kafelek .ikona svg { width: 100%; height: 100%; display: block; }
 .kafelek svg text { font-family: "Atkinson Hyperlegible", Verdana, sans-serif; }
 /* znacznik ✔/✘: kolor dla oka, kształt dla druku czarno-białego */
 .kafelek .znacznik {
-  position: absolute; right: -3.5mm; top: -2.5mm; width: 8mm; height: 8mm; border-radius: 50%;
+  position: absolute; right: -2.5mm; top: -2.5mm; width: 8mm; height: 8mm; border-radius: 50%;
   display: grid; place-items: center; color: #fff; font-size: 12pt; font-weight: 700; border: 0.7mm solid #fff;
 }
 .kafelek.tak .znacznik { background: #1a7f37; }
 .kafelek.nie .znacznik { background: #c62828; }
-.kafelek .podpis { font-size: 11.5pt; font-weight: 700; line-height: 1.1; }
-.kafelek .wartosc { display: block; white-space: nowrap; }
-.kafelek .en { font-size: 8.5pt; margin-top: 0.5mm; }
-.u-godziny { display: flex; align-items: center; gap: 2.5mm; font-size: 13pt; margin-top: 3mm; }
-.u-godziny svg { width: 7mm; height: 7mm; flex: none; }
-.u-qr { text-align: center; }
-.u-qr .kod { width: 40mm; height: 40mm; margin: 0 auto; }
+.kafelek .podpis { font-size: 14.5pt; font-weight: 700; line-height: 1.1; }
+.kafelek .en { font-size: 11pt; margin-top: 0.5mm; }
+.u-godziny { display: flex; align-items: center; gap: 3mm; font-size: 17pt; font-weight: 700; line-height: 1.2; }
+.u-godziny .en { font-size: 13pt; margin-top: 0.5mm; }
+.u-godziny .grupa { white-space: nowrap; }
+.u-godziny svg { width: 9mm; height: 9mm; flex: none; }
+.u-qr { text-align: center; align-self: center; }
+.u-qr .kod { width: 42mm; height: 42mm; margin: 0 auto; }
 .u-qr .kod img, .u-qr .kod canvas { width: 100% !important; height: auto !important; }
 .u-qr p { font-size: 13pt; font-weight: 700; margin-top: 1mm; }
 .u-qr .en { font-size: 10pt; }

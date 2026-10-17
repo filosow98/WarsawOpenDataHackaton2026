@@ -38,6 +38,7 @@ MAX_ALTERNATYWA = 3000  # m — dalszej „pewnej” toalety nie dopisujemy
 
 DNI = ["Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela"]
 DNI_SKROT = ["pon.", "wt.", "śr.", "czw.", "pt.", "sob.", "niedz."]
+DNI_SKROT_EN = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 MIESIACE_DOPELNIACZ = (
     "stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca", "lipca",
     "sierpnia", "września", "października", "listopada", "grudnia",
@@ -81,16 +82,22 @@ def parsuj_godziny(tekst: str | None) -> list[str | None]:
     return wynik
 
 
-def skrot_godzin(dni: list[str | None]) -> str:
-    """Skleja jednakowe kolejne dni: 'pon.–pt. 9–19 · sob. 9–15 · niedz. nieczynne'."""
+def skrot_godzin(dni: list[str | None], en: bool = False) -> str:
+    """Skleja jednakowe kolejne dni: 'pon.–pt. 9–19 · sob. 9–15 · niedz. nieczynne'
+    (en: 'Mon–Fri 9–19 · Sat 9–15 · Sun closed')."""
+    skroty = DNI_SKROT_EN if en else DNI_SKROT
+    if en:
+        dni = ["24 h" if d == "całą dobę" else d for d in dni]
     if len(set(dni)) == 1:
+        if en:
+            return f"daily {dni[0]}" if dni[0] else "closed"
         return f"codziennie {dni[0]}" if dni[0] else "nieczynna"
     grupy = []
     start = 0
     for i in range(1, 8):
         if i == 7 or dni[i] != dni[start]:
-            nazwa = DNI_SKROT[start] if i - 1 == start else f"{DNI_SKROT[start]}–{DNI_SKROT[i - 1]}"
-            grupy.append(f"{nazwa} {dni[start] or 'nieczynne'}")
+            nazwa = skroty[start] if i - 1 == start else f"{skroty[start]}–{skroty[i - 1]}"
+            grupy.append(f"{nazwa} {dni[start] or ('closed' if en else 'nieczynne')}")
             start = i
     return " · ".join(grupy)
 
@@ -124,6 +131,13 @@ def sezon_krotko(sezon: str | None) -> str | None:
     return " ".join(s.split())
 
 
+def sezon_krotko_en(krotko: str | None) -> str | None:
+    """'do 31.10' → 'until 31.10', '1.05–30.09, weekendy' → '1.05–30.09, weekends'."""
+    if not krotko:
+        return None
+    return re.sub(r"^do ", "until ", krotko).replace("weekendy", "weekends")
+
+
 def wczytaj_toalety() -> list[dict]:
     dane = json.loads((RAW_DIR / "toalety.json").read_text(encoding="utf-8"))
     toalety = []
@@ -143,8 +157,10 @@ def wczytaj_toalety() -> list[dict]:
             "przewijak": p["przewijak"] == 1,
             "niedziela": dni[6],
             "godziny": skrot_godzin(dni),
+            "godziny_en": skrot_godzin(dni, en=True),
             "sezon": sezon,
             "sezon_krotko": sezon_krotko(sezon),
+            "sezon_krotko_en": sezon_krotko_en(sezon_krotko(sezon)),
             "wskazowka": wskazowka,
             "warianty": [nazwa for nazwa, f in WARIANTY.items() if f(p)],
         })
@@ -222,7 +238,7 @@ def wczytaj_przystanki(dzielnice: list[tuple[str, list]]) -> list[dict]:
 def opis_toalety(t: dict, prosta_m: float) -> dict:
     """Pola toalety na ulotce, z odległością pieszą (linia prosta × objazd)."""
     odl = OBJAZD * prosta_m
-    pola = {k: v for k, v in t.items() if k not in ("dzielnica", "przewijak", "warianty")}
+    pola = {k: v for k, v in t.items() if k not in ("dzielnica", "warianty")}
     return {
         **pola,
         "odl_m": int(round(odl, -1)),
