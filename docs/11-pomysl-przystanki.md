@@ -132,7 +132,7 @@ nieoczywistego (patrz testy w sekcji 6).
 
 ### Jedno zdanie
 
-**Za rok miasto zdecyduje, jakie wiaty i gdzie postawi na kolejną dekadę.
+**Za rok miasto zdecyduje, jakie wiaty i gdzie postawi w kolejnej umowie.
 Pokazujemy, które przystanki stoją w pełnym słońcu, czego potrzebują i od
 których zacząć.**
 
@@ -141,7 +141,9 @@ których zacząć.**
 Koncesja AMS z października 2025 obejmuje utrzymanie 1640 wiat. Zawarto ją
 **tylko na rok**, z opcją przedłużenia o 3 × 6 miesięcy. Poprzednia umowa
 (2013) trwała prawie 9 lat. Miasto (ZTM) musi więc w ciągu 1–2 lat
-przygotować nowy, długi przetarg: gdzie stoją wiaty i jakie mają dachy.
+przygotować nowy przetarg: gdzie stoją wiaty i jakie mają dachy. Na jaki
+okres zostanie zawarta kolejna umowa, nie wiemy — nie zakładamy, że znów na
+ok. 9 lat.
 Nasz wynik to gotowy wkład do opisu przedmiotu zamówienia.
 
 To odwraca argument z pierwotnej krytyki. Koncesja nie przekreśla pomysłu,
