@@ -77,9 +77,7 @@
   white-space: nowrap; background: #fff; border: 2px solid #111; border-radius: 4px; padding: 2px 7px;
   font: 700 13pt/1.1 "Atkinson Hyperlegible", Verdana, sans-serif; color: #111;
 }
-.pin-wc .podpis { left: 26px; top: -34px; }
 .pin.lewa .podpis { left: auto; right: 30px; text-align: right; }
-.pin-wc.lewa .podpis { right: 26px; }
 .pin .podpis i { display: block; font-style: normal; font-weight: 400; font-size: 9pt; color: #444; }
 
 /* dół: piktogramy toalety + kod QR */

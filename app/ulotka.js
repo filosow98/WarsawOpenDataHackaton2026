@@ -166,8 +166,8 @@
     return f;
   }
 
-  // Toaleta: pinezka, której ostry koniec wskazuje dokładny punkt.
-  // Przystanek: kropka, której środek jest w punkcie.
+  // Toaleta: pinezka z „WC”, której ostry koniec wskazuje dokładny punkt.
+  // Przystanek: kropka, której środek jest w punkcie, z podpisem.
   function pinezka(klasa, znak, pl, en, podpisZLewej) {
     const ksztalt = klasa === "pin-wc"
       ? '<svg class="znak" viewBox="0 0 44 58" aria-hidden="true">' +
@@ -176,7 +176,7 @@
       : '<span class="znak"></span>';
     return L.divIcon({
       className: "pin " + klasa + (podpisZLewej ? " lewa" : ""),
-      html: ksztalt + '<span class="podpis">' + pl + "<i>" + en + "</i></span>",
+      html: ksztalt + (pl ? '<span class="podpis">' + pl + "<i>" + en + "</i></span>" : ""),
       iconSize: null,
     });
   }
@@ -190,13 +190,13 @@
     });
     const tu = [r.lat, r.lon];
     const wc = [r.glowna.lat, r.glowna.lon];
-    // Podpisy po zewnętrznych stronach, żeby nie nachodziły na siebie;
-    // margines poziomy mieści podpis, górny — pinezkę WC nad punktem.
+    // Podpis przystanku po stronie odwrotnej do toalety, żeby nie zasłaniał
+    // pinezki; margines poziomy mieści podpis, górny — pinezkę WC nad punktem.
     const wcZLewej = r.glowna.lon < r.lon;
     m.fitBounds([tu, wc], { paddingTopLeft: [190, 80], paddingBottomRight: [190, 30], maxZoom: 18 });
     L.polyline([tu, wc], { color: "#111", weight: 5, dashArray: "4 10", lineCap: "round" }).addTo(m);
     L.marker(tu, { icon: pinezka("pin-tu", "", "JESTEŚ TUTAJ", "You are here", !wcZLewej) }).addTo(m);
-    L.marker(wc, { icon: pinezka("pin-wc", "WC", "TOALETA", "Toilet", wcZLewej), zIndexOffset: 1000 }).addTo(m);
+    L.marker(wc, { icon: pinezka("pin-wc", "WC"), zIndexOffset: 1000 }).addTo(m);
     return new Promise((resolve) => {
       const limit = setTimeout(() => resolve(false), 30000);
       warstwaKafelkow()
