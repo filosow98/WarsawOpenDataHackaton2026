@@ -20,7 +20,7 @@ tylko to, co trzeba wiedzieć zawsze.
 Uzupełniamy na bieżąco — to jest źródło prawdy o tym, co robimy.
 
 - **Wyzwanie:** Twój ruch (wyzwanie 3)
-- **Temat / pomysł:** wstępnie upał na przystankach — [docs/11-pomysl-przystanki.md](docs/11-pomysl-przystanki.md)
+- **Temat / pomysł:** ulotki „Najbliższa toaleta” na przystankach (dla seniorów) — [docs/13-toalety-przy-przystankach.md](docs/13-toalety-przy-przystankach.md), plan aplikacji: [docs/14-plan-generatora-ulotek.md](docs/14-plan-generatora-ulotek.md). Wcześniej: upał na przystankach ([docs/12](docs/12-upal-na-przystankach.md))
 - **Wykorzystane zbiory:** _—_
 - **Podział ról:** _—_
 
@@ -103,5 +103,6 @@ docs/10-problemy.md    propozycje tematów (5 problemów + parkingi)
 docs/11-pomysl-przystanki.md  pomysł „Upał na przystankach” (pełny kontekst)
 docs/12-upal-na-przystankach.md  bieżąca analiza pomysłu (wersja do przesłania)
 docs/13-toalety-przy-przystankach.md  pomysł „Toaleta w zasięgu przystanku” + źródła
+docs/14-plan-generatora-ulotek.md  plan aplikacji: generator ulotek + mapa luk
 data/raw/opis_plikow.json  opis pobranych plików
 ```
