@@ -202,3 +202,23 @@ zobaczysz tylko przy ręcznym curl/przeglądarce.
 Token nieprawidłowy lub brakujący. Token nowego portalu pobierasz z
 https://dane.um.warszawa.pl/pl/key-api i **może być inny niż apikey**
 starego portalu. W `.env` to osobna zmienna `WAW_TOKEN`.
+
+## Trasy piesze: `429` albo skrypt liczy godzinami (`src/trasy_piesze.py`)
+
+Publiczny serwer OSRM (`routing.openstreetmap.de`) ma limit zapytań i odpowiada
+`429 Too Many Requests`. Skrypt ponawia z przerwą, więc wychodzi ok. 12 s na
+słupek — całe miasto to ok. 15 h. Do większej liczby słupków postaw lokalny
+OSRM w Dockerze i uruchom skrypt z `--serwer http://localhost:5000`
+(instrukcja: docs/14, sekcja „Trasy piesze”; całe miasto w 7 minut).
+
+## Docker w Git Bash: `osrm-extract` nie widzi pliku `/data/...`
+
+Git Bash na Windows zamienia ścieżki typu `/data/plik` na `C:/Program
+Files/Git/data/plik`. Przed `docker run` ustaw `export MSYS_NO_PATHCONV=1`
+albo uruchom polecenia w PowerShellu.
+
+## Docker: `failed to connect to the docker API ... dockerDesktopLinuxEngine`
+
+Docker Desktop nie działa. Uruchom aplikację Docker Desktop (u nas
+`%LOCALAPPDATA%\Programs\DockerDesktop\Docker Desktop.exe`) i poczekaj ok.
+minuty, aż `docker info` przestanie zgłaszać błąd.

@@ -20,6 +20,9 @@ pieszą i maskotka — syrenka.
   polecenie daje 18 PDF-ów, po jednym na dzielnicę, ok. 4400 stron A4.
 - **Dwa widoki, jedna paczka danych.** Ulotka (dla pasażera) i mapa luk (dla
   urzędu) czytają dane z `app/dane/`.
+- **Prawdziwa trasa piesza, nie linia prosta.** Najbliższą toaletę wybieramy
+  według długości dojścia chodnikami (OSRM, profil pieszy), a mapa na
+  ulotce rysuje trasę po ulicach.
 - **Python liczy, przeglądarka rysuje.** Ulotka to HTML + CSS z mapą Leaflet.
   Ten sam szablon służy do podglądu, do druku pojedynczej ulotki i do druku
   wsadowego (Playwright).
@@ -38,8 +41,8 @@ słupku). Stan wdrożony:
 │ │  WC    │                       Sympatyczna 03
 │ └────────┘                       [nr 4225-03]│
 ├─────────────────────────────────────────────┤
-│  ok. 350 m   8 min pieszo                    │
-│              approx. 8 min walk              │
+│  ok. 350 m   6 min pieszo                    │
+│              approx. 6 min walk              │
 │  Inwalidów 3, Biblioteka Publiczna           │
 │  toaleta stacjonarna · wejście od ul. …      │
 ├─────────────────────────────────────────────┤
@@ -68,7 +71,7 @@ dublujemy ich. Angielski w nagłówkach, etykietach i godzinach, nie w adresie.
 |---|---|---|
 | Syrenka + nagłówek PL/EN | stałe | „WC” jest zrozumiałe w każdym języku; opis w sekcji „Maskotka” |
 | Nazwa i nr przystanku | `przystanki.json`: `nazwa_zespolu`, `zespol`, `slupek` | ID w formacie `4225-03` (zespół-słupek) |
-| Odległość, minuty | liczone | linia prosta × 1,3 (objazdy), tempo seniora 0,8 m/s, zaokrąglone w górę do 1 min; zawsze „ok.” |
+| Odległość, minuty | liczone | długość trasy pieszej z OSRM (sekcja „Trasy piesze”); tempo seniora 1,0 m/s = 3,6 km/h, zaokrąglone w górę do 1 min; zawsze „ok.” |
 | Adres toalety | `lokalizacja` | |
 | Wskazówka | typ toalety + `uwagi`, gdy nie dotyczy sezonu | „poziom -1”, „przejście podziemne”, „wejście od ul. …” |
 | Kafelek: płatna / bezpłatna | `platnosc` 0/1 | zbiór nie mówi, jak się płaci (karta, moneta) |
@@ -154,9 +157,10 @@ miasto (pytanie do mentora).
 
 ## Którą toaletę pokazujemy
 
-1. **Główna** = najbliższa toaleta dowolnego typu. Pokazujemy uczciwie jej
-   cechy, także gdy to toi-toi albo toaleta płatna. Do niej prowadzą mapa
-   i kod QR.
+1. **Główna** = najbliższa **pieszo** toaleta dowolnego typu (decyzja 18.10:
+   toaleta za torami albo rzeką odpada, nawet gdy w linii prostej jest
+   bliżej). Pokazujemy uczciwie jej cechy, także gdy to toi-toi albo toaleta
+   płatna. Do niej prowadzą mapa i kod QR.
 2. **Alternatywa** = najbliższa toaleta „pewna”: bezpłatna, całoroczna, czynna
    w niedzielę, nie przenośna. `ulotki_dane.py` liczy ją, gdy główna nie
    spełnia tych warunków, ale **obecna, uproszczona ulotka jej nie drukuje**.
@@ -230,10 +234,13 @@ masowego pobierania. Powyżej 60 ulotek skrypt wymaga klucza MapTiler:
   za dwa tygodnie zniknie. Dlatego okres działania zawsze jest na ulotce
   (przy godzinach).
 - **Linia prosta przez Wisłę i tory.** Najbliższa toaleta w linii prostej może
-  być po drugiej stronie rzeki albo torów. Kod QR częściowo to łagodzi (Google
-  Maps poprowadzi prawdziwą trasą), ale odległość i linia na mapie na papierze
-  będą zaniżone. Na demo wybieramy sprawdzone przystanki. Próba rozwiązania:
-  trasa piesza (sekcja „Kolejność prac”, krok 8) — **na razie tylko plan**.
+  być po drugiej stronie rzeki albo torów. **Rozwiązane trasami pieszymi**
+  (sekcja „Trasy piesze”): 853 słupki (19%) wskazują przez to inną toaletę
+  niż w linii prostej. Mapa luk (`mapa.html`) nadal liczy w linii prostej.
+- **Czas dojścia inny niż w Google Maps.** Odległość zgadza się z Google
+  (np. CH Reduta 01: 960 m u nas, 950 m w Google), ale Google liczy minuty dla
+  przeciętnego dorosłego (ok. 1,25 m/s), a my dla seniora (1,0 m/s): 17 min
+  na ulotce, 13 min w telefonie po zeskanowaniu QR. To celowe.
 - 54 toalety typu „toaleta METRO”: nie wiemy, czy są przed bramkami, czy za
   nimi. Pytanie do mentora.
 
@@ -242,10 +249,16 @@ masowego pobierania. Powyżej 60 ulotek skrypt wymaga klucza MapTiler:
 ```
 data/raw/male/{przystanki,toalety}.json  +  data/raw/dzielnice.geojson
             │
-            ▼
-src/ulotki_dane.py ──► app/dane/ulotki.json   (1 rekord = 1 słupek, ok. 4400)
-                   ├─► app/dane/toalety.json  (toalety z opisem)
-                   └─► app/dane/mapa.json     (dla mapy luk)
+            ├──► src/trasy_piesze.py ◄──► OSRM w Dockerze (localhost:5000)
+            │          │
+            │          ▼
+            │    data/cache/trasy_piesze.json   (w gicie, ok. 3 MB)
+            ▼          │
+src/ulotki_dane.py ◄───┘
+            │
+            ├─► app/dane/ulotki.json   (1 rekord = 1 słupek, ok. 4400)
+            ├─► app/dane/toalety.json  (toalety z opisem)
+            └─► app/dane/mapa.json     (dla mapy luk)
                               │
        ┌──────────────────────┼──────────────────────┐
        ▼                      ▼                      ▼
@@ -262,7 +275,8 @@ src/ulotki_dane.py ──► app/dane/ulotki.json   (1 rekord = 1 słupek, ok. 4
 
 | Plik | Co robi |
 |---|---|
-| `src/ulotki_dane.py` | wczytuje dane, przypisuje dzielnice, liczy główną toaletę i alternatywę, parsuje godziny (PL + EN) i sezon, zapisuje JSON-y |
+| `src/trasy_piesze.py` | dla każdego słupka pyta OSRM o dojście pieszo do 10 najbliższych toalet, wybiera najbliższą pieszo i zapisuje jej trasę do `data/cache/trasy_piesze.json` |
+| `src/ulotki_dane.py` | wczytuje dane, przypisuje dzielnice, liczy główną toaletę (z trasą pieszą z cache) i alternatywę, parsuje godziny (PL + EN) i sezon, zapisuje JSON-y |
 | `app/ulotka.js` + `ulotka.css` | **jeden szablon ulotki** (mapa, kafelki, QR, syrenka), używany przez `index.html` i `druk.html`; `@page { size: A4 }` |
 | `app/index.html` | pole „wpisz nazwę lub nr przystanku” (`?id=4225-03`), podgląd, przycisk druku |
 | `app/druk.html` | wiele ulotek na stronę (`?ids=...` albo `?dzielnica=Wola&od=0&ile=20`), sygnał `window.gotowe` dla Playwright |
@@ -278,13 +292,14 @@ src/ulotki_dane.py ──► app/dane/ulotki.json   (1 rekord = 1 słupek, ok. 4
   "lat": 52.2103, "lon": 20.91986,
   "glowna": {
     "lat": 52.2081, "lon": 20.9214, "adres": "Inwalidów 3, Biblioteka Publiczna",
-    "typ": "toaleta stacjonarna", "odl_m": 350, "min": 8,
+    "typ": "toaleta stacjonarna", "odl_m": 350, "min": 6,
     "platna": false, "dla_wozkow": true, "przewijak": true,
     "niedziela": null,
     "godziny": "pon.–pt. 9–19 · sob. 9–15 · niedz. nieczynne",
     "godziny_en": "Mon–Fri 9–19 · Sat 9–15 · Sun closed",
     "sezon": null, "sezon_krotko": null, "sezon_krotko_en": null,
-    "wskazowka": "wejście od ul. Piekarskiej"
+    "wskazowka": "wejście od ul. Piekarskiej",
+    "trasa": [[52.2103, 20.91986], [52.2095, 20.9203], "...", [52.2081, 20.9214]]
   },
   "alternatywa": { "...": "te same pola albo null" }
 }
@@ -318,8 +333,59 @@ poza gitem.
 **Mapa na ulotce:** Leaflet 1.9.4 z cdnjs. Mapę tworzymy dopiero po
 wczytaniu fontu (`document.fonts.ready`), inaczej zostaje szary pas. Przed
 drukiem czekamy na zdarzenie `load` warstwy kafelków, inaczej PDF wyjdzie
-z szarą mapą. Trasa to na razie linia prosta (przerywana) od przystanku do
-toalety.
+z szarą mapą. Linia przerywana biegnie po trasie pieszej (`glowna.trasa`),
+a mapa jest dopasowana do całej trasy. Rekord bez trasy dostaje linię prostą.
+
+## Trasy piesze
+
+Odległość i linia na mapie pochodzą z prawdziwej trasy pieszej, a nie
+z linii prostej × 1,3. Liczy je `src/trasy_piesze.py`:
+
+1. Dla słupka bierze 10 najbliższych toalet w linii prostej.
+2. Jednym zapytaniem OSRM `/table` (profil pieszy) pobiera odległości
+   pieszo do wszystkich dziesięciu i wybiera najkrótszą. Doliczamy dojście
+   od punktu do najbliższej ścieżki (toaleta w parku itp.).
+3. Zapytaniem `/route` pobiera kształt trasy, upraszcza go (Douglas–Peucker,
+   2 m; mediana 10 punktów na trasę) i zapisuje w
+   `data/cache/trasy_piesze.json`.
+
+`src/ulotki_dane.py` czyta ten plik: główna toaleta to ta najbliższa pieszo,
+odległość to długość trasy. **Bez pliku ulotki wracają do linii prostej** —
+dlatego cache jest w gicie i nie trzeba liczyć tras, żeby przeliczyć dane.
+
+**Serwer tras: lokalny OSRM w Dockerze.** Serwer publiczny
+(`routing.openstreetmap.de`) ma limit zapytań (HTTP 429): ok. 12 s na słupek,
+czyli ok. 15 h dla miasta. Lokalnie całe miasto liczy się w 7 minut.
+Jednorazowe przygotowanie (ok. 2 min + pobranie 300 MB):
+
+```bash
+# mapa Mazowsza z Geofabrik → data/osrm/ (katalog poza gitem, ok. 1,5 GB po przygotowaniu)
+curl -L -o data/osrm/mazowieckie-latest.osm.pbf https://download.geofabrik.de/europe/poland/mazowieckie-latest.osm.pbf
+# Git Bash na Windows: najpierw export MSYS_NO_PATHCONV=1
+docker run --rm -v "$PWD/data/osrm:/data" ghcr.io/project-osrm/osrm-backend:v5.27.1 osrm-extract -p /opt/foot.lua /data/mazowieckie-latest.osm.pbf
+docker run --rm -v "$PWD/data/osrm:/data" ghcr.io/project-osrm/osrm-backend:v5.27.1 osrm-partition /data/mazowieckie-latest.osrm
+docker run --rm -v "$PWD/data/osrm:/data" ghcr.io/project-osrm/osrm-backend:v5.27.1 osrm-customize /data/mazowieckie-latest.osrm
+# serwer na localhost:5000
+docker run -d --name osrm-pieszo -p 5000:5000 -v "$PWD/data/osrm:/data" ghcr.io/project-osrm/osrm-backend:v5.27.1 osrm-routed --algorithm mld --max-table-size 1000 /data/mazowieckie-latest.osrm
+```
+
+Potem:
+
+```bash
+.venv/Scripts/python.exe src/trasy_piesze.py --wszystkie --serwer http://localhost:5000
+.venv/Scripts/python.exe src/ulotki_dane.py
+docker stop osrm-pieszo        # ponownie: docker start osrm-pieszo
+```
+
+Skrypt liczy tylko słupki, których nie ma w cache. Żeby przeliczyć
+wszystko od nowa (np. po zmianie listy toalet), usuń
+`data/cache/trasy_piesze.json`. Bez `--serwer` skrypt pyta serwer publiczny
+— wystarczy na kilka słupków, nie na dzielnicę.
+
+**Wynik (18.10, mapa OSM z 17.10):** 4433 słupki, 0 błędów. Mediana różnicy
+wobec starego szacunku +10 m, ale 129 słupków ma trasę ponad 2× dłuższą
+(tory, rzeka, ruchliwa ulica bez przejścia), a 853 (19%) inną toaletę.
+`app/dane/ulotki.json` urósł z 3,3 do 4,8 MB.
 
 ## Kolejność prac
 
@@ -335,15 +401,7 @@ ostatni działający krok.
 | 5 | Mapa luk dla urzędu + statystyki dzielnic | gotowe | slajd z liczbami i mapą |
 | 6 | GitHub Pages + makieta ulotki na zdjęciu prawdziwego przystanku | do zrobienia | link dla jury, zdjęcie do prezentacji |
 | 7 | Test wydruku w czerni i bieli + skan QR różnymi telefonami | do zrobienia | pewność, że ulotka działa na papierze |
-| 8 | *Plan, nie wiadomo, czy się uda:* trasa piesza po ulicach zamiast linii prostej × 1,3 | plan | prawdziwa odległość i trasa na mapie |
-
-**Krok 8 — trasa piesza (plan).** Pomysł: dla każdego słupka policzyć z góry
-trasę pieszą do toalety (OSRM, profil foot, np. `routing.openstreetmap.de`,
-albo Valhalla, profil pedestrian) i zapisać ją w danych. Ulotka rysuje wtedy
-linię po ulicach, a odległość i minuty pochodzą z prawdziwej trasy. Ryzyka:
-limity publicznych serwerów przy ok. 4400 zapytaniach, czas liczenia, rozmiar
-danych z kształtami tras, trasy przez tereny zamknięte. Jeśli się nie uda,
-zostajemy przy linii prostej × 1,3, a prawdziwą trasę daje kod QR.
+| 8 | Trasa piesza po ulicach zamiast linii prostej × 1,3 (OSRM w Dockerze) | gotowe (18.10) | prawdziwa odległość, najbliższa toaleta pieszo, trasa na mapie; sekcja „Trasy piesze” |
 
 **Punkty kontrolne:** **zamrożenie kodu w niedzielę o 9:00.** Potem tylko
 prezentacja i próba. Oddanie o 11:00.
@@ -390,8 +448,11 @@ przebiegu na żywo nie puszczamy, bo trwa za długo.
 - [x] Kafelki na ulotce: płatność, przewijak, wózki (niedziela i „cały rok”
   usunięte 18.10; niedziela i sezon są w godzinach).
 - [ ] Alternatywa: wraca na ulotkę czy zostaje tylko w danych?
-- [ ] Trasa piesza (krok 8): robimy, jeśli próba się uda; inaczej linia
-  prosta × 1,3.
+- [x] Trasa piesza (krok 8): tak, główna toaleta = najbliższa pieszo.
+- [x] Tempo seniora: 1,0 m/s = 3,6 km/h (środek tempa zdrowego seniora,
+  3,0–4,5 km/h). Wcześniej 0,8 m/s — za wolno.
+- [ ] Mapa luk: zostaje w linii prostej (liczby na slajdach), czy
+  przechodzi na odległości piesze?
 
 ## Pytania do mentora
 

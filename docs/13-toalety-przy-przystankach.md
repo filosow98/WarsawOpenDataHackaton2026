@@ -103,7 +103,8 @@ Pułapki:
 ### Część 1: luka toaletowa (analiza)
 
 Dla każdego przystanku sprawdzamy, czy w zasięgu ok. **500 m** (ok. 10 minut
-pieszo dla seniora, ok. 0,8 m/s) jest toaleta, która jest:
+pieszo dla seniora: 500 m w linii prostej to ok. 650 m chodnikiem, tempem
+1,0 m/s) jest toaleta, która jest:
 
 - bezpłatna,
 - dostępna dla osób z niepełnosprawnością,
@@ -116,8 +117,8 @@ Jeśli nie ma — przystanek ma **lukę**. Wynik:
 - mapa luk,
 - porównanie dzielnic.
 
-Odległość na początek w linii prostej; jeśli starczy czasu — po sieci
-chodników (OSM).
+Odległość na mapie luk w linii prostej. Ulotki używają już prawdziwej trasy
+pieszej po chodnikach OSM (18.10, docs/14, sekcja „Trasy piesze”).
 
 ### Część 2: generator tabliczek (wdrożenie)
 

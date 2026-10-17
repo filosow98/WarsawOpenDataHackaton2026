@@ -49,6 +49,8 @@ Polecenia:
 
 ```bash
 uv run src/ulotki_dane.py                       # przelicza app/dane/*.json
+uv run src/trasy_piesze.py --wszystkie --serwer http://localhost:5000
+                                                # trasy piesze (OSRM w Dockerze, docs/14)
 uv run src/ulotki_pdf.py --id 7013-01,7016-02   # wybrane słupki → data/out/ulotki/wybrane.pdf
 uv run src/ulotki_pdf.py --dzielnica Wola       # jedna dzielnica → data/out/ulotki/Wola.pdf
 uv run src/ulotki_pdf.py --wszystkie            # całe miasto, plik na dzielnicę + spis.csv
@@ -125,10 +127,12 @@ src/zbieraj_gps.py    zbieracz historii GPS (uruchom przed hackatonem)
 src/katalog.py        przegladarka katalogu 23 zbiorow (bez tokenu)
 src/pobierz_rcn.py    przyklad pobierania (Rejestr Cen Nieruchomosci)
 src/ulotki_dane.py    dane ulotek i mapy luk → app/dane/
+src/trasy_piesze.py   trasy piesze przystanek → toaleta (OSRM) → data/cache/trasy_piesze.json
 src/ulotki_pdf.py     druk wsadowy ulotek do PDF → data/out/ulotki/
 app/                  strona: index.html (ulotka), mapa.html (mapa luk), druk.html
 docs/                 dokumentacja: setup, API, dane, troubleshooting
 data/raw/             pobrane dane źródłowe (poza gitem)
-data/cache/           snapshoty danych realtime (poza gitem)
+data/cache/           snapshoty danych realtime; trasy_piesze.json (w gicie, potrzebny ulotkom)
+data/osrm/            mapa i pliki lokalnego serwera tras (poza gitem, ok. 1,5 GB)
 notebooks/            eksploracja
 ```

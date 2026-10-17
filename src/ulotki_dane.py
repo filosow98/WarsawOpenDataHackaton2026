@@ -27,13 +27,14 @@ from luka_toaletowa import RAW_DIR, czynna_w_niedziele, dla_seniora, odleglosc_m
 ROOT = Path(__file__).resolve().parent.parent
 APP_DANE = ROOT / "app" / "dane"
 DZIELNICE_PLIK = ROOT / "data" / "raw" / "dzielnice.geojson"
+TRASY_PLIK = ROOT / "data" / "cache" / "trasy_piesze.json"
 DZIELNICE_URL = (
     "https://raw.githubusercontent.com/andilabs/warszawa-dzielnice-geojson/"
     "master/warszawa-dzielnice.geojson"
 )
 
 OBJAZD = 1.3  # droga po chodnikach vs linia prosta
-TEMPO_SENIORA = 0.8  # m/s
+TEMPO_SENIORA = 1.0  # m/s = 3,6 km/h, środek tempa zdrowego seniora (3,0–4,5 km/h)
 MAX_ALTERNATYWA = 3000  # m — dalszej „pewnej” toalety nie dopisujemy
 
 DNI = ["Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela"]
@@ -235,23 +236,37 @@ def wczytaj_przystanki(dzielnice: list[tuple[str, list]]) -> list[dict]:
 
 # --- ulotki --------------------------------------------------------------
 
-def opis_toalety(t: dict, prosta_m: float) -> dict:
-    """Pola toalety na ulotce, z odległością pieszą (linia prosta × objazd)."""
-    odl = OBJAZD * prosta_m
+def opis_toalety(t: dict, prosta_m: float, trasa: dict | None = None) -> dict:
+    """Pola toalety na ulotce. Odległość z trasy pieszej (src/trasy_piesze.py),
+    a bez niej szacunek: linia prosta × objazd."""
+    odl = trasa["odl_m"] if trasa else OBJAZD * prosta_m
     pola = {k: v for k, v in t.items() if k not in ("dzielnica", "warianty")}
-    return {
+    wynik = {
         **pola,
         "odl_m": int(round(odl, -1)),
         "min": max(1, math.ceil(odl / TEMPO_SENIORA / 60)),
     }
+    if trasa:
+        wynik["trasa"] = trasa["ksztalt"]
+    return wynik
+
+
+def wczytaj_trasy() -> dict:
+    """Trasy piesze z cache src/trasy_piesze.py (brak pliku = same szacunki)."""
+    return json.loads(TRASY_PLIK.read_text(encoding="utf-8")) if TRASY_PLIK.exists() else {}
 
 
 def main() -> None:
     toalety = wczytaj_toalety()
     przystanki = wczytaj_przystanki(wczytaj_dzielnice())
+    trasy = wczytaj_trasy()
+    po_wsp = {}
+    for i, t in enumerate(toalety):
+        po_wsp.setdefault(f"{t['lat']},{t['lon']}", i)
     print(f"Toalet: {len(toalety)}, słupków w granicach Warszawy: {len(przystanki)}")
 
     ulotki, mapa = [], []
+    z_trasa = 0
     for s in przystanki:
         odl = [odleglosc_m(s["lat"], s["lon"], t["lat"], t["lon"]) for t in toalety]
 
@@ -259,7 +274,16 @@ def main() -> None:
             kandydaci = [i for i, t in enumerate(toalety) if warunek(t)]
             return min(kandydaci, key=odl.__getitem__) if kandydaci else None
 
-        glowna = najblizsza(lambda t: True)
+        # Z trasą pieszą główna = najbliższa pieszo, nie w linii prostej
+        # (toaleta za torami albo rzeką odpada).
+        trasa = trasy.get(s["id"])
+        if trasa and (trasa["lat"], trasa["lon"]) == (s["lat"], s["lon"]) and trasa["cel"] in po_wsp:
+            glowna = po_wsp[trasa["cel"]]
+            trasa_glownej = {"odl_m": trasa["pieszo"][trasa["cel"]], "ksztalt": trasa["trasa"]}
+            z_trasa += 1
+        else:
+            glowna = najblizsza(lambda t: True)
+            trasa_glownej = None
         alternatywa = None
         if not pewna(toalety[glowna]):
             alt = najblizsza(pewna)
@@ -267,7 +291,7 @@ def main() -> None:
                 alternatywa = opis_toalety(toalety[alt], odl[alt])
         ulotki.append({
             **{k: s[k] for k in ("id", "nazwa", "dzielnica", "lat", "lon")},
-            "glowna": opis_toalety(toalety[glowna], odl[glowna]),
+            "glowna": opis_toalety(toalety[glowna], odl[glowna], trasa_glownej),
             "alternatywa": alternatywa,
         })
 
@@ -287,7 +311,8 @@ def main() -> None:
     zapisz("toalety.json", toalety)
 
     z_alternatywa = sum(u["alternatywa"] is not None for u in ulotki)
-    print(f"Zapisano {len(ulotki)} ulotek ({z_alternatywa} z alternatywą) → {APP_DANE.relative_to(ROOT)}")
+    print(f"Zapisano {len(ulotki)} ulotek ({z_alternatywa} z alternatywą, {z_trasa} z trasą pieszą) "
+          f"→ {APP_DANE.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

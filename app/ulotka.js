@@ -201,12 +201,15 @@
     // pinezki; margines po stronie podpisu go mieści, górny — pinezkę WC nad punktem.
     const wcZLewej = r.glowna.lon < r.lon;
     const PODPIS = 190, BOK = 50;
-    m.fitBounds([tu, wc], {
+    // Trasa piesza po ulicach (src/trasy_piesze.py), a bez niej linia prosta.
+    // Zaczyna się na przystanku i kończy przy toalecie.
+    const linia = r.glowna.trasa || [tu, wc];
+    m.fitBounds(linia, {
       paddingTopLeft: [wcZLewej ? BOK : PODPIS, 75],
       paddingBottomRight: [wcZLewej ? PODPIS : BOK, 30],
       maxZoom: 18.5,
     });
-    L.polyline([tu, wc], { color: "#111", weight: 5, dashArray: "4 10", lineCap: "round" }).addTo(m);
+    L.polyline(linia, { color: "#111", weight: 5, dashArray: "4 10", lineCap: "round" }).addTo(m);
     L.marker(tu, { icon: pinezka("pin-tu", "", "JESTEŚ TUTAJ", "You are here", !wcZLewej) }).addTo(m);
     L.marker(wc, { icon: pinezka("pin-wc", "WC"), zIndexOffset: 1000 }).addTo(m);
     return new Promise((resolve) => {

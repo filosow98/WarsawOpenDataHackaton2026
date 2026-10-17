@@ -85,7 +85,10 @@ Python z venv (Windows: `.venv/Scripts/python.exe`, Mac/Linux: `.venv/bin/python
 .venv/Scripts/python.exe src/katalog.py --szczegoly <id>
 
 # Ulotki „Najbliższa toaleta” (docs/14)
-.venv/Scripts/python.exe src/ulotki_dane.py                  # dane → app/dane/
+.venv/Scripts/python.exe src/ulotki_dane.py                  # dane → app/dane/ (trasy z data/cache/trasy_piesze.json)
+.venv/Scripts/python.exe src/trasy_piesze.py --wszystkie --serwer http://localhost:5000
+#   trasy piesze z lokalnego OSRM w Dockerze — tylko gdy zmieniają się toalety
+#   albo przystanki; przygotowanie serwera: docs/14, sekcja „Trasy piesze”
 .venv/Scripts/python.exe -m http.server 8000 -d app          # localhost:8000 ulotki, /mapa.html mapa luk
 #   (albo: uv run python -m http.server 8000 --directory app; nie otwieraj
 #   index.html z dysku — z file:// przeglądarka nie wczyta danych)
@@ -115,6 +118,7 @@ docs/15-storytelling.md  historia na prezentację + liczby ze źródłami
 docs/16-skrypt-prezentacji.md  skrypt 5-minutowej prezentacji
 data/raw/opis_plikow.json  opis pobranych plików
 src/ulotki_dane.py     liczy dane ulotek i mapy luk → app/dane/*.json
+src/trasy_piesze.py    trasy piesze przystanek → toaleta (OSRM) → data/cache/trasy_piesze.json (w gicie)
 src/ulotki_pdf.py      druk wsadowy ulotek do PDF (Playwright)
 app/                   strona: index.html (ulotka), mapa.html (mapa luk), druk.html
 ```

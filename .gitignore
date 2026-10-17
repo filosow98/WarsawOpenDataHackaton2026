@@ -6,3 +6,5 @@ __pycache__/
 
 # wygenerowane ulotki PDF (docs/14)
 data/out/
+# mapa OSM i pliki lokalnego serwera tras OSRM (src/trasy_piesze.py)
+data/osrm/

@@ -41,7 +41,7 @@ To nie wyjątek. W badaniach z Wielkiej Brytanii **co druga osoba** pije poza do
 
 Ta sama podróż jeszcze raz. Pani Halina wysiada z autobusu. Obok rozkładu wisi kartka. *(pokazać kartkę)*
 
-„Najbliższa toaleta: 250 metrów, około 7 minut pieszo.” Mapka ze strzałką. Bezpłatna, dostępna dla wózków. Godziny otwarcia, a gdy zamknięta, najbliższa czynna. Po polsku i po angielsku.
+„Najbliższa toaleta: 250 metrów, około 5 minut pieszo.” Mapka ze strzałką. Bezpłatna, dostępna dla wózków. Godziny otwarcia, a gdy zamknięta, najbliższa czynna. Po polsku i po angielsku.
 
 Pani Halina wie, że da radę. Więc rano wypiła herbatę i wzięła wodę.
 
@@ -89,8 +89,8 @@ Dziękujemy!
 
 ## Notatki dla prezentującej
 
-- **Liczby w demo:** „250 metrów, około 7 minut” liczone jak w generatorze
-  (0,8 m/s, odległość × 1,3). Przed prezentacją podmienić na liczby
+- **Liczby w demo:** „250 metrów, około 5 minut” liczone jak w generatorze
+  (trasa piesza po chodnikach, tempo seniora 1,0 m/s). Przed prezentacją podmienić na liczby
   z kartki, którą faktycznie pokażemy.
 - **Restauracje zamiast nowych toalet — bez kwot.** Nie znaleźliśmy
   źródła na „200 tys. zł za toaletę”. Dla skali: toaleta przy Stadionie
@@ -125,8 +125,12 @@ Dziękujemy!
 - **Pytania jury, na które warto mieć odpowiedź:**
   - „Skąd ta połowa?” — Royal Society for Public Health, Wielka Brytania,
     2019, ponad 2000 dorosłych.
-  - „Odległość w linii prostej?” — tak, po chodnikach będzie dalej, więc
-    luka jest raczej zaniżona.
+  - „Odległość w linii prostej?” — na ulotce nie: odległość i mapa to
+    prawdziwa trasa piesza po chodnikach, a toaleta za torami albo rzeką
+    odpada (zmieniło to toaletę na 19% przystanków). Mapa luk liczy w linii
+    prostej, więc po chodnikach luka byłaby jeszcze większa.
+  - „Google Maps pokazuje mniej minut?” — Google liczy dla przeciętnego
+    dorosłego (ok. 4,5 km/h), my dla seniora (3,6 km/h). Odległość ta sama.
   - „Kto to wydrukuje i powiesi?” — ZTM w ramkach na rozkłady (do
     potwierdzenia z mentorem).
   - „Czym to się różni od tabliczek miasta?” — kierunek i odległość
