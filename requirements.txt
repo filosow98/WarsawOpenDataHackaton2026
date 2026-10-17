@@ -7,3 +7,6 @@ geopandas>=1.0
 folium>=0.17
 matplotlib>=3.9
 jupyterlab>=4.2
+# druk wsadowy ulotek (src/ulotki_pdf.py); po instalacji: python -m playwright install chromium
+playwright>=1.40
+pypdf>=4.0

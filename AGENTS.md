@@ -87,6 +87,11 @@ Python z venv (Windows: `.venv/Scripts/python.exe`, Mac/Linux: `.venv/bin/python
 .venv/Scripts/python.exe src/sprawdz_setup.py               # test połączenia
 .venv/Scripts/python.exe src/katalog.py --kategoria Transport  # katalog zbiorów
 .venv/Scripts/python.exe src/katalog.py --szczegoly <id>
+
+# Ulotki „Najbliższa toaleta” (docs/14)
+.venv/Scripts/python.exe src/ulotki_dane.py                  # dane → app/dane/
+.venv/Scripts/python.exe -m http.server 8000 -d app          # localhost:8000 ulotki, /mapa.html mapa luk
+.venv/Scripts/python.exe src/ulotki_pdf.py --dzielnica Wola  # PDF → data/out/ulotki/ (--id, --wszystkie)
 ```
 
 Instalacja od zera: [docs/01-setup.md](docs/01-setup.md).
@@ -113,4 +118,7 @@ docs/14-plan-generatora-ulotek.md  plan aplikacji: generator ulotek + mapa luk
 docs/14-plan-generatora-ulotek.md  plan aplikacji: ulotki (mapa, QR, syrenka), druk wsadowy, mapa luk
 >>>>>>> 56d2340 (Plan dla tworzenia ulotek z odległością toalet.)
 data/raw/opis_plikow.json  opis pobranych plików
+src/ulotki_dane.py     liczy dane ulotek i mapy luk → app/dane/*.json
+src/ulotki_pdf.py      druk wsadowy ulotek do PDF (Playwright)
+app/                   strona: index.html (ulotka), mapa.html (mapa luk), druk.html
 ```

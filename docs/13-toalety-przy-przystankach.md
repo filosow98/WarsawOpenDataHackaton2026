@@ -193,6 +193,22 @@ Warszawy). Po chodnikach będzie gorzej.
 | dla seniora | 291 | **59%** | 630 m |
 | dla seniora, czynna w niedzielę | 137 | 74% | 984 m |
 
+**Aktualizacja 17.10, wieczór — liczby na slajd bierzemy stąd.** Prostokąt
+łapał też przystanki podmiejskie (daleko od miejskich toalet). Z granicami
+dzielnic (`src/ulotki_dane.py`, mapa luk w `app/mapa.html`) zostaje **4433
+słupki** w Warszawie i luka jest mniejsza:
+
+| Wariant toalety | Słupki bez toalety w 500 m | Mediana odległości |
+|---|---|---|
+| dowolna | 35% | 350 m |
+| bezpłatna | 36% | 362 m |
+| dla seniora | **52%** | 524 m |
+| dla seniora, czynna w niedzielę | **70%** | 809 m |
+
+Najgorzej (dla seniora, 500 m): Wesoła 79%, Wawer 76%, Rembertów 70%,
+Białołęka 68%. Granice dzielnic są uproszczone, więc pojedyncze słupki przy
+granicy mogą trafić do sąsiedniej dzielnicy (np. Dw. Centralny 03 → Wola).
+
 - 213 z 695 toalet to przenośne (toi-toi). Co najmniej 84 toalety są
   sezonowe (m.in. „do 31 października”), ale prawie wszystkie to toi-toie —
   w wariancie „dla seniora” sezonowość prawie nic nie zmienia.

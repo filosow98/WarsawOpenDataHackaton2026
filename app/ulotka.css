@@ -1,0 +1,128 @@
+/* Ulotka A4 „Najbliższa toaleta”. Zasady czytelności: docs/14-plan-generatora-ulotek.md */
+
+@page { size: A4; margin: 0; }
+
+:root {
+  --tusz: #111;
+  --tusz-2: #444;
+  --linia: #111;
+  --tlo: #fff;
+}
+
+.ulotka {
+  box-sizing: border-box;
+  width: 210mm;
+  height: 297mm;
+  padding: 11mm 12mm 9mm;
+  display: flex;
+  flex-direction: column;
+  gap: 4mm;
+  overflow: hidden;
+  background: var(--tlo);
+  color: var(--tusz);
+  font-family: "Atkinson Hyperlegible", Verdana, sans-serif;
+  font-size: 15pt;
+  line-height: 1.25;
+  break-after: page;
+}
+.ulotka *, .ulotka *::before { box-sizing: border-box; }
+.ulotka p, .ulotka h1, .ulotka ul { margin: 0; }
+.ulotka .en { display: block; font-size: 0.6em; font-weight: 400; color: var(--tusz-2); }
+
+/* nagłówek */
+.u-naglowek {
+  display: grid;
+  grid-template-columns: 36mm 1fr auto;
+  align-items: center;
+  gap: 5mm;
+  padding-bottom: 4mm;
+  border-bottom: 1.2mm solid var(--linia);
+}
+.u-maskotka { width: 36mm; height: 36mm; object-fit: contain; }
+.u-tytul h1 { font-size: 32pt; line-height: 1.05; letter-spacing: 0.01em; }
+.u-tytul .en { font-size: 17pt; margin-top: 1mm; }
+.u-przystanek { text-align: right; display: flex; flex-direction: column; }
+.u-przystanek .etykieta { font-size: 11pt; color: var(--tusz-2); }
+.u-przystanek strong { font-size: 19pt; }
+.u-id { font-size: 15pt; font-weight: 700; margin-top: 1mm; padding: 0.5mm 2mm; border: 0.5mm solid var(--linia); align-self: flex-end; }
+
+/* odległość — najważniejsza liczba na kartce */
+.u-brak { font-size: 22pt; font-weight: 700; }
+.u-liczby { display: flex; align-items: baseline; gap: 6mm; flex-wrap: wrap; }
+.u-metry { font-size: 60pt; font-weight: 700; line-height: 1; }
+.u-minuty { font-size: 26pt; font-weight: 700; }
+.u-minuty .en { font-size: 13pt; }
+.u-adres { font-size: 19pt; font-weight: 700; margin-top: 2mm; }
+.u-wskazowka { font-size: 14pt; margin-top: 1mm; }
+
+/* mapa wypełnia wolne miejsce */
+.u-mapa {
+  flex: 1;
+  min-height: 60mm;
+  border: 0.6mm solid var(--linia);
+  background: #eee;
+}
+.pin { position: relative; }
+.pin .znak {
+  position: absolute; left: 0; top: 0; transform: translate(-50%, -50%);
+  display: grid; place-items: center;
+  font: 700 15pt "Atkinson Hyperlegible", Verdana, sans-serif;
+}
+.pin-tu .znak { width: 26px; height: 26px; border-radius: 50%; background: #111; border: 5px solid #fff; box-shadow: 0 0 0 3px #111; }
+.pin-wc .znak { width: 48px; height: 38px; border-radius: 6px; background: #fff; color: #111; border: 4px solid #111; }
+.pin .podpis {
+  position: absolute; left: 30px; top: 0; transform: translateY(-50%);
+  white-space: nowrap; background: #fff; border: 2px solid #111; border-radius: 4px; padding: 2px 7px;
+  font: 700 13pt/1.1 "Atkinson Hyperlegible", Verdana, sans-serif; color: #111;
+}
+.pin-wc .podpis { left: 32px; }
+.pin.lewa .podpis { left: auto; right: 30px; text-align: right; }
+.pin-wc.lewa .podpis { left: auto; right: 32px; }
+.pin .podpis i { display: block; font-style: normal; font-weight: 400; font-size: 9pt; color: #444; }
+
+/* cechy toalety: zawsze znacznik + słowo, nie sam kolor */
+.u-cechy { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 2mm 6mm; }
+.u-cechy li { display: flex; align-items: flex-start; gap: 2.5mm; font-size: 15pt; font-weight: 700; }
+.u-cechy .znacznik {
+  flex: none; width: 8mm; height: 8mm; display: grid; place-items: center;
+  border: 0.6mm solid var(--linia); border-radius: 1.5mm; font-size: 14pt;
+}
+.u-cechy .nie .znacznik { background: #111; color: #fff; }
+.u-cechy .en { font-size: 10pt; }
+.u-godziny { font-size: 14pt; }
+.u-godziny .en { display: inline; margin-left: 2mm; }
+
+/* dół: alternatywa + kod QR */
+.u-dol {
+  display: grid; grid-template-columns: 1fr 42mm; gap: 6mm; align-items: center;
+  border-top: 0.6mm solid var(--linia); padding-top: 3mm;
+}
+.u-alt .etykieta { font-size: 13pt; font-weight: 700; }
+.u-alt .etykieta .en { font-size: 10pt; }
+.u-alt-odl { font-size: 20pt; font-weight: 700; margin-top: 1.5mm; }
+.u-alt-adres { font-size: 14pt; }
+.u-alt-godziny { font-size: 12pt; color: var(--tusz-2); }
+.u-qr { text-align: center; }
+.u-qr .kod { width: 40mm; height: 40mm; margin: 0 auto; }
+.u-qr .kod img, .u-qr .kod canvas { width: 100% !important; height: auto !important; }
+.u-qr p { font-size: 13pt; font-weight: 700; margin-top: 1mm; }
+.u-qr .en { font-size: 10pt; }
+
+.u-stopka {
+  display: flex; justify-content: space-between; gap: 4mm; flex-wrap: wrap;
+  font-size: 9pt; color: var(--tusz-2); border-top: 0.3mm solid #999; padding-top: 1.5mm;
+}
+.u-stopka strong { color: var(--tusz); font-size: 10pt; }
+
+/* ekran: podgląd kartki */
+@media screen {
+  .ulotka { margin: 24px auto; box-shadow: 0 2px 16px rgba(0, 0, 0, 0.25); }
+}
+@media screen and (max-width: 840px) {
+  .ulotka { zoom: 0.45; }
+}
+@media print {
+  body { margin: 0; background: #fff; }
+  .ui { display: none !important; }
+  .ulotka { margin: 0; }
+}
