@@ -108,6 +108,22 @@ def rozdziel_uwagi(uwagi: str | None) -> tuple[str | None, str | None]:
     return None, tekst
 
 
+RZYMSKIE = ("I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII")
+
+
+def sezon_krotko(sezon: str | None) -> str | None:
+    """Okres na kafelek ulotki: 'od 1 maja do 30 września w weekendy' → '1.05–30.09, weekendy'."""
+    if not sezon:
+        return None
+    s = sezon.lower().replace("całodobowo", "")
+    for nr, miesiac in enumerate(MIESIACE_DOPELNIACZ, start=1):
+        s = re.sub(rf"(\d{{1,2}}) {miesiac}", rf"\1.{nr:02d}", s)
+        s = s.replace(miesiac, RZYMSKIE[nr - 1])
+    s = re.sub(r"od (\S+) do (\S+)", r"\1–\2", s)
+    s = re.sub(r"\s+w\s+", ", ", s)
+    return " ".join(s.split())
+
+
 def wczytaj_toalety() -> list[dict]:
     dane = json.loads((RAW_DIR / "toalety.json").read_text(encoding="utf-8"))
     toalety = []
@@ -128,6 +144,7 @@ def wczytaj_toalety() -> list[dict]:
             "niedziela": dni[6],
             "godziny": skrot_godzin(dni),
             "sezon": sezon,
+            "sezon_krotko": sezon_krotko(sezon),
             "wskazowka": wskazowka,
             "warianty": [nazwa for nazwa, f in WARIANTY.items() if f(p)],
         })
