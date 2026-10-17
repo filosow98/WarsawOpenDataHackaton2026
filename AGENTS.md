@@ -95,6 +95,7 @@ src/katalog.py         przeglądarka katalogu 23 zbiorów
 src/pobierz_male.py    pobranie 18 małych zbiorów w całości
 src/pobierz_rcn.py     przykład: Rejestr Cen Nieruchomości
 src/zbieraj_gps.py     zbieracz historii GPS
+src/luka_toaletowa.py  ile przystanków nie ma toalety w zasięgu (pomysł 13)
 docs/05-zbiory.md      katalog zbiorów + przykłady wywołań
 docs/08-opis-zbiorow.md  co zawiera każdy zbiór (pola, rozmiar)
 docs/09-kryteria-oceny.md  kryteria jury

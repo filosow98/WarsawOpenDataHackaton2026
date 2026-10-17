@@ -178,9 +178,36 @@ pokazania.
 4. Szablon tabliczki (HTML → PDF) i generator dla wszystkich słupków.
 5. Wizualizacja tabliczki na zdjęciu przystanku, slajdy.
 
+## Wyniki wstępne (17.10, wieczór)
+
+Skrypt: `src/luka_toaletowa.py` (parametr `--promien`). Odległość w linii
+prostej, 5127 słupków w prostokącie wokół toalet (przybliżenie granic
+Warszawy). Po chodnikach będzie gorzej.
+
+„Dla seniora” = bezpłatna, dostępna dla osób z niepełnosprawnością, nie toi-toi.
+
+| Wariant toalety | Ile toalet | Słupki bez toalety w 500 m | Mediana odległości |
+|---|---|---|---|
+| dowolna | 695 | 44% | 421 m |
+| dla seniora | 291 | **59%** | 630 m |
+| dla seniora, czynna w niedzielę | 137 | 74% | 984 m |
+
+- 213 z 695 toalet to przenośne (toi-toi). Co najmniej 84 toalety są
+  sezonowe (m.in. „do 31 października”), ale prawie wszystkie to toi-toie —
+  w wariancie „dla seniora” sezonowość prawie nic nie zmienia.
+- Zbiór **nie mówi, jak się płaci** — jest tylko `platnosc` 0/1.
+
+**Konkurencja:** w lutym 2026 miasto (Centrum Komunikacji Społecznej)
+powiesiło 350 tabliczek „Mapa WC” z kodem QR, głównie na latarniach
+w najruchliwszych miejscach
+([Spider's Web](https://spidersweb.pl/2026/02/warszawa-kod-qr-tabliczki-toalety.html)).
+Pokazują tylko QR — bez kierunku i odległości, nie na przystankach. To
+dokładnie wykluczenie cyfrowe, które krytykuje Głos Seniora; nasza tabliczka
+musi działać bez telefonu.
+
 ## Otwarte pytania
 
-- Czy zbiór toalet mówi, jak się płaci (karta / moneta)?
+- ~~Czy zbiór toalet mówi, jak się płaci (karta / moneta)?~~ Nie.
 - Skąd liczba 20% w artykule Głosu Seniora?
 - Kto w mieście odpowiada za informację na przystankach (ZTM) i za toalety
   (różni zarządcy) — do kogo kierujemy rekomendację?
