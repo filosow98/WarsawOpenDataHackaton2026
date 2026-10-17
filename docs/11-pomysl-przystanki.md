@@ -56,8 +56,8 @@ argument w budżecie obywatelskim).
   przystanków. To mocny punkt w innowacyjności, która waży 25%.
 - **Bardzo dobrze się prezentuje.** Mapa z cieniami robi wrażenie, a to
   kryterium prezentacji (20%).
-- **Rozwiązuje bieżący problem miasta** i łączy się z naszym problemem nr 2
-  z [10-problemy.md](10-problemy.md): tramwaje bez klimatyzacji.
+- **Rozwiązuje bieżący problem miasta:** upał na przystankach, który
+  dotyczy każdego pasażera, niezależnie od pojazdu.
 - **Jest konkretny moment decyzji** (szczegóły w sekcji 3): miasto w ciągu
   1–2 lat przygotuje nowy przetarg na wiaty.
 
@@ -101,11 +101,13 @@ argument w budżecie obywatelskim).
    i nagrzewają się w upale. Na pojedynczych wiatach jest już rozchodnik
    (sedum). W Krakowie zmierzono do 5°C różnicy między wiatą z zielonym
    dachem a zwykłą. Pytanie „jaki dach” jest równie ważne jak „czy wiata”.
-10. **Liczby taboru wymagają sprawdzenia.** W naszych danych jest 797
-    tramwajów, a według stanu z lutego 2025 tabor to ok. 600 pojazdów (434
-    niskopodłogowe + 165 wysokopodłogowych). Portal liczy pewnie osobno każdy
-    wagon składu 105Na (jeżdżą parami). Wtedy „44% bez klimy” to udział
-    wagonów, nie kursów.
+10. **Tabor bez klimatyzacji — wykluczony z projektu (decyzja 17.10).**
+    Udział tramwajów bez klimy spada z każdą dostawą nowych wozów, więc
+    argument słabnie z roku na rok. Przy okazji wyszło, że liczba „353 z 797
+    (44%)” była błędna: 797 to wagony, a nie składy. 301 z nich to Konstal
+    105N, które jeżdżą parami, a ok. 30 to tramwaje muzealne. Realnie bez
+    klimy jeździ ok. 1/3 składów (ok. 195 z ok. 610), a najnowszy wóz
+    w danych jest z 2023 r.
 11. **Pogoda ZOM to migawka z października.** Nie wnosi nic do analizy,
     a jury zobaczy, że jest dekoracją. Nie liczymy jej jako „wykorzystanych
     danych”.
@@ -118,7 +120,7 @@ Kryteria są te same we wszystkich wyzwaniach.
 |---|---|---|---|---|---|---|
 | Przystanki — pierwotna (cień + PV) | 3 | 4 | 2,5 | 2,5 | 5 | ≈3,5 |
 | Przystanki — wzór „słońce × kursy × tabor” | 3,5 | 4 | 3 | 3 | 4,5 | ≈3,65 |
-| **Przystanki — rama przetargowa (rekomendowana)** | 4 | 4 | 3,5 | 4,5 | 4,5 | **≈4,1** |
+| **Przystanki — rama przetargowa (rekomendowana)** | 3,5 | 4 | 3,5 | 4,5 | 4,5 | **≈4,0** |
 | Dla porównania: mieszkania (RCN) | 4,5 | 2,5 | 4,5 | 5 | 3,5 | ≈3,9 |
 
 Mieszkania przegrały przede wszystkim na innowacyjności. Ceny transakcyjne
@@ -126,13 +128,17 @@ pokazują już rcn-szukaj miasta, Geoportal, Sonarhome i Otodom. Przewaga
 przystanków jest jednak niewielka. Rozstrzygnie to, czy TOP 20 pokaże coś
 nieoczywistego (patrz testy w sekcji 6).
 
+**Najsłabsze kryterium to „dane Warszawy”.** Po wykluczeniu taboru z danych
+miasta pracują przystanki i linie na przystankach. Budżet obywatelski
+(warstwa „głos mieszkańców” w sekcji 3) może podnieść tę ocenę do ok. 4.
+
 ---
 
 ## 3. Wersja rekomendowana: rama przetargowa
 
 ### Jedno zdanie
 
-**Za rok miasto zdecyduje, jakie wiaty i gdzie postawi w kolejnej umowie.
+**Za rok miasto zdecyduje, jakie wiaty i gdzie postawi na kolejną dekadę.
 Pokazujemy, które przystanki stoją w pełnym słońcu, czego potrzebują i od
 których zacząć.**
 
@@ -141,9 +147,7 @@ których zacząć.**
 Koncesja AMS z października 2025 obejmuje utrzymanie 1640 wiat. Zawarto ją
 **tylko na rok**, z opcją przedłużenia o 3 × 6 miesięcy. Poprzednia umowa
 (2013) trwała prawie 9 lat. Miasto (ZTM) musi więc w ciągu 1–2 lat
-przygotować nowy przetarg: gdzie stoją wiaty i jakie mają dachy. Na jaki
-okres zostanie zawarta kolejna umowa, nie wiemy — nie zakładamy, że znów na
-ok. 9 lat.
+przygotować nowy, długi przetarg: gdzie stoją wiaty i jakie mają dachy.
 Nasz wynik to gotowy wkład do opisu przedmiotu zamówienia.
 
 To odwraca argument z pierwotnej krytyki. Koncesja nie przekreśla pomysłu,
@@ -153,10 +157,11 @@ tylko daje mu konkretnego odbiorcę, dokument i termin.
 
 | Wcześniej | Teraz |
 |---|---|
-| Oś: cień + PV po równo | **Oś: cień i upał.** PV to najwyżej jedno zdanie |
+| Oś: cień + PV po równo | **Oś: upał na przystanku.** PV to moduł opcjonalny (dach z panelem jako wariant dachu nieprzezroczystego) |
 | Jeden ranking „priorytet” | **Klasa interwencji** dla każdego przystanku + kolejność w klasie |
-| Mnożnik za liczbę kursów | **Punkty za węzeł przesiadkowy i wrażliwe miejsca** w pobliżu |
-| Tabor bez klimy jako mnożnik | **Tabor jako osobna warstwa mapy** („łańcuch upału w podróży”) |
+| Mnożnik za liczbę kursów | **Kolejność: godziny słońca**, przy remisie liczba linii |
+| Tabor bez klimy jako mnożnik | **Wykluczony** — udział wozów bez klimy spada z każdym rokiem |
+| Tylko dane o przystankach | _propozycja, do decyzji:_ + **budżet obywatelski** |
 | „Gdzie postawić wiatę” | „Gdzie wiata, gdzie inny dach, gdzie drzewo”, z zastrzeżeniem, że miejsce trzeba sprawdzić w terenie |
 | Dla kogo: firmy PV | Dla kogo: ZTM (przetarg), Zarząd Zieleni, AMS, mieszkańcy |
 
@@ -167,32 +172,56 @@ Każdy zespół przystankowy dostaje jedną klasę:
 | Klasa | Sytuacja | Rekomendacja | Kto decyduje |
 |---|---|---|---|
 | **A** | Pełne słońce, brak wiaty | drzewo albo wiata (do sprawdzenia, czy jest miejsce) | Zarząd Zieleni, nowy przetarg na wiaty |
-| **B** | Pełne słońce, wiata z pleksi | dach nieprzezroczysty albo zielony | specyfikacja nowego przetargu, AMS |
+| **B** | Pełne słońce, wiata z pleksi | dach nieprzezroczysty: zielony albo z panelem PV | specyfikacja nowego przetargu, AMS |
 | **C** | Cień od budynków | nic nie trzeba | — |
 
 „Pełne słońce” = co najmniej X godzin bezpośredniego słońca latem w godz.
 12–18. Próg X dobieramy po pierwszym przebiegu.
 
-### Kolejność w klasie (punkty)
+### Kolejność w klasie
 
-Prosty system, który da się wytłumaczyć jury w 20 sekund:
+Najprostsza reguła, którą da się wytłumaczyć jury w 20 sekund:
 
-```
-punkty = węzeł      (1–3 pkt: liczba linii na zespole)
-       + wrażliwi   (+1: przychodnia, szpital lub dom seniora w promieniu 300 m)
-       + tabor      (+1: na liniach przystanku przeważają tramwaje bez klimy)
-```
+1. **Więcej godzin słońca latem → wyżej.**
+2. Przy podobnym nasłonecznieniu wyżej jest zespół z większą liczbą linii
+   (ważniejszy węzeł).
 
 Nie mnożymy przez liczbę kursów (patrz punkt 7 krytyki). Liczba linii mówi,
 jak ważny jest węzeł, i nie udaje liczby pasażerów.
 
-### Warstwa „łańcuch upału”
+### Moduł opcjonalny: panele PV
 
-Osobna warstwa mapy: przystanki w pełnym słońcu obsługiwane głównie przez
-tramwaje bez klimatyzacji. Najpierw czekasz w słońcu, potem jedziesz
-w nagrzanym wagonie. Problem jest realny w najbliższych latach, zanim
-wymiana taboru się skończy. Pokazujemy go jako kontekst dla Tramwajów
-Warszawskich, a nie jako główny wynik.
+Robimy go dopiero wtedy, gdy rdzeń (cień latem, klasy A/B/C) działa.
+
+- **Co liczymy:** nasłonecznienie w skali roku (np. jeden dzień z każdego
+  miesiąca, co godzinę) tą samą symulacją cienia. Uzysk z dachu wiaty
+  szacujemy w `pvlib`.
+- **Co pokazujemy:** przystanki klasy A i B, na których dach z panelem ma
+  sens, czyli dużo słońca w całym roku, a nie tylko latem.
+- **Jak o tym mówimy:** panel nie jest inwestycją energetyczną (dach wiaty
+  to ok. 1 kWp, patrz punkt 3 krytyki). Jest wariantem nieprzezroczystego
+  dachu, który daje cień i może zasilać własne oświetlenie wiaty. Pasuje
+  jako zapis w specyfikacji przetargu: „na przystankach z listy dach
+  nieprzezroczysty, z panelem tam, gdzie roczne nasłonecznienie > Y”.
+- **Konflikt do rozstrzygnięcia w specyfikacji:** dach zielony i dach
+  z panelem zajmują to samo miejsce. Mapa może podpowiedzieć, gdzie który
+  wariant ma więcej sensu.
+
+### Propozycja, do decyzji: warstwa „głos mieszkańców” (budżet obywatelski)
+
+_Nieomówione z drużyną. Cel: podnieść kryterium „dane Warszawy”._
+
+Projekty budżetu obywatelskiego mają punkty na mapie i kategorie (np.
+zieleń). Szukamy projektów o zieleni, drzewach i wiatach w pobliżu
+przystanków. Daje to dwie rzeczy:
+
+- **dowód potrzeby:** „przy N przystankach z naszej listy mieszkańcy sami
+  zgłaszali zieleń lub wiatę”;
+- **kontrolę wyniku:** przystanek, przy którym projekt zrealizowano, może
+  już mieć cień, którego nie widać w danych.
+
+Do sprawdzenia: ile projektów da się dopasować do przystanków (opis miejsca
+bywa ogólny, a część projektów jest ogólnomiejska).
 
 ### Hasło na prezentację
 
@@ -204,8 +233,8 @@ miasto rozpisze przetarg na wiaty. Oto lista, od której warto zacząć.”
 
 - **ZTM:** wkład do specyfikacji nowego przetargu na wiaty (lokalizacje, typ dachu).
 - **Zarząd Zieleni:** przystanki klasy A, przy których drzewo zastąpi wiatę.
-- **AMS** (operator wiat): lista wiat do wymiany dachu z uzasadnieniem.
-- **Tramwaje Warszawskie:** warstwa „łańcuch upału”.
+- **AMS** (operator wiat): lista wiat do wymiany dachu z uzasadnieniem;
+  opcjonalnie: gdzie dach z panelem PV ma sens.
 - **Mieszkańcy:** gotowy argument do wniosku w budżecie obywatelskim (zieleń to
   124 projekty w edycji 2025, zielone dachy wiat były już finansowane z BO).
 
@@ -218,32 +247,43 @@ miasto rozpisze przetarg na wiaty. Oto lista, od której warto zacząć.”
 | Zbiór | Endpoint | Co daje | Stan |
 |---|---|---|---|
 | Przystanki | `get_ztm_przystanki_komunikacji_miejskiej` | 6988 słupków / 2935 zespołów, WGS84 | ✅ `data/raw/male/przystanki.json` |
-| Linie na przystanku | `get_ztm_lista_linii_na_przystanku` | linie na słupku → punkty za węzeł | ⚠️ 1 zapytanie = 1 słupek (~7000 zapytań, puścić w tle) |
+| Linie na przystanku | `get_ztm_lista_linii_na_przystanku` | linie na słupku → ważność węzła (przy remisach) | ⚠️ 1 zapytanie = 1 słupek (~7000 zapytań, puścić w tle) |
 | Odjazdy | `get_ztm_odjazdy_linii_z_przystanku` | rozkład, `line` obowiązkowy | ⚠️ tylko dla wybranych przystanków (przykłady na slajd) |
-| Pojazdy (tabor) | `get_ztm_pojazdy` | `numerTaborowy` → model → `klimatyzacja`, `podloga` | ✅ `data/raw/male/pojazdy_transportu_publicznego.json` |
-| GPS pojazdów | `get_ztm_lokalizacja_pojazdow` | które wozy jeżdżą na jakich liniach | ⚠️ bez historii, trzeba zbierać (`src/zbieraj_gps.py`) |
+| Budżet obywatelski (propozycja) | (patrz [08-opis-zbiorow.md](08-opis-zbiorow.md)) | projekty z punktami na mapie i kategoriami → warstwa „głos mieszkańców” | ✅ edycja 2025: 228 zrealizowanych + 61 w realizacji |
 | Pogoda ZOM | `get_zom_pogoda` | temperatura powietrza i nawierzchni, 16 stacji | ⚠️ tylko migawka z października — nie używamy w analizie |
 
-Liczby z taboru (do weryfikacji, patrz punkt 10 krytyki): **353 z 797
-tramwajów bez klimatyzacji**, 363 sprzed 2006 r. Autobusy są klimatyzowane
-prawie wszystkie (1819 z 1839), więc warstwa taboru dotyczy praktycznie
-tylko tramwajów. Zanim liczba trafi na slajd, sprawdzamy, czy 797 to
-pojazdy, czy wagony.
-
-**GPS → tabor na linii:** migawki GPS zbierane co 30–60 s przez kilka godzin
-pokażą, jakie wozy (z klimą czy bez) jeżdżą na każdej linii tramwajowej.
-Łączymy to z listą linii na przystanku.
+Taboru (`get_ztm_pojazdy`) i GPS nie używamy — patrz punkt 10 krytyki.
 
 ### Spoza portalu
 
 | Dane | Źródło | Uwagi |
 |---|---|---|
 | Budynki + wysokość | OSM (`building:levels`, `height`) | dobre pokrycie w centrum, dziury na obrzeżach |
-| Budynki 3D (opcja) | GUGiK, modele LoD1/LoD2 (CityGML) | dokładne, ale ciężkie w obróbce — raczej nie w 22 h |
+| Budynki 3D (opcja) | GUGiK, modele LoD1/LoD2 (CityGML) | dokładne; linki niżej (LoD1 2024: 58 MB, LoD2: 116 MB) |
 | Wiaty | OSM: `shelter=yes` na przystankach | częściowe; zapytać mentorów ZTM o pełną listę — **kluczowe dla klas A/B** |
+
 | Wrażliwe miejsca | OSM: `amenity=clinic`, `hospital`, `social_facility` (seniorzy) | do punktów „wrażliwi” |
-| Drzewa | OSM `natural=tree` (rzadkie) / NDVI z Sentinel-2 | zastępstwo dla braku inwentaryzacji miejskiej |
+| Drzewa | **GUGiK, modele drzew LoD1 2023 (CityGML)**, 1,93 mln drzew | pełne pokrycie Warszawy, ale plik ma **8,6 GB** — linki niżej |
 | Pozycja słońca | `pvlib` albo `pysolar` | standard |
+
+**Modele 3D z GUGiK dla Warszawy (powiat, TERYT 1465), sprawdzone 17.10.2026:**
+
+| Dane | Bezpośredni link | Rozmiar | Obiektów |
+|---|---|---|---|
+| Budynki LoD1 2024 | `https://opendata.geoportal.gov.pl/InneDane/Budynki3D/LOD1/2024/14/1465.zip` | 58 MB | 153 109 |
+| Budynki LoD2 (stan 2017/18) | `https://opendata.geoportal.gov.pl/InneDane/Budynki3D/LOD2/1465_gml.zip` | 116 MB | 139 279 |
+| Drzewa LoD1 2023 | `https://opendata.geoportal.gov.pl/InneDane/Drzewa3D/LOD1/2023/14/1465.zip` | **8,6 GB** | 1 933 646 |
+
+- Linki pochodzą z `GetFeatureInfo` usług WMS
+  `https://mapy.geoportal.gov.pl/wss/service/PZGIK/FOTO/WMS/ModeleBudynkow3D`
+  i `.../ModeleDrzew3D`. Dla innego powiatu zmień TERYT w ścieżce.
+- Serwer **nie obsługuje pobierania częściowego** (`Range` → 200), więc
+  przerwanego pobierania nie da się wznowić. Pliku drzew nie pobieraj przez Wi-Fi
+  na hackatonie.
+- Publicznego WFS nie ma (401), więc wycinka obszaru nie da się pobrać. Jest tylko cały powiat.
+- Format: CityGML 2.0. Układ współrzędnych sprawdź w atrybucie `srsName` po
+  pobraniu (najpewniej PL-1992, EPSG:2180, ale jeszcze nie zweryfikowane).
+  LoD1 to bryła z wysokością, co wystarcza do liczenia cienia.
 
 ---
 
@@ -259,9 +299,13 @@ pokażą, jakie wozy (z klimą czy bez) jeżdżą na każdej linii tramwajowej.
    budynek. Do wyszukiwania budynków użyj `shapely` + `STRtree`. Skala jest
    mała (2935 punktów × ~14 chwil).
 5. Zapisz godziny słońca dla każdego przystanku. Dołącz wiaty (OSM lub lista
-   z ZTM), linie, wrażliwe miejsca i tabor. Przypisz klasę A/B/C i punkty.
-6. Mapa: `folium` (doinstalować) z warstwami „słońce”, „klasa interwencji”
-   i „łańcuch upału” oraz tabele TOP 20 dla klas A i B.
+   z ZTM) i linie. Przypisz klasę A/B/C i kolejność.
+6. Mapa: `folium` (doinstalować) z warstwami „słońce” i „klasa interwencji”
+   oraz tabele TOP 20 dla klas A i B.
+7. _Opcjonalnie:_ roczne nasłonecznienie i uzysk PV (`pvlib`) → warstwa
+   „dach z panelem”.
+8. _Propozycja:_ dopasowanie projektów budżetu obywatelskiego (zieleń, wiaty)
+   do przystanków w promieniu ok. 200 m.
 
 **Gotowe biblioteki do sprawdzenia:** `pybdshadow` (cienie budynków z OSM),
 `pvlib`.
@@ -271,7 +315,7 @@ pokażą, jakie wozy (z klimą czy bez) jeżdżą na każdej linii tramwajowej.
 - Nasłonecznienie przybliżamy prościej: szerokość ulicy i średnia wysokość
   zabudowy w promieniu 30 m oraz kierunek ulicy względem południa.
 - Albo jeszcze prościej: brak budynków w promieniu X m oznacza „pełne słońce”.
-- Reszta (klasy, punkty, tabor) działa bez zmian. To nadal pełny projekt.
+- Reszta (klasy, kolejność) działa bez zmian. To nadal pełny projekt.
 
 ---
 
@@ -279,12 +323,11 @@ pokażą, jakie wozy (z klimą czy bez) jeżdżą na każdej linii tramwajowej.
 
 | Kiedy | Co |
 |---|---|
-| Od razu | Uruchomić zbieranie GPS w tle (`src/zbieraj_gps.py`). Historii nie da się pobrać wstecz |
 | Od razu | Puścić w tle pobieranie linii na przystankach (~7000 zapytań) |
 | Pierwsze 2 h | **Testy „kontynuować czy zmieniać”** (niżej) |
 | Sobota rano | Budynki z OSM, pozycja słońca, pierwszy wynik dla Śródmieścia |
 | Sobota do 14:00 | **Punkt decyzji:** symulacja działa → cała Warszawa; nie działa → plan B |
-| Sobota popołudnie | GPS → tabor → klimatyzacja; wiaty, wrażliwe miejsca, klasy A/B/C |
+| Sobota popołudnie | Wiaty, klasy A/B/C; jeśli zostanie czas: moduł PV |
 | Sobota wieczór | Punkty, mapa, TOP 20 dla klas A i B |
 | Niedziela rano | Prezentacja, uczciwe ograniczenia, demo. **Oddanie 11:00** |
 
@@ -299,7 +342,6 @@ pokażą, jakie wozy (z klimą czy bez) jeżdżą na każdej linii tramwajowej.
 3. **Zgrubny przebieg dla Śródmieścia:** jeśli TOP 20 to same oczywiste
    miejsca (duże ronda, place), szukamy wniosku w skali miasta, np. „X%
    węzłów przesiadkowych nie ma żadnego cienia”.
-4. **Liczba tramwajów:** wyjaśnić, czy 797 to pojazdy, czy wagony.
 
 ---
 
@@ -313,10 +355,6 @@ pokażą, jakie wozy (z klimą czy bez) jeżdżą na każdej linii tramwajowej.
   podziemne zostają do weryfikacji w terenie. Mówimy to wprost, zanim zapyta jury.
 - **Liczba linii to nie pasażerowie:** traktujemy ją jako miarę ważności
   węzła, nie jako obciążenie.
-- **GPS tylko z weekendu:** rozkład weekendowy różni się od roboczego.
-  Do udziału wozów bez klimy na linii wystarczy.
-- **Tabor się zmienia:** wymiana tramwajów trwa, więc warstwa „łańcuch upału”
-  dotyczy najbliższych lat, nie dekady.
 - **Październik:** w Warszawie nie ma teraz upału. Symulujemy lato (geometria
   słońca); danych pogodowych z października nie używamy.
 
@@ -329,10 +367,10 @@ pokażą, jakie wozy (z klimą czy bez) jeżdżą na każdej linii tramwajowej.
 - [ ] Czy `pybdshadow` działa na naszym Pythonie / Windows?
 - [ ] Jakie pokrycie wysokościami budynków ma OSM poza Śródmieściem?
 - [ ] Ile przystanków ma w OSM znacznik `shelter`?
-- [ ] Czy 797 tramwajów w `get_ztm_pojazdy` to pojazdy, czy wagony?
+- [ ] Ile projektów budżetu obywatelskiego da się dopasować do przystanków?
 - [x] Które wyzwanie: Warszawa 2076 (upały, starzenie się) czy Twój ruch? → **Twój ruch**
-- [ ] Łączymy z problemem nr 4 (tramwaje niskopodłogowe, `podloga`), czy
-  zostajemy przy samym upale?
+- [x] Łączymy z problemem nr 4 (tramwaje niskopodłogowe, `podloga`), czy
+  zostajemy przy samym upale? → **sam upał na przystankach**, tabor wykluczony
 
 ---
 
