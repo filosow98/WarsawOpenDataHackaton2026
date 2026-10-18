@@ -61,8 +61,8 @@
 
       <h2>Zasięg</h2>
       <div class="zasieg">
-        <input type="range" id="zasieg" min="200" max="1500" step="50" value="500" aria-label="Zasięg w metrach">
-        <strong id="zasieg-m">500 m</strong>
+        <input type="range" id="zasieg" min="180" max="1800" step="60" value="600" aria-label="Zasięg w metrach pieszo">
+        <strong id="zasieg-m">600 m</strong>
       </div>
       <p class="opis" id="zasieg-opis"></p>
 
@@ -86,7 +86,7 @@
       <ul class="slupki" id="dzielnice"></ul>
 
       <p class="opis" style="margin-top:16px">
-        Odległość w linii prostej, więc rzeczywista luka jest większa. Dane: dane.um.warszawa.pl
+        Odległość pieszo po chodnikach (OpenStreetMap, OSRM), jak na ulotkach. Dane: dane.um.warszawa.pl
         (przystanki ZTM, toalety: kwiecień 2026). Granice dzielnic: OSM. Metoda: docs/14.
       </p>
     </aside>
@@ -97,19 +97,21 @@
   <script>
     // Mapa tylko wyświetla: odległości liczy src/ulotki_dane.py (app/dane/mapa.json).
     const WARIANTY = {
-      dowolna: ["Dowolna", "każda toaleta z miejskiego zbioru"],
-      bezplatna: ["Bezpłatna", ""],
-      senior: ["Dla seniora", "bezpłatna, dostępna dla wózków, nie kabina przenośna"],
-      senior_niedziela: ["Dla seniora, czynna w niedzielę", ""],
+      // [etykieta, opis, „słupków nie ma ___ w zasięgu”]
+      wszystkie: ["Wszystkie", "każda toaleta z miejskiego zbioru", "żadnej toalety"],
+      bezplatna: ["Bezpłatna", "", "bezpłatnej toalety"],
+      dostepna: ["Dla osób z niepełnosprawnością", "dostępna dla wózków", "toalety dostępnej dla wózków"],
+      niedziela: ["Czynna w niedzielę", "każda toaleta czynna w niedzielę", "toalety czynnej w niedzielę"],
     };
     // Blisko → zielony, daleko → czerwony. Kolory po obu stronach progu zasięgu
     // różnią się też jasnością (czytelne przy daltonizmie), a słupki poza
     // zasięgiem są większe — kolor nie jest jedyną informacją.
     const KOLORY = ["#00703c", "#9fd36b", "#d9472c", "#8b0a1f"];
     const TOALETA = "#2a78d6";
-    const OBJAZD = 1.3, TEMPO_SENIORA = 1.0; // jak w ulotki_dane.py
+    const TEMPO_SENIORA = 1.0; // m/s, jak w ulotki_dane.py
+    const minuty = (m) => Math.max(1, Math.ceil(m / TEMPO_SENIORA / 60));
 
-    const stan = { wariant: 2, zasieg: 500, dzielnica: "", tylkoLuki: false, toalety: true };
+    const stan = { wariant: 0, zasieg: 600, dzielnica: "", tylkoLuki: false, toalety: true };
     const fmt = (n) => n.toLocaleString("pl-PL");
     const metry = (m) => (m >= 1000 ? (m / 1000).toFixed(1).replace(".", ",") + " km" : m + " m");
 
@@ -173,7 +175,7 @@
         const w = stan.wariant, R = stan.zasieg;
         document.getElementById("zasieg-m").textContent = R + " m";
         document.getElementById("zasieg-opis").textContent =
-          "w linii prostej; pieszo ok. " + Math.ceil((R * OBJAZD) / TEMPO_SENIORA / 60) + " min tempem seniora";
+          "pieszo, ok. " + minuty(R) + " min tempem seniora";
 
         // kafel z liczbą
         const obszar = slupki.filter((s) => !stan.dzielnica || s.dzielnica === stan.dzielnica);
@@ -182,7 +184,7 @@
         document.getElementById("odsetek").textContent = Math.round((100 * luki) / obszar.length) + "%";
         document.getElementById("odsetek-opis").textContent =
           "słupków " + (stan.dzielnica ? "w dzielnicy " + stan.dzielnica + " " : "") +
-          "nie ma toalety „" + WARIANTY[klucze[w]][0].toLowerCase() + "” w zasięgu " + R + " m";
+          "nie ma " + WARIANTY[klucze[w]][2] + " w zasięgu " + R + " m";
         document.getElementById("mediana").textContent =
           fmt(luki) + " z " + fmt(obszar.length) + " słupków · mediana odległości " + metry(odl[Math.floor(odl.length / 2)]);
 
@@ -199,7 +201,7 @@
           L.circleMarker([s.lat, s.lon], {
             radius: promien(klasa(s.d[w]) >= 2 ? 6 : 4.5), color: "#1d1d1b", weight: 1, fillColor: KOLORY[klasa(s.d[w])], fillOpacity: 1,
           })
-            .bindTooltip(s.nazwa + " " + s.id.split("-")[1] + ": " + metry(s.d[w]) + " do toalety")
+            .bindTooltip(s.nazwa + " " + s.id.split("-")[1] + ": " + metry(s.d[w]) + " pieszo do toalety")
             .bindPopup(() => popupSlupka(s, toalety[s.t[w]], s.d[w]))
             .addTo(warstwaSlupkow);
         }
@@ -238,7 +240,7 @@
         const div = document.createElement("div");
         div.innerHTML = "<strong></strong><br><span class='o'></span><br><span class='a'></span><br><span class='g'></span><br><a>Ulotka do druku →</a>";
         div.querySelector("strong").textContent = s.nazwa + " " + s.id.split("-")[1] + " (nr " + s.id + ", " + s.dzielnica + ")";
-        div.querySelector(".o").textContent = "Najbliższa toaleta: " + metry(d) + " w linii prostej";
+        div.querySelector(".o").textContent = "Najbliższa toaleta: " + metry(d) + " pieszo, ok. " + minuty(d) + " min";
         div.querySelector(".a").textContent = t.adres;
         div.querySelector(".g").textContent = (t.platna ? "płatna · " : "bezpłatna · ") + t.godziny + (t.sezon ? " · sezonowa: " + t.sezon : "");
         div.querySelector("a").href = "index.html?id=" + s.id;

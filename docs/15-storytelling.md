@@ -58,12 +58,13 @@ Pierwotne hasła nie mają pokrycia w danych. Jury łatwo to wyłapie.
 
 ### Nasze dane (Warszawa)
 
-Z [13-toalety-przy-przystankach.md](13-toalety-przy-przystankach.md), sekcja „Wyniki wstępne”:
+Z [13-toalety-przy-przystankach.md](13-toalety-przy-przystankach.md), sekcja „Aktualizacja 18.10”
+(odległość pieszo po chodnikach, jak na ulotkach):
 
-- **59%** słupków nie ma w 500 m (ok. 10 min pieszo) toalety bezpłatnej
-  i dostępnej dla osób z niepełnosprawnością.
-- W niedzielę: **74%**.
-- Mediana odległości do takiej toalety: **630 m**.
+- **57%** słupków nie ma w 10 minut pieszo (600 m tempem seniora) toalety
+  bezpłatnej i dostępnej dla osób z niepełnosprawnością.
+- W niedzielę: **73%**.
+- Mediana odległości do takiej toalety: **690 m pieszo** (ok. 12 min).
 
 To jest nasze „co drugi” — z danych miasta, nie z ankiety.
 
@@ -87,8 +88,8 @@ To jest nasze „co drugi” — z danych miasta, nie z ankiety.
 3. **Skutek.** Seniorzy słabiej czują pragnienie, co piąty jest odwodniony.
    Każda fala upałów to +153 zgony osób 60+ w dużych miastach. Odwodnienie
    kończy się na SOR-ze — to koszt dla miasta i NFZ.
-4. **Mapa: luka toaletowa.** Na 59% przystanków senior nie dojdzie w 10
-   minut do bezpłatnej, dostępnej toalety. W niedzielę — na 74%.
+4. **Mapa: luka toaletowa.** Na 57% przystanków senior nie dojdzie w 10
+   minut do bezpłatnej, dostępnej toalety. W niedzielę — na 73%.
 5. **Dlaczego przystanek?** Każda podróż komunikacją zaczyna się i kończy
    na przystanku, a senior jedzie do lekarza autobusem. Na przystanku
    się czeka — jest czas, żeby przeczytać kartkę. Rama na rozkład już

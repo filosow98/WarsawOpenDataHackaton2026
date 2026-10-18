@@ -28,6 +28,7 @@ nr 1 (najprostszy, wszystkie dane już mamy).
   w dni robocze ok. 7–17. W nocy i w weekend sieć prawie znika.
 - **Pomysł:** mapa zasięgu AED z suwakiem godziny + propozycje, gdzie postawić
   szafki zewnętrzne (przystanki, całodobowe toalety).
+  szafki zewnętrzne (przystanki, całodobowe toalety).
 - **Zbiory:** AED, przystanki, toalety (261 całodobowych), otwarte boiska.
 - **Dla kogo:** Biuro Bezpieczeństwa — lista miejsc pod nowe AED.
 - **Do sprawdzenia:** czy „Tak” w `device_availability` na pewno znaczy

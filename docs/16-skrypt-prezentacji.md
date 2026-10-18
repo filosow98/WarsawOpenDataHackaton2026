@@ -125,10 +125,11 @@ Dziękujemy!
 - **Pytania jury, na które warto mieć odpowiedź:**
   - „Skąd ta połowa?” — Royal Society for Public Health, Wielka Brytania,
     2019, ponad 2000 dorosłych.
-  - „Odległość w linii prostej?” — na ulotce nie: odległość i mapa to
-    prawdziwa trasa piesza po chodnikach, a toaleta za torami albo rzeką
-    odpada (zmieniło to toaletę na 19% przystanków). Mapa luk liczy w linii
-    prostej, więc po chodnikach luka byłaby jeszcze większa.
+  - „Odległość w linii prostej?” — nie: i ulotka, i mapa luk liczą
+    prawdziwą trasę pieszą po chodnikach, a toaleta za torami albo rzeką
+    odpada (zmieniło to toaletę na 19% przystanków).
+  - „Skąd 6 na 10?” — 57% słupków nie ma bezpłatnej, dostępnej toalety
+    w 600 m pieszo, czyli w 10 minut tempem seniora. W niedzielę 73%.
   - „Google Maps pokazuje mniej minut?” — Google liczy dla przeciętnego
     dorosłego (ok. 4,5 km/h), my dla seniora (3,6 km/h). Odległość ta sama.
   - „Kto to wydrukuje i powiesi?” — ZTM w ramkach na rozkłady (do

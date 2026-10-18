@@ -102,9 +102,9 @@ Pułapki:
 
 ### Część 1: luka toaletowa (analiza)
 
-Dla każdego przystanku sprawdzamy, czy w zasięgu ok. **500 m** (ok. 10 minut
-pieszo dla seniora: 500 m w linii prostej to ok. 650 m chodnikiem, tempem
-1,0 m/s) jest toaleta, która jest:
+Dla każdego przystanku sprawdzamy, czy w zasięgu **600 m pieszo** po
+chodnikach (10 minut tempem seniora 1,0 m/s; do 18.10 liczyliśmy 500 m
+w linii prostej) jest toaleta, która jest:
 
 - bezpłatna,
 - dostępna dla osób z niepełnosprawnością,
@@ -117,8 +117,8 @@ Jeśli nie ma — przystanek ma **lukę**. Wynik:
 - mapa luk,
 - porównanie dzielnic.
 
-Odległość na mapie luk w linii prostej. Ulotki używają już prawdziwej trasy
-pieszej po chodnikach OSM (18.10, docs/14, sekcja „Trasy piesze”).
+Od 18.10 mapa luk i ulotki liczą odległość tak samo: prawdziwa trasa piesza
+po chodnikach OSM (docs/14, sekcja „Trasy piesze”).
 
 ### Część 2: generator tabliczek (wdrożenie)
 
@@ -194,7 +194,8 @@ Warszawy). Po chodnikach będzie gorzej.
 | dla seniora | 291 | **59%** | 630 m |
 | dla seniora, czynna w niedzielę | 137 | 74% | 984 m |
 
-**Aktualizacja 17.10, wieczór — liczby na slajd bierzemy stąd.** Prostokąt
+**Aktualizacja 17.10, wieczór** (linia prosta — nieaktualne, liczby na
+slajd są niżej, w aktualizacji 18.10). Prostokąt
 łapał też przystanki podmiejskie (daleko od miejskich toalet). Z granicami
 dzielnic (`src/ulotki_dane.py`, mapa luk w `app/mapa.html`) zostaje **4433
 słupki** w Warszawie i luka jest mniejsza:
@@ -209,6 +210,31 @@ słupki** w Warszawie i luka jest mniejsza:
 Najgorzej (dla seniora, 500 m): Wesoła 79%, Wawer 76%, Rembertów 70%,
 Białołęka 68%. Granice dzielnic są uproszczone, więc pojedyncze słupki przy
 granicy mogą trafić do sąsiedniej dzielnicy (np. Dw. Centralny 03 → Wola).
+
+**Aktualizacja 18.10 — odległości piesze, liczby na slajd bierzemy stąd.**
+Mapa luk liczy jak ulotki: trasa piesza po chodnikach OSM (OSRM), próg
+**600 m pieszo** = 10 minut tempem seniora 1,0 m/s. Kategorie toalet
+zmienione tego samego dnia: każda to jedno kryterium. 4433 słupki:
+
+| Kategoria toalety | Ile toalet | Słupki bez toalety w 600 m pieszo | Mediana odległości pieszo |
+|---|---|---|---|
+| wszystkie | 695 | 40% (1780) | 478 m |
+| bezpłatna | 637 | 41% (1809) | 492 m |
+| dla osób z niepełnosprawnością (dostępna dla wózków) | 400 | **51%** (2258) | 613 m |
+| czynna w niedzielę | 438 | **52%** (2311) | 629 m |
+
+Dla porównania, przy 500 m pieszo: 48% / 49% / 60% / 60%.
+
+Najgorzej (600 m pieszo):
+
+- dla osób z niepełnosprawnością: Wesoła 80%, Wawer 79%, Ursus 71%,
+  Rembertów 70%, Bemowo 68%,
+- czynna w niedzielę: Wawer 90%, Wilanów 74%, Bemowo 74%, Białołęka 72%,
+- wszystkie: Wawer 76%, Bemowo 59%, Białołęka 58%, Ursynów 53%.
+
+Dawna kategoria „dla seniora” (bezpłatna + dostępna + nie toi-toi, 291
+toalet) dawała przy 600 m pieszo 57%, a w niedzielę 73% — tych kategorii
+nie ma już na mapie.
 
 - 213 z 695 toalet to przenośne (toi-toi). Co najmniej 84 toalety są
   sezonowe (m.in. „do 31 października”), ale prawie wszystkie to toi-toie —

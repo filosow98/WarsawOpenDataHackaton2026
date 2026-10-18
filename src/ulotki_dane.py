@@ -8,7 +8,7 @@ dzielnic pobiera sam przy pierwszym uruchomieniu do data/raw/dzielnice.geojson.
 
 Wynik w app/dane/:
     ulotki.json   1 rekord = 1 słupek, wzór rekordu jak w docs/14
-    mapa.json     odległości słupek → toaleta w 4 wariantach (mapa luk)
+    mapa.json     odległości piesze słupek → toaleta w 4 wariantach (mapa luk)
     toalety.json  toalety z polami do wyświetlenia
 """
 
@@ -22,7 +22,7 @@ from pathlib import Path
 import requests
 
 import waw_api  # noqa: F401 — ustawia UTF-8 na konsoli (Windows, cp1251)
-from luka_toaletowa import RAW_DIR, czynna_w_niedziele, dla_seniora, odleglosc_m
+from luka_toaletowa import RAW_DIR, czynna_w_niedziele, odleglosc_m
 
 ROOT = Path(__file__).resolve().parent.parent
 APP_DANE = ROOT / "app" / "dane"
@@ -48,13 +48,13 @@ MIESIACE_DOPELNIACZ = (
 # część roku — toaleta działa cały rok.
 CALOROCZNE_ZMIENNE_GODZINY = ("w pozostałym okresie", "styczeń-maj", "listopad - marzec")
 
-# Warianty mapy luk — te same filtry co w luka_toaletowa.py, żeby liczby
-# na mapie zgadzały się z docs/13.
+# Warianty mapy luk (decyzja 18.10: każdy wariant to jedno kryterium,
+# wcześniej „dla seniora” = bezpłatna + dostępna + nie toi-toi).
 WARIANTY = {
-    "dowolna": lambda p: True,
+    "wszystkie": lambda p: True,
     "bezplatna": lambda p: p["platnosc"] == 0,
-    "senior": dla_seniora,
-    "senior_niedziela": lambda p: dla_seniora(p) and czynna_w_niedziele(p),
+    "dostepna": lambda p: p["dostepnosc"] == 1,
+    "niedziela": czynna_w_niedziele,
 }
 
 
@@ -260,13 +260,13 @@ def main() -> None:
     toalety = wczytaj_toalety()
     przystanki = wczytaj_przystanki(wczytaj_dzielnice())
     trasy = wczytaj_trasy()
-    po_wsp = {}
+    po_wsp: dict[str, list[int]] = {}  # "lat,lon" → indeksy toalet (bywa kilka w jednym punkcie)
     for i, t in enumerate(toalety):
-        po_wsp.setdefault(f"{t['lat']},{t['lon']}", i)
+        po_wsp.setdefault(f"{t['lat']},{t['lon']}", []).append(i)
     print(f"Toalet: {len(toalety)}, słupków w granicach Warszawy: {len(przystanki)}")
 
     ulotki, mapa = [], []
-    z_trasa = 0
+    z_trasa = z_mapa_pieszo = 0
     for s in przystanki:
         odl = [odleglosc_m(s["lat"], s["lon"], t["lat"], t["lon"]) for t in toalety]
 
@@ -277,8 +277,10 @@ def main() -> None:
         # Z trasą pieszą główna = najbliższa pieszo, nie w linii prostej
         # (toaleta za torami albo rzeką odpada).
         trasa = trasy.get(s["id"])
-        if trasa and (trasa["lat"], trasa["lon"]) == (s["lat"], s["lon"]) and trasa["cel"] in po_wsp:
-            glowna = po_wsp[trasa["cel"]]
+        if trasa and (trasa["lat"], trasa["lon"]) != (s["lat"], s["lon"]):
+            trasa = None  # słupek przesunięty — trasa nieaktualna
+        if trasa and trasa["cel"] in po_wsp:
+            glowna = po_wsp[trasa["cel"]][0]
             trasa_glownej = {"odl_m": trasa["pieszo"][trasa["cel"]], "ksztalt": trasa["trasa"]}
             z_trasa += 1
         else:
@@ -295,10 +297,28 @@ def main() -> None:
             "alternatywa": alternatywa,
         })
 
-        najblizsze = [najblizsza(lambda t, w=w: w in t["warianty"]) for w in WARIANTY]
+        # Mapa luk liczy jak ulotka: najbliższa pieszo w każdym wariancie,
+        # a bez trasy szacunek linia prosta × objazd.
+        pieszo = [
+            (d, i)
+            for k, d in (trasa["pieszo"].items() if trasa else ())
+            if d is not None and k in po_wsp
+            for i in po_wsp[k]
+        ]
+        najblizsze, odleglosci = [], []
+        for w in WARIANTY:
+            w_wariancie = [(d, i) for d, i in pieszo if w in toalety[i]["warianty"]]
+            if w_wariancie:
+                d, i = min(w_wariancie)
+                z_mapa_pieszo += 1
+            else:
+                i = najblizsza(lambda t, w=w: w in t["warianty"])
+                d = OBJAZD * odl[i]
+            najblizsze.append(i)
+            odleglosci.append(round(d))
         mapa.append({
             **{k: s[k] for k in ("id", "nazwa", "dzielnica", "lat", "lon")},
-            "d": [round(odl[i]) for i in najblizsze],  # linia prosta, m
+            "d": odleglosci,  # m pieszo
             "t": najblizsze,  # indeks w toalety.json
         })
 
@@ -313,6 +333,7 @@ def main() -> None:
     z_alternatywa = sum(u["alternatywa"] is not None for u in ulotki)
     print(f"Zapisano {len(ulotki)} ulotek ({z_alternatywa} z alternatywą, {z_trasa} z trasą pieszą) "
           f"→ {APP_DANE.relative_to(ROOT)}")
+    print(f"Mapa luk: {z_mapa_pieszo} z {len(mapa) * len(WARIANTY)} odległości pieszo, reszta szacunek × {OBJAZD}")
 
 
 if __name__ == "__main__":

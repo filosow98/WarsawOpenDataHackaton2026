@@ -4,14 +4,16 @@ Uruchomienie (z katalogu projektu), potem src/ulotki_dane.py dołącza trasy:
     .venv/Scripts/python.exe src/trasy_piesze.py --dzielnica Ochota
     .venv/Scripts/python.exe src/trasy_piesze.py --wszystkie --serwer http://localhost:5000
 
-Dla każdego słupka bierze KANDYDACI najbliższych toalet w linii prostej,
+Dla każdego słupka bierze KANDYDACI najbliższych toalet w linii prostej
+w każdym wariancie mapy luk (wszystkie, bezpłatne, dostępne, w niedzielę),
 pyta OSRM (profil pieszy) o odległości do wszystkich naraz (/table), wybiera
 najbliższą pieszo i pobiera jej trasę (/route). Dwa zapytania na słupek.
+Odległości do kandydatów z wariantów to dane mapy luk (src/ulotki_dane.py).
 
 Serwer publiczny FOSSGIS ma limit zapytań (HTTP 429): ok. 12 s na słupek,
 więc całe miasto tylko z lokalnym serwerem OSRM w Dockerze (docs/14, krok 8).
 Wyniki trafiają do data/cache/trasy_piesze.json; ponowne uruchomienie liczy
-tylko brakujące.
+tylko brakujące odległości, a trasę pobiera, gdy zmieni się najbliższa toaleta.
 """
 
 from __future__ import annotations
@@ -27,12 +29,12 @@ import requests
 
 import waw_api  # noqa: F401 — UTF-8 na konsoli (Windows, cp1251)
 from luka_toaletowa import odleglosc_m
-from ulotki_dane import wczytaj_dzielnice, wczytaj_przystanki, wczytaj_toalety
+from ulotki_dane import WARIANTY, wczytaj_dzielnice, wczytaj_przystanki, wczytaj_toalety
 
 ROOT = Path(__file__).resolve().parent.parent
 CACHE = ROOT / "data" / "cache" / "trasy_piesze.json"
 OSRM_PUBLICZNY = "https://routing.openstreetmap.de/routed-foot"
-KANDYDACI = 10
+KANDYDACI = 10  # na wariant
 ODSTEP_PUBLICZNY_S = 1.0  # między zapytaniami do serwera publicznego
 UPROSZCZENIE_M = 2.0  # tolerancja upraszczania kształtu trasy
 
@@ -89,32 +91,47 @@ def uprosc(punkty: list[tuple[float, float]], tolerancja_m: float) -> list[tuple
     return [p for p, z in zip(punkty, zostaw) if z]
 
 
-def policz_slupek(s: dict, toalety: list[dict]) -> dict:
-    tu = (s["lat"], s["lon"])
-    kandydaci = sorted(toalety, key=lambda t: odleglosc_m(*tu, t["lat"], t["lon"]))[:KANDYDACI]
-    cele = [(t["lat"], t["lon"]) for t in kandydaci]
+def kandydaci(s: dict, toalety: list[dict]) -> list[str]:
+    """Klucze „lat,lon” KANDYDACI najbliższych toalet w linii prostej, w każdym wariancie."""
+    po_odl = sorted(toalety, key=lambda t: odleglosc_m(s["lat"], s["lon"], t["lat"], t["lon"]))
+    klucze = {}
+    for w in WARIANTY:
+        for t in [t for t in po_odl if w in t["warianty"]][:KANDYDACI]:
+            klucze[f"{t['lat']},{t['lon']}"] = None
+    return list(klucze)
 
-    tabela = osrm("table", [tu, *cele], sources="0", annotations="distance")
-    # OSRM liczy od punktu na najbliższej ścieżce — dojście do niej doliczamy
-    dojscie = [w["distance"] for w in tabela["destinations"]]
-    pieszo = {}
-    for i, (lat, lon) in enumerate(cele, start=1):
-        d = tabela["distances"][0][i]
-        if d is not None:
-            pieszo[f"{lat},{lon}"] = round(d + dojscie[0] + dojscie[i])
-    if not pieszo:
+
+def policz_slupek(s: dict, cele: list[str], stary: dict | None) -> dict:
+    """Odległości piesze do brakujących celów i trasa do najbliższej pieszo.
+    Ze starego wpisu bierze policzone odległości i trasę, jeśli cel się nie zmienił."""
+    tu = (s["lat"], s["lon"])
+    pieszo = dict(stary["pieszo"]) if stary else {}
+    brakujace = [k for k in cele if k not in pieszo]
+    if brakujace:
+        punkty = [tuple(map(float, k.split(","))) for k in brakujace]
+        tabela = osrm("table", [tu, *punkty], sources="0", annotations="distance")
+        # OSRM liczy od punktu na najbliższej ścieżce — dojście do niej doliczamy
+        dojscie = [w["distance"] for w in tabela["destinations"]]
+        for i, k in enumerate(brakujace, start=1):
+            d = tabela["distances"][0][i]
+            pieszo[k] = None if d is None else round(d + dojscie[0] + dojscie[i])
+    osiagalne = {k: d for k, d in pieszo.items() if d is not None}
+    if not osiagalne:
         raise RuntimeError("brak trasy do żadnej toalety")
 
-    cel = min(pieszo, key=pieszo.get)
-    lat, lon = map(float, cel.split(","))
-    trasa = osrm("route", [tu, (lat, lon)], overview="full", geometries="geojson")
-    ksztalt = [(y, x) for x, y in trasa["routes"][0]["geometry"]["coordinates"]]
-    ksztalt = uprosc([tu, *ksztalt, (lat, lon)], UPROSZCZENIE_M)
+    cel = min(osiagalne, key=osiagalne.get)
+    if stary and stary["cel"] == cel:
+        ksztalt = stary["trasa"]
+    else:
+        lat, lon = map(float, cel.split(","))
+        trasa = osrm("route", [tu, (lat, lon)], overview="full", geometries="geojson")
+        punkty = [(y, x) for x, y in trasa["routes"][0]["geometry"]["coordinates"]]
+        ksztalt = [[round(y, 5), round(x, 5)] for y, x in uprosc([tu, *punkty, (lat, lon)], UPROSZCZENIE_M)]
     return {
         "lat": s["lat"], "lon": s["lon"],
-        "pieszo": pieszo,  # "lat,lon" toalety → m pieszo
+        "pieszo": pieszo,  # "lat,lon" toalety → m pieszo (None: OSRM nie znalazł trasy)
         "cel": cel,
-        "trasa": [[round(y, 5), round(x, 5)] for y, x in ksztalt],
+        "trasa": ksztalt,
     }
 
 
@@ -139,8 +156,16 @@ def main() -> None:
         sys.exit(f"Nie ma słupków w dzielnicy „{args.dzielnica}”")
 
     cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {}
-    zrobione = lambda s: s["id"] in cache and (cache[s["id"]]["lat"], cache[s["id"]]["lon"]) == (s["lat"], s["lon"])  # noqa: E731
-    do_zrobienia = [s for s in przystanki if not zrobione(s)]
+
+    def stary_wpis(s: dict) -> dict | None:
+        wpis = cache.get(s["id"])
+        return wpis if wpis and (wpis["lat"], wpis["lon"]) == (s["lat"], s["lon"]) else None
+
+    do_zrobienia = []
+    for s in przystanki:
+        cele, stary = kandydaci(s, toalety), stary_wpis(s)
+        if not stary or any(k not in stary["pieszo"] for k in cele):
+            do_zrobienia.append((s, cele, stary))
     print(f"Słupków: {len(przystanki)}, w cache: {len(przystanki) - len(do_zrobienia)}, "
           f"do policzenia: {len(do_zrobienia)} · serwer: {serwer}")
 
@@ -148,9 +173,9 @@ def main() -> None:
     zapisz = lambda: CACHE.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")  # noqa: E731
     bledy = []
     start = time.time()
-    for n, s in enumerate(do_zrobienia, start=1):
+    for n, (s, cele, stary) in enumerate(do_zrobienia, start=1):
         try:
-            cache[s["id"]] = policz_slupek(s, toalety)
+            cache[s["id"]] = policz_slupek(s, cele, stary)
         except RuntimeError as e:
             bledy.append(s["id"])
             print(f"  {s['id']} {s['nazwa']}: {e}")
