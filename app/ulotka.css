@@ -48,7 +48,6 @@
 .u-id { font-size: 15pt; font-weight: 700; margin-top: 1mm; padding: 0.5mm 2mm; border: 0.5mm solid var(--linia); align-self: flex-end; }
 
 /* odległość — najważniejsza liczba na kartce */
-.u-brak { font-size: 22pt; font-weight: 700; }
 .u-liczby { display: flex; align-items: flex-end; gap: 6mm; flex-wrap: wrap; }
 .u-metry { font-size: 60pt; font-weight: 700; line-height: 1; }
 /* oba wiersze (PL + EN) w pasie wysokości liczby, a nie pod nią */
@@ -83,15 +82,14 @@
 .pin.lewa .podpis { left: auto; right: 30px; text-align: right; }
 .pin .podpis i { display: block; font-style: normal; font-weight: 400; font-size: 9pt; color: #444; }
 
-/* dół: piktogramy toalety + kod QR */
+/* dół: piktogramy toalety i kod QR w jednym rzędzie, pod nimi godziny */
 .u-dol {
   flex: 1; /* zabiera miejsce zwolnione przez mapę */
-  display: grid; grid-template-columns: minmax(0, 1fr) 44mm; gap: 5mm;
-  padding-top: 1mm;
+  display: grid; grid-template-columns: minmax(0, 1fr) 44mm; grid-template-rows: 1fr auto;
+  gap: 6mm 5mm; padding-top: 1mm;
 }
-.u-info { display: flex; flex-direction: column; gap: 6mm; }
 /* kafelki rosną w pionie i wypełniają miejsce między mapą a godzinami */
-.u-kafelki { flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; }
+.u-kafelki { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; }
 .kafelek {
   position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center;
   gap: 2.5mm; text-align: center; padding: 3mm 1.5mm; border: 0.6mm solid var(--linia); border-radius: 3mm;
@@ -108,11 +106,12 @@
 .kafelek.nie .znacznik { background: #c62828; }
 .kafelek .podpis { font-size: 14.5pt; font-weight: 700; line-height: 1.1; }
 .kafelek .en { font-size: 11pt; margin-top: 0.5mm; }
-.u-godziny { display: flex; align-items: center; gap: 3mm; font-size: 17pt; font-weight: 700; line-height: 1.2; }
+.u-godziny { grid-column: 1 / -1; display: flex; align-items: center; gap: 3mm; font-size: 17pt; font-weight: 700; line-height: 1.2; }
 .u-godziny .en { font-size: 13pt; margin-top: 0.5mm; }
 .u-godziny .grupa { white-space: nowrap; }
 .u-godziny svg { width: 9mm; height: 9mm; flex: none; }
-.u-qr { text-align: center; align-self: center; }
+/* QR od górnej do dolnej krawędzi kafelków */
+.u-qr { text-align: center; display: flex; flex-direction: column; justify-content: space-between; }
 .u-qr .kod { width: 42mm; height: 42mm; margin: 0 auto; }
 .u-qr .kod img, .u-qr .kod canvas { width: 100% !important; height: auto !important; }
 .u-qr p { font-size: 13pt; font-weight: 700; margin-top: 1mm; }

@@ -166,8 +166,9 @@ miasto (pytanie do mentora).
    w niedzielę, nie przenośna. `ulotki_dane.py` liczy ją, gdy główna nie
    spełnia tych warunków, ale **obecna, uproszczona ulotka jej nie drukuje**.
    Pole zostaje w danych na wypadek powrotu.
-3. Gdy główna jest dalej niż 1,5 km, nad odległością pojawia się „W pobliżu
-   nie ma toalety. / No toilet nearby.”. Taki przystanek trafia też na mapę luk.
+3. Daleka toaleta nie dostaje dopisku „W pobliżu nie ma toalety” (usunięty
+   18.10) — odległość i minuty mówią same za siebie, a przystanek i tak
+   trafia na mapę luk.
 
 Dlaczego alternatywa w ogóle: najbliższa toaleta bywa toi-toiem czynnym do 31
 października albo toaletą w urzędzie zamkniętym w niedzielę, a w niedzielę

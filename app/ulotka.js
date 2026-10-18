@@ -5,8 +5,6 @@
 // piktogramami, a tekst ograniczamy do minimum.
 
 (function () {
-  const MAX_W_POBLIZU = 1500; // m — dalej: „W pobliżu nie ma toalety”
-
   // Druk wsadowy (src/ulotki_pdf.py) podaje klucz MapTiler; podgląd używa OSM.
   function warstwaKafelkow() {
     if (window.MAPTILER_KEY) {
@@ -112,9 +110,6 @@
   function sekcjaOdleglosci(r) {
     const t = r.glowna;
     const s = el("section", "u-odleglosc");
-    if (t.odl_m > MAX_W_POBLIZU) {
-      s.append(dwujezyczny("p", "u-brak", "W pobliżu nie ma toalety.", "No toilet nearby."));
-    }
     const wiersz = el("div", "u-liczby");
     wiersz.append(
       el("span", "u-metry", "ok. " + odleglosc(t.odl_m)),
@@ -129,7 +124,6 @@
   function dol(r) {
     const t = r.glowna;
     const s = el("section", "u-dol");
-    const info = el("div", "u-info");
     const kafelki = el("div", "u-kafelki");
     kafelki.append(
       t.platna
@@ -150,13 +144,12 @@
     const pl = grupyGodzin(t.godziny + (t.sezon_krotko ? " · sezonowo: " + t.sezon_krotko : ""));
     pl.append(grupyGodzin(t.godziny_en + (t.sezon_krotko_en ? " · seasonal: " + t.sezon_krotko_en : ""), "en"));
     godziny.append(pl);
-    info.append(kafelki, godziny);
 
     const qr = el("div", "u-qr");
     const kod = el("div", "kod");
     new QRCode(kod, { text: linkNawigacji(r), width: 360, height: 360, correctLevel: QRCode.CorrectLevel.M });
     qr.append(kod, dwujezyczny("p", "", "Prowadź mnie", "Navigate me"));
-    s.append(info, qr);
+    s.append(kafelki, qr, godziny);
     return s;
   }
 
